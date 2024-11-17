@@ -1,4 +1,8 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:pkmtcgcollector/resources/pokemonInfos.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -17,68 +21,211 @@ class HomePageContent extends StatefulWidget {
 }
 
 class _HomePageContentState extends State<HomePageContent> {
-  final List<Map<String, dynamic>> _pokemonList = [
-    {
-      "Possui": true,
-      "ID": "A001",
-      "Nome": "Pikachu EX",
-      "Buster": "Pickachu",
-      "Raridade": "☆☆",
-      "1-3": 2.0,
-      "4": 1.0,
-      "5": 0.8
-    },
-    {
-      "Possui": false,
-      "ID": "A002",
-      "Nome": "Charizard",
-      "Buster": "Charizard",
-      "Raridade": "♢♢♢",
-      "1-3": 2.0,
-      "4": 1.0,
-      "5": 0.8
-    },
-    {
-      "Possui": true,
-      "ID": "A003",
-      "Nome": "Mewtwo EX",
-      "Buster": "Todos",
-      "Raridade": "♛",
-      "1-3": 2.0,
-      "4": 1.0,
-      "5": 0.8
-    },
-    {
-      "Possui": true,
-      "ID": "A004",
-      "Nome": "Jinx",
-      "Buster": "Mewtwo",
-      "Raridade": "♢",
-      "1-3": 2.0,
-      "4": 1.0,
-      "5": 0.8
-    },
-    {
-      "Possui": false,
-      "ID": "A005",
-      "Nome": "Zapdos",
-      "Buster": "Pikachu",
-      "Raridade": "♢♢♢",
-      "1-3": 2.0,
-      "4": 1.0,
-      "5": 0.8
-    },
-    {
-      "Possui": true,
-      "ID": "A006",
-      "Nome": "Arcanine",
-      "Buster": "Charizard",
-      "Raridade": "♢♢",
-      "1-3": 2.0,
-      "4": 1.0,
-      "5": 0.8
-    },
-  ];
+  List<Map<String, dynamic>> _pokemonList = [];
+  List<Map<String, dynamic>> _pokemonListFiltered = [];
+  final TextEditingController _filterController = TextEditingController();
+  bool? raridade01 = false;
+  bool? raridade02 = false;
+  bool? raridade03 = false;
+  bool? raridade04 = false;
+  bool? raridade05 = false;
+  bool? raridade06 = false;
+  bool? raridade07 = false;
+  bool? raridade08 = false;
+  bool? packPikachu = false;
+  bool? packCharizard = false;
+  bool? packMewtwo = false;
+
+  Future<void> _savedPokemonList() async {
+    // Salve os dados atualizados no SharedPreferences
+    final prefs = await SharedPreferences.getInstance();
+    final updatedList = _pokemonList.map((pokemon) => pokemon).toList();
+    await prefs.setString('pokemonList', jsonEncode(updatedList));
+  }
+
+  Future<void> _loadPokemonList() async {
+    final prefs = await SharedPreferences.getInstance();
+    final savedList = prefs.getString('pokemonList');
+
+    if (savedList != null) {
+      setState(() {
+        _pokemonList = List<Map<String, dynamic>>.from(jsonDecode(savedList));
+      });
+    } else {
+      // Carregar a lista padrão
+      setState(() {
+        _pokemonList = infoPokemons;
+      });
+    }
+  }
+
+  Future<void> _clearPokemonList() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.clear();
+  }
+
+  void _filterList(String query) {
+    final lowerCaseQuery = query.toLowerCase();
+
+    final filteredList = _pokemonList.where((pokemon) {
+      final name = pokemon['nome']?.toLowerCase() ?? '';
+      // final pack = pokemon['buster']?.toLowerCase() ?? '';
+
+      return name.contains(lowerCaseQuery); //|| pack.contains(lowerCaseQuery);
+    }).toList();
+
+    setState(() {
+      _pokemonListFiltered = filteredList;
+    });
+  }
+
+  Future _displayBottomSheet(BuildContext context) {
+    return showModalBottomSheet(
+      backgroundColor: Colors.amber[50],
+      barrierColor: Colors.black87.withOpacity(0.5),
+      isDismissible: false,
+      context: context,
+      builder: (context) => Container(
+        height: 500,
+        width: double.infinity,
+        child: Column(
+          children: [
+            Container(
+              margin: const EdgeInsets.only(top: 8.0, bottom: 12.0),
+              width: 50,
+              height: 4,
+              decoration: BoxDecoration(
+                color: Colors.grey[400],
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Text(
+              "Filtros",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Text("Raridade"),
+            Divider(),
+            Row(
+              children: [
+                Expanded(
+                  child: CheckboxListTile(
+                      title: Text("🔹"),
+                      value: raridade01,
+                      onChanged: (bool? newValue) async {
+                        setState(() {
+                          raridade01 = newValue ?? false;
+                        });
+                      }),
+                ),
+                Expanded(
+                  child: CheckboxListTile(
+                      title: Text("🔹🔹"),
+                      value: raridade02,
+                      onChanged: (bool? newValue) async {
+                        setState(() {
+                          raridade02 = newValue ?? false;
+                        });
+                      }),
+                ),
+                Expanded(
+                  child: CheckboxListTile(
+                      title: Text("🔹🔹🔹"),
+                      value: raridade03,
+                      onChanged: (bool? newValue) async {
+                        setState(() {
+                          raridade03 = newValue ?? false;
+                        });
+                      }),
+                ),
+                Expanded(
+                  child: CheckboxListTile(
+                      title: Text("🔹🔹🔹🔹"),
+                      value: raridade04,
+                      onChanged: (bool? newValue) async {
+                        setState(() {
+                          raridade04 = newValue ?? false;
+                        });
+                      }),
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: CheckboxListTile(
+                      title: Text("⭐️"),
+                      value: raridade05,
+                      onChanged: (bool? newValue) async {
+                        setState(() {
+                          raridade05 = newValue ?? false;
+                        });
+                      }),
+                ),
+                Expanded(
+                  child: CheckboxListTile(
+                      title: Text("⭐️⭐️"),
+                      value: raridade06,
+                      onChanged: (bool? newValue) async {
+                        setState(() {
+                          raridade06 = newValue ?? false;
+                        });
+                      }),
+                ),
+                Expanded(
+                  child: CheckboxListTile(
+                      title: Text("⭐️⭐️⭐️"),
+                      value: raridade07,
+                      onChanged: (bool? newValue) async {
+                        setState(() {
+                          raridade07 = newValue ?? false;
+                        });
+                      }),
+                ),
+                Expanded(
+                  child: CheckboxListTile(
+                      title: Text("👑"),
+                      value: raridade08,
+                      onChanged: (bool? newValue) async {
+                        setState(() {
+                          raridade08 = newValue ?? false;
+                        });
+                      }),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              child: Text(
+                "Aplicar",
+                style: TextStyle(color: Colors.white),
+              ),
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.cyan,
+                  shadowColor: Colors.cyan[100],
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5))),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _loadPokemonList();
+    _pokemonListFiltered = List.from(_pokemonList);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -119,12 +266,17 @@ class _HomePageContentState extends State<HomePageContent> {
                           labelText: "Buscar Pokemon",
                           hintText: "Digite o nome do pokemon",
                         ),
+                        onChanged: (value) => _filterList(value),
+                        onSubmitted: (value) =>
+                            _filterList(_filterController.text),
                       ),
                       Positioned(
                         right: 0,
                         top: 0,
                         child: IconButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            _filterList(_filterController.text);
+                          },
                           icon: Icon(Icons.search_rounded),
                           color: Colors.deepPurple,
                         ),
@@ -137,7 +289,7 @@ class _HomePageContentState extends State<HomePageContent> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    print(_pokemonList[0]["Possui"]);
+                    _displayBottomSheet(context);
                   },
                   child: Center(
                     child: Icon(
@@ -147,7 +299,7 @@ class _HomePageContentState extends State<HomePageContent> {
                     ),
                   ),
                   style: ElevatedButton.styleFrom(
-                      minimumSize: Size(0, 60),
+                      // minimumSize: Size(0, 60),
                       backgroundColor: Colors.amber,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10))),
@@ -171,25 +323,21 @@ class _HomePageContentState extends State<HomePageContent> {
                     ),
                   ),
                   Text(
-                    "ID",
+                    "code",
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                   Text(
-                    "Nome",
+                    "nome",
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                   Text(
-                    "Buster",
+                    "buster",
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                   Text(
-                    "Raridade",
+                    "raridade",
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
-                  // Text(
-                  //   "QNT",
-                  //   style: TextStyle(fontWeight: FontWeight.bold),
-                  // ),
                 ],
               ),
             ),
@@ -200,15 +348,16 @@ class _HomePageContentState extends State<HomePageContent> {
                 child: ListView(
                   children: <Widget>[
                     Column(
-                      children: _pokemonList.map((item) {
+                      children: _pokemonListFiltered.map((item) {
                         return Row(
                           children: [
                             Checkbox(
-                                value: item["Possui"],
+                                value: item["obtido"],
                                 onChanged: (bool? newValue) {
                                   setState(() {
-                                    item["Possui"] = newValue ?? false;
+                                    item["obtido"] = newValue ?? false;
                                   });
+                                  _savedPokemonList();
                                 }),
                             Expanded(
                               child: Container(
@@ -216,11 +365,11 @@ class _HomePageContentState extends State<HomePageContent> {
                                 height: 50,
                                 margin: EdgeInsets.symmetric(vertical: 5),
                                 decoration: BoxDecoration(
-                                    color: item["Buster"] == "Charizard"
+                                    color: item["buster"] == "Charizard"
                                         ? Colors.deepOrange[100]
-                                        : item["Buster"] == "Mewtwo"
+                                        : item["buster"] == "Mewtwo"
                                             ? Colors.deepPurple[100]
-                                            : item["Buster"] == "Todos"
+                                            : item["buster"] == "All"
                                                 ? Colors.green[100]
                                                 : Colors.amberAccent[100],
                                     borderRadius: BorderRadius.circular(5)),
@@ -233,22 +382,13 @@ class _HomePageContentState extends State<HomePageContent> {
                                         mainAxisAlignment:
                                             MainAxisAlignment.spaceBetween,
                                         children: [
-                                          Text(item["ID"]),
+                                          Text(item["code"]),
                                           Divider(),
-                                          Text(item["Nome"]),
+                                          Text(item["nome"]),
                                           Divider(),
-                                          Text(item["Buster"]),
+                                          Text(item["buster"]),
                                           Divider(),
-                                          Text(
-                                            item["Raridade"],
-                                            style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                color: item["Raridade"]
-                                                        .contains("♢")
-                                                    ? Colors.grey
-                                                    : Colors.amber[700]),
-                                          ),
-                                          // Text(item["QNT"])
+                                          Text(item["raridade"]),
                                         ],
                                       ),
                                     ),
@@ -263,29 +403,25 @@ class _HomePageContentState extends State<HomePageContent> {
                                             "Taxas:",
                                             style: TextStyle(
                                                 fontWeight: FontWeight.bold,
-                                                fontSize: 11,
-                                                color: Colors.grey),
+                                                fontSize: 11),
                                           ),
                                           Text(
-                                            "1-3º: ${item["1-3"].toString()}%",
+                                            "1-3º : ${item["chance_1_3"].toString()}%",
                                             style: TextStyle(
                                                 fontWeight: FontWeight.bold,
-                                                fontSize: 11,
-                                                color: Colors.grey),
+                                                fontSize: 11),
                                           ),
                                           Text(
-                                            "4º: ${item["4"].toString()}%",
+                                            "4º : ${item["chance_4"].toString()}%",
                                             style: TextStyle(
                                                 fontWeight: FontWeight.bold,
-                                                fontSize: 11,
-                                                color: Colors.grey),
+                                                fontSize: 11),
                                           ),
                                           Text(
-                                            "5º: ${item["5"].toString()}%",
+                                            "5º : ${item["chance_5"].toString()}%",
                                             style: TextStyle(
                                                 fontWeight: FontWeight.bold,
-                                                fontSize: 11,
-                                                color: Colors.grey),
+                                                fontSize: 11),
                                           ),
                                         ],
                                       ),
