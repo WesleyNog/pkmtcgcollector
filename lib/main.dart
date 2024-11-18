@@ -1,11 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:pkmtcgcollector/pages/graficPage.dart';
 import 'package:pkmtcgcollector/pages/homePage.dart';
 import 'package:pkmtcgcollector/pages/menuPage.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 
 void main() {
-  runApp(const MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+  ]).then((_) {
+    runApp(const MyApp());
+    configLoading();
+  });
 }
 
 void configLoading() {
@@ -58,11 +65,11 @@ class _HomeScreenState extends State<HomeScreen> {
             IconButton(
               onPressed: () {
                 setState(() {
-                  _selectPageIndex = 1;
+                  _selectPageIndex = 2;
                 });
               },
-              icon: Icon(Icons.menu_open_rounded),
-              color: _selectPageIndex == 1 ? Colors.greenAccent : Colors.black,
+              icon: Icon(Icons.pie_chart_sharp),
+              color: _selectPageIndex == 2 ? Colors.greenAccent : Colors.black,
             ),
             IconButton(
               onPressed: () {
@@ -76,11 +83,11 @@ class _HomeScreenState extends State<HomeScreen> {
             IconButton(
               onPressed: () {
                 setState(() {
-                  _selectPageIndex = 2;
+                  _selectPageIndex = 1;
                 });
               },
-              icon: Icon(Icons.pie_chart_sharp),
-              color: _selectPageIndex == 2 ? Colors.greenAccent : Colors.black,
+              icon: Icon(Icons.menu_open_rounded),
+              color: _selectPageIndex == 1 ? Colors.greenAccent : Colors.black,
             ),
           ],
         ),

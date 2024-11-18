@@ -27,7 +27,7 @@ class _ManuPageContentState extends State<ManuPageContent> {
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
       ),
-      body: Text("Pagina Menu"),
+      body: Center(child: Text("Pagina Menu")),
     );
   }
 }

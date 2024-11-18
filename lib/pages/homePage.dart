@@ -25,17 +25,28 @@ class _HomePageContentState extends State<HomePageContent> {
   List<Map<String, dynamic>> _pokemonList = [];
   List<Map<String, dynamic>> _pokemonListFiltered = [];
   final TextEditingController _filterController = TextEditingController();
-  bool? raridade01 = false;
-  bool? raridade02 = false;
-  bool? raridade03 = false;
-  bool? raridade04 = false;
-  bool? raridade05 = false;
-  bool? raridade06 = false;
-  bool? raridade07 = false;
-  bool? raridade08 = false;
-  bool? packPikachu = false;
-  bool? packCharizard = false;
-  bool? packMewtwo = false;
+  List<bool?> _raridades = [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ];
+  final List<String> nivelRaridades = [
+    "🔹",
+    "🔹🔹",
+    "🔹🔹🔹",
+    "🔹🔹🔹🔹",
+    "⭐️",
+    "⭐️⭐️",
+    "⭐️⭐️⭐️",
+    "👑"
+  ];
+  List<bool?> _packs = [false, false, false];
+  final List<String> nivelPakcs = ["Charizard", "Mewtwo", "Pikachu"];
 
   Future<void> _savedPokemonList() async {
     // Salve os dados atualizados no SharedPreferences
@@ -67,12 +78,33 @@ class _HomePageContentState extends State<HomePageContent> {
 
   void _filterList(String query) {
     final lowerCaseQuery = query.toLowerCase();
+    // Verifica se nenhuma raridade/Pack estão selecionados
+    final isAnyRaridadeSelected = _raridades.contains(true);
+    final isAnyPackSelected = _packs.contains(true);
 
     final filteredList = _pokemonList.where((pokemon) {
+      // Filtrar por nome do Pokemon
       final name = pokemon['nome']?.toLowerCase() ?? '';
-      // final pack = pokemon['buster']?.toLowerCase() ?? '';
 
-      return name.contains(lowerCaseQuery); //|| pack.contains(lowerCaseQuery);
+      // Filtrar por Raridade
+      final raridadePokemon = pokemon["raridade"];
+      bool raridadeValida = !isAnyRaridadeSelected ||
+          _raridades.asMap().entries.any((entry) {
+            final index = entry.key;
+            final isSelected = entry.value;
+            return isSelected! && raridadePokemon == nivelRaridades[index];
+          });
+
+      // Filtrar por Packs
+      final packPokemon = pokemon["buster"];
+      bool packValida = !isAnyPackSelected ||
+          _packs.asMap().entries.any((entry) {
+            final index = entry.key;
+            final isSelected = entry.value;
+            return isSelected! && packPokemon == nivelPakcs[index];
+          });
+
+      return name.contains(lowerCaseQuery) && raridadeValida && packValida;
     }).toList();
 
     setState(() {
@@ -82,7 +114,7 @@ class _HomePageContentState extends State<HomePageContent> {
 
   Future _displayBottomSheet(BuildContext context) {
     return showModalBottomSheet(
-      backgroundColor: Colors.amber[50],
+      backgroundColor: Colors.blueAccent[50],
       barrierColor: Colors.black87.withOpacity(0.5),
       context: context,
       builder: (context) => Container(
@@ -114,34 +146,42 @@ class _HomePageContentState extends State<HomePageContent> {
             Row(
               children: [
                 Checkbox(
-                    value: raridade01,
+                    value: _raridades[0],
                     onChanged: (bool? newValue) {
                       setState(() {
-                        raridade01 = newValue ?? false;
+                        _raridades[0] = newValue ?? false;
+                        _filterList("");
+                        Navigator.pop(context);
                       });
                     }),
                 Text("🔹"),
                 Checkbox(
-                    value: raridade02,
+                    value: _raridades[1],
                     onChanged: (bool? newValue) {
                       setState(() {
-                        raridade02 = newValue ?? false;
+                        _raridades[1] = newValue ?? false;
+                        _filterList("");
+                        Navigator.pop(context);
                       });
                     }),
                 Text("🔹🔹"),
                 Checkbox(
-                    value: raridade03,
+                    value: _raridades[2],
                     onChanged: (bool? newValue) {
                       setState(() {
-                        raridade03 = newValue ?? false;
+                        _raridades[2] = newValue ?? false;
+                        _filterList("");
+                        Navigator.pop(context);
                       });
                     }),
                 Text("🔹🔹🔹"),
                 Checkbox(
-                    value: raridade04,
+                    value: _raridades[3],
                     onChanged: (bool? newValue) {
                       setState(() {
-                        raridade04 = newValue ?? false;
+                        _raridades[3] = newValue ?? false;
+                        _filterList("");
+                        Navigator.pop(context);
                       });
                     }),
                 Text("🔹🔹🔹🔹")
@@ -150,34 +190,42 @@ class _HomePageContentState extends State<HomePageContent> {
             Row(
               children: [
                 Checkbox(
-                    value: raridade05,
+                    value: _raridades[4],
                     onChanged: (bool? newValue) {
                       setState(() {
-                        raridade05 = newValue ?? false;
+                        _raridades[4] = newValue ?? false;
+                        _filterList("");
+                        Navigator.pop(context);
                       });
                     }),
                 Text("⭐️"),
                 Checkbox(
-                    value: raridade06,
+                    value: _raridades[5],
                     onChanged: (bool? newValue) {
                       setState(() {
-                        raridade06 = newValue ?? false;
+                        _raridades[5] = newValue ?? false;
+                        _filterList("");
+                        Navigator.pop(context);
                       });
                     }),
                 Text("⭐️⭐️"),
                 Checkbox(
-                    value: raridade07,
+                    value: _raridades[6],
                     onChanged: (bool? newValue) {
                       setState(() {
-                        raridade07 = newValue ?? false;
+                        _raridades[6] = newValue ?? false;
+                        _filterList("");
+                        Navigator.pop(context);
                       });
                     }),
                 Text("⭐️⭐️⭐️"),
                 Checkbox(
-                    value: raridade08,
+                    value: _raridades[7],
                     onChanged: (bool? newValue) {
                       setState(() {
-                        raridade08 = newValue ?? false;
+                        _raridades[7] = newValue ?? false;
+                        _filterList("");
+                        Navigator.pop(context);
                       });
                     }),
                 Text("👑"),
@@ -192,26 +240,32 @@ class _HomePageContentState extends State<HomePageContent> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Checkbox(
-                    value: packCharizard,
+                    value: _packs[0],
                     onChanged: (bool? newValue) {
                       setState(() {
-                        packCharizard = newValue ?? false;
+                        _packs[0] = newValue ?? false;
+                        _filterList("");
+                        Navigator.pop(context);
                       });
                     }),
                 Image.asset("assets/images/charizard.jpg"),
                 Checkbox(
-                    value: packMewtwo,
+                    value: _packs[1],
                     onChanged: (bool? newValue) {
                       setState(() {
-                        packMewtwo = newValue ?? false;
+                        _packs[1] = newValue ?? false;
+                        _filterList("");
+                        Navigator.pop(context);
                       });
                     }),
                 Image.asset("assets/images/mewtwo.jpg"),
                 Checkbox(
-                    value: packPikachu,
+                    value: _packs[2],
                     onChanged: (bool? newValue) {
                       setState(() {
-                        packPikachu = newValue ?? false;
+                        _packs[2] = newValue ?? false;
+                        _filterList("");
+                        Navigator.pop(context);
                       });
                     }),
                 Image.asset("assets/images/pikachu.jpg"),
@@ -276,7 +330,7 @@ class _HomePageContentState extends State<HomePageContent> {
                         decoration: InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: "Buscar Pokemon",
-                          hintText: "Digite o nome do pokemon",
+                          hintText: "Nome do pokemon",
                         ),
                         onChanged: (value) => _filterList(value),
                         onSubmitted: (value) =>
@@ -284,7 +338,7 @@ class _HomePageContentState extends State<HomePageContent> {
                       ),
                       Positioned(
                         right: 0,
-                        top: 0,
+                        top: 5,
                         child: IconButton(
                           onPressed: () {
                             _filterList(_filterController.text);
@@ -306,13 +360,13 @@ class _HomePageContentState extends State<HomePageContent> {
                   child: Center(
                     child: Icon(
                       Icons.filter_list_rounded,
-                      color: Colors.white,
+                      color: Colors.blue[100],
                       size: 30,
                     ),
                   ),
                   style: ElevatedButton.styleFrom(
                       // minimumSize: Size(0, 60),
-                      backgroundColor: Colors.amber,
+                      backgroundColor: Colors.blue,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10))),
                 )
