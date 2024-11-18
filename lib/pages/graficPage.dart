@@ -21,6 +21,7 @@ class _GraficPageContentState extends State<GraficPageContent> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text(
           "Métricas",
           style: TextStyle(fontWeight: FontWeight.bold),

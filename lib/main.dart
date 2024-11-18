@@ -2,9 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:pkmtcgcollector/pages/graficPage.dart';
 import 'package:pkmtcgcollector/pages/homePage.dart';
 import 'package:pkmtcgcollector/pages/menuPage.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 
 void main() {
   runApp(const MyApp());
+}
+
+void configLoading() {
+  EasyLoading.instance
+    ..loadingStyle = EasyLoadingStyle.dark
+    ..indicatorType = EasyLoadingIndicatorType.fadingCircle
+    ..indicatorSize = 45.0
+    ..radius = 10.0
+    ..dismissOnTap = false;
 }
 
 class MyApp extends StatelessWidget {
@@ -19,6 +29,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: HomeScreen(),
+      builder: EasyLoading.init(),
     );
   }
 }

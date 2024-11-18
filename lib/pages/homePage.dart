@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:pkmtcgcollector/resources/pokemonInfos.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -83,7 +84,6 @@ class _HomePageContentState extends State<HomePageContent> {
     return showModalBottomSheet(
       backgroundColor: Colors.amber[50],
       barrierColor: Colors.black87.withOpacity(0.5),
-      isDismissible: false,
       context: context,
       builder: (context) => Container(
         height: 500,
@@ -113,107 +113,110 @@ class _HomePageContentState extends State<HomePageContent> {
             Divider(),
             Row(
               children: [
-                Expanded(
-                  child: CheckboxListTile(
-                      title: Text("🔹"),
-                      value: raridade01,
-                      onChanged: (bool? newValue) async {
-                        setState(() {
-                          raridade01 = newValue ?? false;
-                        });
-                      }),
-                ),
-                Expanded(
-                  child: CheckboxListTile(
-                      title: Text("🔹🔹"),
-                      value: raridade02,
-                      onChanged: (bool? newValue) async {
-                        setState(() {
-                          raridade02 = newValue ?? false;
-                        });
-                      }),
-                ),
-                Expanded(
-                  child: CheckboxListTile(
-                      title: Text("🔹🔹🔹"),
-                      value: raridade03,
-                      onChanged: (bool? newValue) async {
-                        setState(() {
-                          raridade03 = newValue ?? false;
-                        });
-                      }),
-                ),
-                Expanded(
-                  child: CheckboxListTile(
-                      title: Text("🔹🔹🔹🔹"),
-                      value: raridade04,
-                      onChanged: (bool? newValue) async {
-                        setState(() {
-                          raridade04 = newValue ?? false;
-                        });
-                      }),
-                ),
+                Checkbox(
+                    value: raridade01,
+                    onChanged: (bool? newValue) {
+                      setState(() {
+                        raridade01 = newValue ?? false;
+                      });
+                    }),
+                Text("🔹"),
+                Checkbox(
+                    value: raridade02,
+                    onChanged: (bool? newValue) {
+                      setState(() {
+                        raridade02 = newValue ?? false;
+                      });
+                    }),
+                Text("🔹🔹"),
+                Checkbox(
+                    value: raridade03,
+                    onChanged: (bool? newValue) {
+                      setState(() {
+                        raridade03 = newValue ?? false;
+                      });
+                    }),
+                Text("🔹🔹🔹"),
+                Checkbox(
+                    value: raridade04,
+                    onChanged: (bool? newValue) {
+                      setState(() {
+                        raridade04 = newValue ?? false;
+                      });
+                    }),
+                Text("🔹🔹🔹🔹")
               ],
             ),
             Row(
               children: [
-                Expanded(
-                  child: CheckboxListTile(
-                      title: Text("⭐️"),
-                      value: raridade05,
-                      onChanged: (bool? newValue) async {
-                        setState(() {
-                          raridade05 = newValue ?? false;
-                        });
-                      }),
-                ),
-                Expanded(
-                  child: CheckboxListTile(
-                      title: Text("⭐️⭐️"),
-                      value: raridade06,
-                      onChanged: (bool? newValue) async {
-                        setState(() {
-                          raridade06 = newValue ?? false;
-                        });
-                      }),
-                ),
-                Expanded(
-                  child: CheckboxListTile(
-                      title: Text("⭐️⭐️⭐️"),
-                      value: raridade07,
-                      onChanged: (bool? newValue) async {
-                        setState(() {
-                          raridade07 = newValue ?? false;
-                        });
-                      }),
-                ),
-                Expanded(
-                  child: CheckboxListTile(
-                      title: Text("👑"),
-                      value: raridade08,
-                      onChanged: (bool? newValue) async {
-                        setState(() {
-                          raridade08 = newValue ?? false;
-                        });
-                      }),
-                ),
+                Checkbox(
+                    value: raridade05,
+                    onChanged: (bool? newValue) {
+                      setState(() {
+                        raridade05 = newValue ?? false;
+                      });
+                    }),
+                Text("⭐️"),
+                Checkbox(
+                    value: raridade06,
+                    onChanged: (bool? newValue) {
+                      setState(() {
+                        raridade06 = newValue ?? false;
+                      });
+                    }),
+                Text("⭐️⭐️"),
+                Checkbox(
+                    value: raridade07,
+                    onChanged: (bool? newValue) {
+                      setState(() {
+                        raridade07 = newValue ?? false;
+                      });
+                    }),
+                Text("⭐️⭐️⭐️"),
+                Checkbox(
+                    value: raridade08,
+                    onChanged: (bool? newValue) {
+                      setState(() {
+                        raridade08 = newValue ?? false;
+                      });
+                    }),
+                Text("👑"),
               ],
             ),
             SizedBox(
               height: 30,
             ),
-            ElevatedButton(
-              onPressed: () {},
-              child: Text(
-                "Aplicar",
-                style: TextStyle(color: Colors.white),
-              ),
-              style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.cyan,
-                  shadowColor: Colors.cyan[100],
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(5))),
-            )
+            Text("Packs"),
+            Divider(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Checkbox(
+                    value: packCharizard,
+                    onChanged: (bool? newValue) {
+                      setState(() {
+                        packCharizard = newValue ?? false;
+                      });
+                    }),
+                Image.asset("assets/images/charizard.jpg"),
+                Checkbox(
+                    value: packMewtwo,
+                    onChanged: (bool? newValue) {
+                      setState(() {
+                        packMewtwo = newValue ?? false;
+                      });
+                    }),
+                Image.asset("assets/images/mewtwo.jpg"),
+                Checkbox(
+                    value: packPikachu,
+                    onChanged: (bool? newValue) {
+                      setState(() {
+                        packPikachu = newValue ?? false;
+                      });
+                    }),
+                Image.asset("assets/images/pikachu.jpg"),
+              ],
+            ),
           ],
         ),
       ),
@@ -223,14 +226,24 @@ class _HomePageContentState extends State<HomePageContent> {
   @override
   void initState() {
     super.initState();
-    _loadPokemonList();
-    _pokemonListFiltered = List.from(_pokemonList);
+    _initializeData();
+  }
+
+  void _initializeData() {
+    EasyLoading.show(status: "Carregando lista completa");
+    _loadPokemonList().then((_) {
+      setState(() {
+        _pokemonListFiltered = List.from(_pokemonList);
+      });
+    });
+    EasyLoading.dismiss();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text(
           "Coleção",
           style: TextStyle(fontWeight: FontWeight.bold),
@@ -245,7 +258,6 @@ class _HomePageContentState extends State<HomePageContent> {
               padding: EdgeInsets.only(top: 20),
               child: Text(
                 "Lista de Pokemons",
-                textAlign: TextAlign.left,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
@@ -330,10 +342,10 @@ class _HomePageContentState extends State<HomePageContent> {
                     "nome",
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
-                  Text(
-                    "buster",
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
+                  // Text(
+                  //   "buster",
+                  //   style: TextStyle(fontWeight: FontWeight.bold),
+                  // ),
                   Text(
                     "raridade",
                     style: TextStyle(fontWeight: FontWeight.bold),
@@ -343,101 +355,105 @@ class _HomePageContentState extends State<HomePageContent> {
             ),
             Divider(),
             Expanded(
-              child: Container(
-                width: double.infinity,
-                child: ListView(
-                  children: <Widget>[
-                    Column(
-                      children: _pokemonListFiltered.map((item) {
-                        return Row(
-                          children: [
-                            Checkbox(
-                                value: item["obtido"],
-                                onChanged: (bool? newValue) {
-                                  setState(() {
-                                    item["obtido"] = newValue ?? false;
-                                  });
-                                  _savedPokemonList();
-                                }),
-                            Expanded(
-                              child: Container(
-                                width: double.infinity,
-                                height: 50,
-                                margin: EdgeInsets.symmetric(vertical: 5),
-                                decoration: BoxDecoration(
-                                    color: item["buster"] == "Charizard"
-                                        ? Colors.deepOrange[100]
-                                        : item["buster"] == "Mewtwo"
-                                            ? Colors.deepPurple[100]
-                                            : item["buster"] == "All"
-                                                ? Colors.green[100]
-                                                : Colors.amberAccent[100],
-                                    borderRadius: BorderRadius.circular(5)),
-                                child: Column(
+              child: ListView.builder(
+                itemCount: _pokemonListFiltered.length,
+                itemBuilder: (context, index) {
+                  final item = _pokemonListFiltered[index];
+                  return Row(
+                    children: [
+                      Checkbox(
+                          value: item["obtido"],
+                          onChanged: (bool? newValue) {
+                            setState(() {
+                              item["obtido"] = newValue ?? false;
+                            });
+                            _savedPokemonList();
+                          }),
+                      Expanded(
+                        child: Container(
+                          width: double.infinity,
+                          height: 50,
+                          margin: EdgeInsets.symmetric(vertical: 5),
+                          decoration: BoxDecoration(
+                              color: item["buster"] == "Charizard"
+                                  ? Colors.deepOrange[100]
+                                  : item["buster"] == "Mewtwo"
+                                      ? Colors.deepPurple[100]
+                                      : item["buster"] == "All"
+                                          ? Colors.green[100]
+                                          : Colors.amberAccent[100],
+                              borderRadius: BorderRadius.circular(5)),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(
+                                    left: 10.0, right: 10.0, top: 5),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                          left: 10.0, right: 10.0, top: 5),
-                                      child: Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceBetween,
-                                        children: [
-                                          Text(item["code"]),
-                                          Divider(),
-                                          Text(item["nome"]),
-                                          Divider(),
-                                          Text(item["buster"]),
-                                          Divider(),
-                                          Text(item["raridade"]),
-                                        ],
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          horizontal: 10.0),
-                                      child: Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceBetween,
-                                        children: [
-                                          Text(
-                                            "Taxas:",
-                                            style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 11),
-                                          ),
-                                          Text(
-                                            "1-3º : ${item["chance_1_3"].toString()}%",
-                                            style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 11),
-                                          ),
-                                          Text(
-                                            "4º : ${item["chance_4"].toString()}%",
-                                            style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 11),
-                                          ),
-                                          Text(
-                                            "5º : ${item["chance_5"].toString()}%",
-                                            style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 11),
-                                          ),
-                                        ],
-                                      ),
-                                    )
+                                    Text(item["code"]),
+                                    Text(item["nome"]),
+                                    // Text(item["buster"]),
+                                    Text(item["raridade"]),
                                   ],
                                 ),
                               ),
-                            ),
-                          ],
-                        );
-                      }).toList(),
-                    ),
-                  ],
-                ),
+                              Padding(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 10.0),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      "Taxas:",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 11),
+                                    ),
+                                    Text(
+                                      "1-3º : ${item["chance_1_3"].toString()}%",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 11),
+                                    ),
+                                    Text(
+                                      "4º : ${item["chance_4"].toString()}%",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 11),
+                                    ),
+                                    Text(
+                                      "5º : ${item["chance_5"].toString()}%",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 11),
+                                    ),
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  );
+                },
               ),
             ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              alignment: Alignment.topRight,
+              child: Text(
+                "Pokemons: ${_pokemonListFiltered.where((pokemon) => pokemon["obtido"] == true).length.toString().padLeft(2, "0")}/${_pokemonListFiltered.length.toString().padLeft(2, "0")}",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            )
           ],
         ),
       ),
