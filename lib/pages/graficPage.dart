@@ -57,19 +57,81 @@ class _GraficPageContentState extends State<GraficPageContent> {
         .length;
   }
 
+  int obtidoMew(String pack) {
+    if (pack == "Total") {
+      return _pokemonList
+          .where(
+              (pokemon) => pokemon["MEW"] == true && pokemon["obtido"] == true)
+          .length;
+    }
+
+    return _pokemonList
+        .where((pokemon) =>
+            pokemon["buster"] == pack &&
+            pokemon["obtido"] == true &&
+            pokemon["MEW"] == true)
+        .length;
+  }
+
   int totalPokemon(String pack) {
     if (pack == "Total") {
       return _pokemonList.length;
     }
 
+    return _pokemonList.where((pokemon) => pokemon["buster"] == pack).length;
+  }
+
+  int totalMew(pack) {
+    if (pack == "Total") {
+      return _pokemonList.where((pokemon) => pokemon["MEW"] == true).length;
+    }
+
     return _pokemonList
-        .where((pokemon) =>
-            pokemon["buster"] == pack || pokemon["buster"] == "All")
+        .where((pokemon) => pokemon["buster"] == pack && pokemon["MEW"] == true)
         .length;
   }
 
   String percentBuster(String pack) {
     return ((obtido(pack) / totalPokemon(pack)) * 100).toStringAsFixed(3);
+  }
+
+  String percentMew(String pack) {
+    return ((obtidoMew(pack) / totalMew(pack)) * 100).toStringAsFixed(3);
+  }
+
+  String chanceCard(String chance, String pack) {
+    List<String> _raridades = [
+      "🔹",
+      "🔹🔹",
+      "🔹🔹🔹",
+      "🔹🔹🔹🔹",
+      "⭐️",
+      "⭐️⭐️",
+      "⭐️⭐️⭐️",
+      "👑"
+    ];
+    double _sum = 0.0;
+    for (String raridade in _raridades) {
+      var sumPack = _pokemonList
+          .where((pokemon) =>
+              pokemon["obtido"] == false &&
+              pokemon["raridade"] == raridade &&
+              pokemon["buster"] == pack)
+          .fold(0.0, (soma, pokemon) {
+        return soma + (pokemon[chance] ?? 0.0);
+      });
+      var sumAll = _pokemonList
+          .where((pokemon) =>
+              pokemon["obtido"] == false &&
+              pokemon["raridade"] == raridade &&
+              pokemon["buster"] == "All")
+          .fold(0.0, (soma, pokemon) {
+        return soma + (pokemon[chance] ?? 0.0);
+      });
+
+      _sum = _sum + sumPack + sumAll;
+    }
+    return _sum.toString().padLeft(3);
   }
 
   @override
@@ -127,27 +189,15 @@ class _GraficPageContentState extends State<GraficPageContent> {
                         child: CircularProgressIndicator(),
                       ),
                     )
-                  : Stack(
-                      children: [
-                        AspectRatio(
-                          aspectRatio: 1.5,
-                          child: PieChart(
-                            PieChartData(
-                              sectionsSpace: 5,
-                              // centerSpaceRadius: 110,
-                              sections: sections,
-                            ),
-                          ),
+                  : AspectRatio(
+                      aspectRatio: 2,
+                      child: PieChart(
+                        PieChartData(
+                          sectionsSpace: 5,
+                          centerSpaceRadius: 50,
+                          sections: sections,
                         ),
-                        Positioned(
-                            left: 135,
-                            top: 80,
-                            child: Text(
-                              "${obtido("Total")}",
-                              style: TextStyle(
-                                  fontSize: 25, fontWeight: FontWeight.bold),
-                            ))
-                      ],
+                      ),
                     ),
               SizedBox(
                 height: 30,
@@ -180,13 +230,46 @@ class _GraficPageContentState extends State<GraficPageContent> {
                   DataCell(Text("${percentBuster("Pikachu")}%")),
                 ]),
                 DataRow(cells: [
+                  DataCell(Text("All")),
+                  DataCell(Text("${obtido("All")}/${totalPokemon("All")}")),
+                  DataCell(Text("${percentBuster("All")}%")),
+                ]),
+                DataRow(cells: [
                   DataCell(Text("Total")),
                   DataCell(Text("${obtido("Total")}/${totalPokemon("Total")}")),
                   DataCell(Text("${percentBuster("Total")}%")),
                 ]),
               ]),
               SizedBox(
-                height: 20,
+                height: 40,
+              ),
+              Text(
+                "Chance de novas cartas",
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+              DataTable(columns: [
+                DataColumn(label: Text("1-3")),
+                DataColumn(label: Text("4")),
+                DataColumn(label: Text("5")),
+              ], rows: [
+                DataRow(cells: [
+                  DataCell(Text("${chanceCard("chance_1_3", "Charizard")}%")),
+                  DataCell(Text("${chanceCard("chance_4", "Charizard")}%")),
+                  DataCell(Text("${chanceCard("chance_5", "Charizard")}%")),
+                ]),
+                DataRow(cells: [
+                  DataCell(Text("${chanceCard("chance_1_3", "Mewtwo")}%")),
+                  DataCell(Text("${chanceCard("chance_4", "Mewtwo")}%")),
+                  DataCell(Text("${chanceCard("chance_5", "Mewtwo")}%")),
+                ]),
+                DataRow(cells: [
+                  DataCell(Text("${chanceCard("chance_1_3", "Pikachu")}%")),
+                  DataCell(Text("${chanceCard("chance_4", "Pikachu")}%")),
+                  DataCell(Text("${chanceCard("chance_5", "Pikachu")}%")),
+                ])
+              ]),
+              SizedBox(
+                height: 40,
               ),
               Text(
                 "Caminho p/ MEW",
@@ -200,25 +283,30 @@ class _GraficPageContentState extends State<GraficPageContent> {
                 DataRow(cells: [
                   DataCell(Text("Charizard")),
                   DataCell(Text(
-                      "${obtido("Charizard")}/${totalPokemon("Charizard")}")),
-                  DataCell(Text("${percentBuster("Charizard")}%")),
+                      "${obtidoMew("Charizard")}/${totalMew("Charizard")}")),
+                  DataCell(Text("${percentMew("Charizard")}%")),
                 ]),
                 DataRow(cells: [
                   DataCell(Text("Mewtwo")),
                   DataCell(
-                      Text("${obtido("Mewtwo")}/${totalPokemon("Mewtwo")}")),
-                  DataCell(Text("${percentBuster("Mewtwo")}%")),
+                      Text("${obtidoMew("Mewtwo")}/${totalMew("Mewtwo")}")),
+                  DataCell(Text("${percentMew("Mewtwo")}%")),
                 ]),
                 DataRow(cells: [
                   DataCell(Text("Pikachu")),
                   DataCell(
-                      Text("${obtido("Pikachu")}/${totalPokemon("Pikachu")}")),
-                  DataCell(Text("${percentBuster("Pikachu")}%")),
+                      Text("${obtidoMew("Pikachu")}/${totalMew("Pikachu")}")),
+                  DataCell(Text("${percentMew("Pikachu")}%")),
+                ]),
+                DataRow(cells: [
+                  DataCell(Text("All")),
+                  DataCell(Text("${obtidoMew("All")}/${totalMew("All")}")),
+                  DataCell(Text("${percentMew("All")}%")),
                 ]),
                 DataRow(cells: [
                   DataCell(Text("Total")),
-                  DataCell(Text("${obtido("Total")}/${totalPokemon("Total")}")),
-                  DataCell(Text("${percentBuster("Total")}%")),
+                  DataCell(Text("${obtidoMew("Total")}/${totalMew("Total")}")),
+                  DataCell(Text("${percentMew("Total")}%")),
                 ]),
               ]),
             ],
