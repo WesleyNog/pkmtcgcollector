@@ -4,9 +4,11 @@ import 'package:pkmtcgcollector/pages/graficPage.dart';
 import 'package:pkmtcgcollector/pages/homePage.dart';
 import 'package:pkmtcgcollector/pages/menuPage.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  MobileAds.instance.initialize();
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
   ]).then((_) {
