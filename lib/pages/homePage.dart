@@ -132,195 +132,212 @@ class _HomePageContentState extends State<HomePageContent> {
 
   Future _displayBottomSheet(BuildContext context) {
     return showModalBottomSheet(
-      backgroundColor: Colors.blueAccent[50],
-      barrierColor: Colors.black87.withOpacity(0.5),
-      context: context,
-      builder: (context) => Container(
-        height: 500,
-        width: double.infinity,
-        child: Column(
-          children: [
-            Container(
-              margin: const EdgeInsets.only(top: 8.0, bottom: 12.0),
-              width: 50,
-              height: 4,
-              decoration: BoxDecoration(
-                color: Colors.grey[400],
-                borderRadius: BorderRadius.circular(10),
+        backgroundColor: Colors.blueAccent[50],
+        barrierColor: Colors.black87.withOpacity(0.5),
+        context: context,
+        builder: (context) {
+          return StatefulBuilder(builder: (context, StateSetter setModalState) {
+            return Container(
+              height: 500,
+              width: double.infinity,
+              child: Column(
+                children: [
+                  Container(
+                    margin: const EdgeInsets.only(top: 8.0, bottom: 12.0),
+                    width: 50,
+                    height: 4,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[400],
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  Text("Raridade"),
+                  Divider(),
+                  Row(
+                    children: [
+                      Checkbox(
+                          value: _raridades[0],
+                          onChanged: (bool? newValue) {
+                            setModalState(() {
+                              _raridades[0] = newValue ?? false;
+                            });
+                            setState(() {
+                              _filterList("");
+                            });
+                          }),
+                      Text("🔹"),
+                      Checkbox(
+                          value: _raridades[1],
+                          onChanged: (bool? newValue) {
+                            setModalState(() {
+                              _raridades[1] = newValue ?? false;
+                            });
+                            setState(() {
+                              _filterList("");
+                            });
+                          }),
+                      Text("🔹🔹"),
+                      Checkbox(
+                          value: _raridades[2],
+                          onChanged: (bool? newValue) {
+                            setModalState(() {
+                              _raridades[2] = newValue ?? false;
+                            });
+                            setState(() {
+                              _filterList("");
+                            });
+                          }),
+                      Text("🔹🔹🔹"),
+                      Checkbox(
+                          value: _raridades[3],
+                          onChanged: (bool? newValue) {
+                            setModalState(() {
+                              _raridades[3] = newValue ?? false;
+                            });
+                            setState(() {
+                              _filterList("");
+                            });
+                          }),
+                      Text("🔹🔹🔹🔹")
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Checkbox(
+                          value: _raridades[4],
+                          onChanged: (bool? newValue) {
+                            setModalState(() {
+                              _raridades[4] = newValue ?? false;
+                            });
+                            setState(() {
+                              _filterList("");
+                            });
+                          }),
+                      Text("⭐️"),
+                      Checkbox(
+                          value: _raridades[5],
+                          onChanged: (bool? newValue) {
+                            setModalState(() {
+                              _raridades[5] = newValue ?? false;
+                            });
+                            setState(() {
+                              _filterList("");
+                            });
+                          }),
+                      Text("⭐️⭐️"),
+                      Checkbox(
+                          value: _raridades[6],
+                          onChanged: (bool? newValue) {
+                            setModalState(() {
+                              _raridades[6] = newValue ?? false;
+                            });
+                            setState(() {
+                              _filterList("");
+                            });
+                          }),
+                      Text("⭐️⭐️⭐️"),
+                      Checkbox(
+                          value: _raridades[7],
+                          onChanged: (bool? newValue) {
+                            setModalState(() {
+                              _raridades[7] = newValue ?? false;
+                            });
+                            setState(() {
+                              _filterList("");
+                            });
+                          }),
+                      Text("👑"),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Text("Packs"),
+                  Divider(),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Checkbox(
+                          value: _packs[0],
+                          onChanged: (bool? newValue) {
+                            setModalState(() {
+                              _packs[0] = newValue ?? false;
+                            });
+                            setState(() {
+                              _filterList("");
+                            });
+                          }),
+                      Image.asset("assets/images/charizard.jpg"),
+                      Checkbox(
+                          value: _packs[1],
+                          onChanged: (bool? newValue) {
+                            setModalState(() {
+                              _packs[1] = newValue ?? false;
+                            });
+                            setState(() {
+                              _filterList("");
+                            });
+                          }),
+                      Image.asset("assets/images/mewtwo.jpg"),
+                      Checkbox(
+                          value: _packs[2],
+                          onChanged: (bool? newValue) {
+                            setModalState(() {
+                              _packs[2] = newValue ?? false;
+                            });
+                            setState(() {
+                              _filterList("");
+                            });
+                          }),
+                      Image.asset("assets/images/pikachu.jpg"),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    // mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Checkbox(
+                          value: _raridades[8],
+                          onChanged: (bool? newValue) {
+                            setModalState(() {
+                              _raridades[8] = newValue ?? false;
+                            });
+                            setState(() {
+                              _filterList("");
+                            });
+                          }),
+                      Image.asset("assets/images/promoA.png"),
+                      Checkbox(
+                          value: _packs[3],
+                          onChanged: (bool? newValue) {
+                            setModalState(() {
+                              _packs[3] = newValue ?? false;
+                            });
+                            setState(() {
+                              _filterList("");
+                            });
+                          }),
+                      Image.asset("assets/images/buster_promoA.png"),
+                      Checkbox(
+                          value: mewCards,
+                          onChanged: (bool? newValue) {
+                            setModalState(() {
+                              mewCards = newValue ?? false;
+                            });
+                            setState(() {
+                              _filterList("");
+                            });
+                          }),
+                      Image.asset("assets/images/MEW.jpeg"),
+                    ],
+                  ),
+                ],
               ),
-            ),
-            Text("Raridade"),
-            Divider(),
-            Row(
-              children: [
-                Checkbox(
-                    value: _raridades[0],
-                    onChanged: (bool? newValue) {
-                      setState(() {
-                        _raridades[0] = newValue ?? false;
-                        _filterList("");
-                        Navigator.pop(context);
-                      });
-                    }),
-                Text("🔹"),
-                Checkbox(
-                    value: _raridades[1],
-                    onChanged: (bool? newValue) {
-                      setState(() {
-                        _raridades[1] = newValue ?? false;
-                        _filterList("");
-                        Navigator.pop(context);
-                      });
-                    }),
-                Text("🔹🔹"),
-                Checkbox(
-                    value: _raridades[2],
-                    onChanged: (bool? newValue) {
-                      setState(() {
-                        _raridades[2] = newValue ?? false;
-                        _filterList("");
-                        Navigator.pop(context);
-                      });
-                    }),
-                Text("🔹🔹🔹"),
-                Checkbox(
-                    value: _raridades[3],
-                    onChanged: (bool? newValue) {
-                      setState(() {
-                        _raridades[3] = newValue ?? false;
-                        _filterList("");
-                        Navigator.pop(context);
-                      });
-                    }),
-                Text("🔹🔹🔹🔹")
-              ],
-            ),
-            Row(
-              children: [
-                Checkbox(
-                    value: _raridades[4],
-                    onChanged: (bool? newValue) {
-                      setState(() {
-                        _raridades[4] = newValue ?? false;
-                        _filterList("");
-                        Navigator.pop(context);
-                      });
-                    }),
-                Text("⭐️"),
-                Checkbox(
-                    value: _raridades[5],
-                    onChanged: (bool? newValue) {
-                      setState(() {
-                        _raridades[5] = newValue ?? false;
-                        _filterList("");
-                        Navigator.pop(context);
-                      });
-                    }),
-                Text("⭐️⭐️"),
-                Checkbox(
-                    value: _raridades[6],
-                    onChanged: (bool? newValue) {
-                      setState(() {
-                        _raridades[6] = newValue ?? false;
-                        _filterList("");
-                        Navigator.pop(context);
-                      });
-                    }),
-                Text("⭐️⭐️⭐️"),
-                Checkbox(
-                    value: _raridades[7],
-                    onChanged: (bool? newValue) {
-                      setState(() {
-                        _raridades[7] = newValue ?? false;
-                        _filterList("");
-                        Navigator.pop(context);
-                      });
-                    }),
-                Text("👑"),
-              ],
-            ),
-            SizedBox(
-              height: 30,
-            ),
-            Text("Packs"),
-            Divider(),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Checkbox(
-                    value: _packs[0],
-                    onChanged: (bool? newValue) {
-                      setState(() {
-                        _packs[0] = newValue ?? false;
-                        _filterList("");
-                        Navigator.pop(context);
-                      });
-                    }),
-                Image.asset("assets/images/charizard.jpg"),
-                Checkbox(
-                    value: _packs[1],
-                    onChanged: (bool? newValue) {
-                      setState(() {
-                        _packs[1] = newValue ?? false;
-                        _filterList("");
-                        Navigator.pop(context);
-                      });
-                    }),
-                Image.asset("assets/images/mewtwo.jpg"),
-                Checkbox(
-                    value: _packs[2],
-                    onChanged: (bool? newValue) {
-                      setState(() {
-                        _packs[2] = newValue ?? false;
-                        _filterList("");
-                        Navigator.pop(context);
-                      });
-                    }),
-                Image.asset("assets/images/pikachu.jpg"),
-              ],
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Row(
-              // mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                Checkbox(
-                    value: _raridades[8],
-                    onChanged: (bool? newValue) {
-                      setState(() {
-                        _raridades[8] = newValue ?? false;
-                        _filterList("");
-                        Navigator.pop(context);
-                      });
-                    }),
-                Image.asset("assets/images/promoA.png"),
-                Checkbox(
-                    value: _packs[3],
-                    onChanged: (bool? newValue) {
-                      setState(() {
-                        _packs[3] = newValue ?? false;
-                        _filterList("");
-                        Navigator.pop(context);
-                      });
-                    }),
-                Image.asset("assets/images/buster_promoA.png"),
-                Checkbox(
-                    value: mewCards,
-                    onChanged: (bool? newValue) {
-                      setState(() {
-                        mewCards = newValue ?? false;
-                        _filterList("");
-                        Navigator.pop(context);
-                      });
-                    }),
-                Image.asset("assets/images/MEW.jpeg"),
-              ],
-            ),
-          ],
-        ),
-      ),
-    );
+            );
+          });
+        });
   }
 
   @override

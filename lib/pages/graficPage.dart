@@ -3,6 +3,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
+import 'package:pkmtcgcollector/resources/centralLabel.dart';
 import 'package:pkmtcgcollector/resources/dataTable.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:pkmtcgcollector/resources/pokemonInfos.dart';
@@ -228,10 +229,8 @@ class _GraficPageContentState extends State<GraficPageContent> {
             SizedBox(
               height: 30,
             ),
-            Text(
-              "Coleção",
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-            ),
+            centralLabel("Coleção", "00", "04",
+                corFundo: Colors.green.shade100),
             createDataTable(labels: [
               "Buster",
               "Totais",
@@ -300,10 +299,8 @@ class _GraficPageContentState extends State<GraficPageContent> {
             SizedBox(
               height: 40,
             ),
-            Text(
-              "Chance de novas cartas",
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-            ),
+            centralLabel("% - Novas cartas", "00", "03",
+                corFundo: Colors.green.shade100),
             DataTable(
                 columnSpacing: 25,
                 headingTextStyle: TextStyle(fontWeight: FontWeight.bold),
@@ -336,10 +333,9 @@ class _GraficPageContentState extends State<GraficPageContent> {
             SizedBox(
               height: 40,
             ),
-            Text(
-              "Caminho p/ MEW",
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-            ),
+            centralLabel("Caminho MEW", "00", "04",
+                corBordar: Colors.purple.shade100,
+                corFundo: Colors.purple.shade50),
             createDataTable(labels: [
               "Buster",
               "Totais",
