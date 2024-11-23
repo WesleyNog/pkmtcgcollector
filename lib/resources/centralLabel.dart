@@ -19,9 +19,13 @@ Widget centralLabel(String label, String obtido, String total,
             label,
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
-          Text(
-            "$obtido/$total",
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+          Row(
+            children: [
+              Text(
+                "$obtido/$total",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
+            ],
           )
         ],
       ),

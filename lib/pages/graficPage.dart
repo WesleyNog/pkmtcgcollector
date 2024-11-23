@@ -164,6 +164,36 @@ class _GraficPageContentState extends State<GraficPageContent> {
     return _sum.toStringAsFixed(3);
   }
 
+  String totalTask({List<String>? remove, List<String>? add}) {
+    List<String> noCount = ["Charizard", "Mewtwo", "Pikachu", "All"];
+    if (remove != null && remove.isNotEmpty) {
+      remove.forEach((item) {
+        noCount.remove(item);
+      });
+    }
+    if (add != null && add.isNotEmpty) {
+      add.forEach((item) {
+        noCount.add(item);
+      });
+    }
+    Set qntPacks = {};
+    for (var item in _pokemonList) {
+      if (noCount.contains(item["buster"])) {
+        qntPacks.add(item["buster"]);
+      }
+    }
+    return qntPacks.length.toString().padLeft(2, "0");
+  }
+
+  completeTask(String pack, {String tipo = "Normal"}) {
+    if (obtido(pack, tipo: tipo) == totalPokemon(pack, tipo: tipo)) {
+      return Icon(
+        Icons.check_circle_rounded,
+        color: Colors.green,
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     Map<String, int> packCounts = {
@@ -229,7 +259,7 @@ class _GraficPageContentState extends State<GraficPageContent> {
             SizedBox(
               height: 30,
             ),
-            centralLabel("Coleção", "00", "04",
+            centralLabel("Coleção", "00", totalTask(),
                 corFundo: Colors.green.shade100),
             createDataTable(labels: [
               "Buster",
@@ -274,13 +304,16 @@ class _GraficPageContentState extends State<GraficPageContent> {
                   Container(
                     height: 50,
                     width: MediaQuery.of(context).size.width / 2,
-                    color: _pokemonList.isEmpty
-                        ? Colors.grey
-                        : bestPack() == "Charizard"
-                            ? Colors.deepOrange
-                            : bestPack() == "Mewtwo"
-                                ? Colors.deepPurple
-                                : Colors.amberAccent,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(5),
+                      color: _pokemonList.isEmpty
+                          ? Colors.grey
+                          : bestPack() == "Charizard"
+                              ? Colors.deepOrange
+                              : bestPack() == "Mewtwo"
+                                  ? Colors.deepPurple
+                                  : Colors.amberAccent,
+                    ),
                     child: Center(
                       child: _pokemonList.isEmpty
                           ? CircularProgressIndicator()
@@ -299,7 +332,7 @@ class _GraficPageContentState extends State<GraficPageContent> {
             SizedBox(
               height: 40,
             ),
-            centralLabel("% - Novas cartas", "00", "03",
+            centralLabel("% - Novas cartas", "00", totalTask(remove: ["All"]),
                 corFundo: Colors.green.shade100),
             DataTable(
                 columnSpacing: 25,
@@ -333,7 +366,7 @@ class _GraficPageContentState extends State<GraficPageContent> {
             SizedBox(
               height: 40,
             ),
-            centralLabel("Caminho MEW", "00", "04",
+            centralLabel("Caminho MEW", "00", totalTask(),
                 corBordar: Colors.purple.shade100,
                 corFundo: Colors.purple.shade50),
             createDataTable(labels: [
@@ -379,13 +412,16 @@ class _GraficPageContentState extends State<GraficPageContent> {
                   Container(
                     height: 50,
                     width: MediaQuery.of(context).size.width / 2,
-                    color: _pokemonList.isEmpty
-                        ? Colors.grey
-                        : bestPack(tipo: "MEW") == "Charizard"
-                            ? Colors.deepOrange
-                            : bestPack(tipo: "MEW") == "Mewtwo"
-                                ? Colors.deepPurple
-                                : Colors.amberAccent,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(5),
+                      color: _pokemonList.isEmpty
+                          ? Colors.grey
+                          : bestPack(tipo: "MEW") == "Charizard"
+                              ? Colors.deepOrange
+                              : bestPack(tipo: "MEW") == "Mewtwo"
+                                  ? Colors.deepPurple
+                                  : Colors.amberAccent,
+                    ),
                     child: Center(
                       child: _pokemonList.isEmpty
                           ? CircularProgressIndicator()
