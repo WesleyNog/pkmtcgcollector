@@ -33,6 +33,7 @@ class _HomePageContentState extends State<HomePageContent> {
     false,
     false,
     false,
+    false,
     false
   ];
   final List<String> nivelRaridades = [
@@ -43,10 +44,17 @@ class _HomePageContentState extends State<HomePageContent> {
     "⭐️",
     "⭐️⭐️",
     "⭐️⭐️⭐️",
-    "👑"
+    "👑",
+    "promoA"
   ];
-  List<bool?> _packs = [false, false, false];
-  final List<String> nivelPakcs = ["Charizard", "Mewtwo", "Pikachu"];
+  List<bool?> _packs = [false, false, false, false];
+  final List<String> nivelPakcs = [
+    "Charizard",
+    "Mewtwo",
+    "Pikachu",
+    "Promo pack"
+  ];
+  bool mewCards = false;
 
   Future<void> _savedPokemonList() async {
     // Salve os dados atualizados no SharedPreferences
@@ -104,6 +112,16 @@ class _HomePageContentState extends State<HomePageContent> {
             return isSelected! && packPokemon == nivelPakcs[index];
           });
 
+      // Filtrar as cartas que obtem o MEW
+      if (mewCards) {
+        final mewPokemon = pokemon["MEW"] ?? false;
+
+        return name.contains(lowerCaseQuery) &&
+            raridadeValida &&
+            packValida &&
+            mewPokemon;
+      }
+
       return name.contains(lowerCaseQuery) && raridadeValida && packValida;
     }).toList();
 
@@ -130,16 +148,6 @@ class _HomePageContentState extends State<HomePageContent> {
                 color: Colors.grey[400],
                 borderRadius: BorderRadius.circular(10),
               ),
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Text(
-              "Filtros",
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-            ),
-            SizedBox(
-              height: 20,
             ),
             Text("Raridade"),
             Divider(),
@@ -271,6 +279,44 @@ class _HomePageContentState extends State<HomePageContent> {
                 Image.asset("assets/images/pikachu.jpg"),
               ],
             ),
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              // mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Checkbox(
+                    value: _raridades[8],
+                    onChanged: (bool? newValue) {
+                      setState(() {
+                        _raridades[8] = newValue ?? false;
+                        _filterList("");
+                        Navigator.pop(context);
+                      });
+                    }),
+                Image.asset("assets/images/promoA.png"),
+                Checkbox(
+                    value: _packs[3],
+                    onChanged: (bool? newValue) {
+                      setState(() {
+                        _packs[3] = newValue ?? false;
+                        _filterList("");
+                        Navigator.pop(context);
+                      });
+                    }),
+                Image.asset("assets/images/buster_promoA.png"),
+                Checkbox(
+                    value: mewCards,
+                    onChanged: (bool? newValue) {
+                      setState(() {
+                        mewCards = newValue ?? false;
+                        _filterList("");
+                        Navigator.pop(context);
+                      });
+                    }),
+                Image.asset("assets/images/MEW.jpeg"),
+              ],
+            ),
           ],
         ),
       ),
@@ -326,19 +372,22 @@ class _HomePageContentState extends State<HomePageContent> {
                 Expanded(
                   child: Stack(
                     children: [
-                      TextField(
-                        decoration: InputDecoration(
-                          border: OutlineInputBorder(),
-                          labelText: "Buscar Pokemon",
-                          hintText: "Nome do pokemon",
+                      SizedBox(
+                        height: 40,
+                        child: TextField(
+                          decoration: InputDecoration(
+                            border: OutlineInputBorder(),
+                            labelText: "Buscar Pokemon",
+                            hintText: "Nome do pokemon",
+                          ),
+                          onChanged: (value) => _filterList(value),
+                          onSubmitted: (value) =>
+                              _filterList(_filterController.text),
                         ),
-                        onChanged: (value) => _filterList(value),
-                        onSubmitted: (value) =>
-                            _filterList(_filterController.text),
                       ),
                       Positioned(
                         right: 0,
-                        top: 5,
+                        bottom: -4,
                         child: IconButton(
                           onPressed: () {
                             _filterList(_filterController.text);
@@ -433,9 +482,15 @@ class _HomePageContentState extends State<HomePageContent> {
                                   ? Colors.deepOrange[100]
                                   : item["buster"] == "Mewtwo"
                                       ? Colors.deepPurple[100]
-                                      : item["buster"] == "All"
-                                          ? Colors.green[100]
-                                          : Colors.amberAccent[100],
+                                      : item["buster"] == "Shop"
+                                          ? Colors.cyan[100]
+                                          : item["buster"] == "Wonder Pick"
+                                              ? Colors.orangeAccent[100]
+                                              : item["buster"] == "Promo pack"
+                                                  ? Colors.purple[100]
+                                                  : item["buster"] == "All"
+                                                      ? Colors.green[100]
+                                                      : Colors.amberAccent[100],
                               borderRadius: BorderRadius.circular(5)),
                           child: Column(
                             children: [
@@ -449,7 +504,11 @@ class _HomePageContentState extends State<HomePageContent> {
                                     Text(item["code"]),
                                     Text(item["nome"]),
                                     // Text(item["buster"]),
-                                    Text(item["raridade"]),
+                                    item["raridade"] == "promoA"
+                                        ? Image.asset(
+                                            "assets/images/promoA_rarity.png")
+                                        : Text(
+                                            item["raridade"]?.toString() ?? "")
                                   ],
                                 ),
                               ),

@@ -9,6 +9,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -20,6 +21,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -31,6 +33,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -42,6 +45,7 @@ final infoPokemons = [
     "chance_4": 0.333,
     "chance_5": 1.333,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -53,6 +57,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -64,6 +69,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -75,6 +81,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -86,6 +93,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -97,6 +105,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -108,6 +117,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -119,6 +129,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -130,6 +141,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -141,6 +153,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -152,6 +165,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -163,6 +177,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -174,6 +189,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -185,6 +201,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -196,6 +213,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -207,6 +225,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -218,6 +237,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -229,6 +249,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -240,6 +261,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -251,6 +273,7 @@ final infoPokemons = [
     "chance_4": 0.333,
     "chance_5": 1.333,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -262,6 +285,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -273,6 +297,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -284,6 +309,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -295,6 +321,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -306,6 +333,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -317,6 +345,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -328,6 +357,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -339,6 +369,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -350,6 +381,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -361,6 +393,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -372,6 +405,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -383,6 +417,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -394,6 +429,7 @@ final infoPokemons = [
     "chance_4": 0.333,
     "chance_5": 1.333,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -405,6 +441,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -416,6 +453,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -427,6 +465,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -438,6 +477,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -449,6 +489,7 @@ final infoPokemons = [
     "chance_4": 0.333,
     "chance_5": 1.333,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -460,6 +501,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -471,6 +513,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -482,6 +525,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -493,6 +537,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -504,6 +549,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -515,6 +561,7 @@ final infoPokemons = [
     "chance_4": 0.333,
     "chance_5": 1.333,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -526,6 +573,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -537,6 +585,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -548,6 +597,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -559,6 +609,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -570,6 +621,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -581,6 +633,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -592,6 +645,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -603,6 +657,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -614,6 +669,7 @@ final infoPokemons = [
     "chance_4": 0.333,
     "chance_5": 1.333,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -625,6 +681,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -636,6 +693,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -647,6 +705,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -658,6 +717,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -669,6 +729,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -680,6 +741,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -691,6 +753,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -702,6 +765,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -713,6 +777,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -724,6 +789,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -735,6 +801,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -746,6 +813,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -757,6 +825,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -768,6 +837,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -779,6 +849,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -790,6 +861,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -801,6 +873,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -812,6 +885,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -823,6 +897,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -834,6 +909,7 @@ final infoPokemons = [
     "chance_4": 0.333,
     "chance_5": 1.333,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -845,6 +921,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -856,6 +933,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -867,6 +945,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -878,6 +957,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -889,6 +969,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -900,6 +981,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -911,6 +993,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -922,6 +1005,7 @@ final infoPokemons = [
     "chance_4": 0.333,
     "chance_5": 1.333,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -933,6 +1017,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -944,6 +1029,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -955,6 +1041,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -966,6 +1053,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -977,6 +1065,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -988,6 +1077,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -999,6 +1089,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1010,6 +1101,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1021,6 +1113,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1032,6 +1125,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1043,6 +1137,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1054,6 +1149,7 @@ final infoPokemons = [
     "chance_4": 0.333,
     "chance_5": 1.333,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1065,6 +1161,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1076,6 +1173,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1087,6 +1185,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1098,6 +1197,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1109,6 +1209,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1120,6 +1221,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1131,6 +1233,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1142,6 +1245,7 @@ final infoPokemons = [
     "chance_4": 0.333,
     "chance_5": 1.333,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1153,6 +1257,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1164,6 +1269,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1175,6 +1281,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1186,6 +1293,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1197,6 +1305,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1208,6 +1317,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1219,6 +1329,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1230,6 +1341,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1241,6 +1353,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1252,6 +1365,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1263,6 +1377,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1274,6 +1389,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1285,6 +1401,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1296,6 +1413,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1307,6 +1425,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1318,6 +1437,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1329,6 +1449,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1340,6 +1461,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1351,6 +1473,7 @@ final infoPokemons = [
     "chance_4": 0.333,
     "chance_5": 1.333,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1362,6 +1485,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1373,6 +1497,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1384,6 +1509,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1395,6 +1521,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1406,6 +1533,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1417,6 +1545,7 @@ final infoPokemons = [
     "chance_4": 0.333,
     "chance_5": 1.333,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1428,6 +1557,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1439,6 +1569,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1450,6 +1581,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1461,6 +1593,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1472,6 +1605,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1483,6 +1617,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1494,6 +1629,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1505,6 +1641,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1516,6 +1653,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1527,6 +1665,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1538,6 +1677,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1549,6 +1689,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1560,6 +1701,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1571,6 +1713,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1582,6 +1725,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1593,6 +1737,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1604,6 +1749,7 @@ final infoPokemons = [
     "chance_4": 0.333,
     "chance_5": 1.333,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1615,6 +1761,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1626,6 +1773,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1637,6 +1785,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1648,6 +1797,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1659,6 +1809,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1670,6 +1821,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1681,6 +1833,7 @@ final infoPokemons = [
     "chance_4": 0.333,
     "chance_5": 1.333,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1692,6 +1845,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1703,6 +1857,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1714,6 +1869,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1725,6 +1881,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1736,6 +1893,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1747,6 +1905,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1758,6 +1917,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1769,6 +1929,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1780,6 +1941,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1791,6 +1953,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1802,6 +1965,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1813,6 +1977,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1824,6 +1989,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1835,6 +2001,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1846,6 +2013,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1857,6 +2025,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1868,6 +2037,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1879,6 +2049,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1890,6 +2061,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1901,6 +2073,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1912,6 +2085,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1923,6 +2097,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1934,6 +2109,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1945,6 +2121,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1956,6 +2133,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1967,6 +2145,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1978,6 +2157,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -1989,6 +2169,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2000,6 +2181,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2011,6 +2193,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2022,6 +2205,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2033,6 +2217,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2044,6 +2229,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2055,6 +2241,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2066,6 +2253,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2077,6 +2265,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2088,6 +2277,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2099,6 +2289,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2110,6 +2301,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2121,6 +2313,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2132,6 +2325,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2143,6 +2337,7 @@ final infoPokemons = [
     "chance_4": 0.333,
     "chance_5": 1.333,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2154,6 +2349,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2165,6 +2361,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2175,7 +2372,8 @@ final infoPokemons = [
     "chance_1_3": 2.000,
     "chance_4": 0.00,
     "chance_5": 0.00,
-    "MEW": false,
+    "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2187,6 +2385,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2198,6 +2397,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2209,6 +2409,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2220,6 +2421,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2231,6 +2433,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2242,6 +2445,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2253,6 +2457,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2264,6 +2469,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2274,7 +2480,8 @@ final infoPokemons = [
     "chance_1_3": 2.000,
     "chance_4": 0.00,
     "chance_5": 0.00,
-    "MEW": true,
+    "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2285,7 +2492,8 @@ final infoPokemons = [
     "chance_1_3": 2.000,
     "chance_4": 0.00,
     "chance_5": 0.00,
-    "MEW": true,
+    "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2297,6 +2505,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2308,6 +2517,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2319,6 +2529,7 @@ final infoPokemons = [
     "chance_4": 0.357,
     "chance_5": 1.429,
     "MEW": true,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2330,6 +2541,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2341,6 +2553,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2352,6 +2565,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2363,6 +2577,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2374,6 +2589,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2385,6 +2601,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2396,6 +2613,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2407,6 +2625,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2418,6 +2637,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2429,6 +2649,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2440,6 +2661,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2451,6 +2673,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2462,6 +2685,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2473,6 +2697,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2484,6 +2709,7 @@ final infoPokemons = [
     "chance_4": 2.571,
     "chance_5": 1.714,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2495,6 +2721,7 @@ final infoPokemons = [
     "chance_4": 0.322,
     "chance_5": 1.286,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2506,6 +2733,7 @@ final infoPokemons = [
     "chance_4": 0.322,
     "chance_5": 1.286,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2517,6 +2745,7 @@ final infoPokemons = [
     "chance_4": 0.322,
     "chance_5": 1.286,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2528,6 +2757,7 @@ final infoPokemons = [
     "chance_4": 0.322,
     "chance_5": 1.286,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2539,6 +2769,7 @@ final infoPokemons = [
     "chance_4": 0.322,
     "chance_5": 1.286,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2550,6 +2781,7 @@ final infoPokemons = [
     "chance_4": 0.322,
     "chance_5": 1.286,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2561,6 +2793,7 @@ final infoPokemons = [
     "chance_4": 0.322,
     "chance_5": 1.286,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2572,6 +2805,7 @@ final infoPokemons = [
     "chance_4": 0.322,
     "chance_5": 1.286,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2583,6 +2817,7 @@ final infoPokemons = [
     "chance_4": 0.322,
     "chance_5": 1.286,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2594,6 +2829,7 @@ final infoPokemons = [
     "chance_4": 0.322,
     "chance_5": 1.286,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2605,6 +2841,7 @@ final infoPokemons = [
     "chance_4": 0.322,
     "chance_5": 1.286,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2616,6 +2853,7 @@ final infoPokemons = [
     "chance_4": 0.322,
     "chance_5": 1.286,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2627,6 +2865,7 @@ final infoPokemons = [
     "chance_4": 0.322,
     "chance_5": 1.286,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2638,6 +2877,7 @@ final infoPokemons = [
     "chance_4": 0.322,
     "chance_5": 1.286,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2649,6 +2889,7 @@ final infoPokemons = [
     "chance_4": 0.322,
     "chance_5": 1.286,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2660,6 +2901,7 @@ final infoPokemons = [
     "chance_4": 0.322,
     "chance_5": 1.286,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2671,6 +2913,7 @@ final infoPokemons = [
     "chance_4": 0.322,
     "chance_5": 1.286,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2682,6 +2925,7 @@ final infoPokemons = [
     "chance_4": 0.322,
     "chance_5": 1.286,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2693,6 +2937,7 @@ final infoPokemons = [
     "chance_4": 0.322,
     "chance_5": 1.286,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2704,6 +2949,7 @@ final infoPokemons = [
     "chance_4": 0.322,
     "chance_5": 1.286,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2715,6 +2961,7 @@ final infoPokemons = [
     "chance_4": 0.322,
     "chance_5": 1.286,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2726,6 +2973,7 @@ final infoPokemons = [
     "chance_4": 0.322,
     "chance_5": 1.286,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2737,6 +2985,7 @@ final infoPokemons = [
     "chance_4": 0.322,
     "chance_5": 1.286,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2748,6 +2997,7 @@ final infoPokemons = [
     "chance_4": 0.322,
     "chance_5": 1.286,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2759,6 +3009,7 @@ final infoPokemons = [
     "chance_4": 0.056,
     "chance_5": 0.222,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2770,6 +3021,7 @@ final infoPokemons = [
     "chance_4": 0.050,
     "chance_5": 0.200,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2781,6 +3033,7 @@ final infoPokemons = [
     "chance_4": 0.050,
     "chance_5": 0.200,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2792,6 +3045,7 @@ final infoPokemons = [
     "chance_4": 0.050,
     "chance_5": 0.200,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2803,6 +3057,7 @@ final infoPokemons = [
     "chance_4": 0.050,
     "chance_5": 0.200,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2814,6 +3069,7 @@ final infoPokemons = [
     "chance_4": 0.050,
     "chance_5": 0.200,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2825,6 +3081,7 @@ final infoPokemons = [
     "chance_4": 0.050,
     "chance_5": 0.200,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2836,6 +3093,7 @@ final infoPokemons = [
     "chance_4": 0.056,
     "chance_5": 0.222,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2847,6 +3105,7 @@ final infoPokemons = [
     "chance_4": 0.050,
     "chance_5": 0.200,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2858,6 +3117,7 @@ final infoPokemons = [
     "chance_4": 0.050,
     "chance_5": 0.200,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2869,6 +3129,7 @@ final infoPokemons = [
     "chance_4": 0.056,
     "chance_5": 0.222,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2880,6 +3141,7 @@ final infoPokemons = [
     "chance_4": 0.056,
     "chance_5": 0.222,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2891,6 +3153,7 @@ final infoPokemons = [
     "chance_4": 0.050,
     "chance_5": 0.200,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2902,6 +3165,7 @@ final infoPokemons = [
     "chance_4": 0.056,
     "chance_5": 0.222,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2913,6 +3177,7 @@ final infoPokemons = [
     "chance_4": 0.050,
     "chance_5": 0.200,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2924,6 +3189,7 @@ final infoPokemons = [
     "chance_4": 0.050,
     "chance_5": 0.200,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2935,6 +3201,7 @@ final infoPokemons = [
     "chance_4": 0.050,
     "chance_5": 0.200,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2946,6 +3213,7 @@ final infoPokemons = [
     "chance_4": 0.050,
     "chance_5": 0.200,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2957,6 +3225,7 @@ final infoPokemons = [
     "chance_4": 0.056,
     "chance_5": 0.222,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2968,6 +3237,7 @@ final infoPokemons = [
     "chance_4": 0.056,
     "chance_5": 0.222,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2979,6 +3249,7 @@ final infoPokemons = [
     "chance_4": 0.050,
     "chance_5": 0.200,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -2990,6 +3261,7 @@ final infoPokemons = [
     "chance_4": 0.050,
     "chance_5": 0.200,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -3001,6 +3273,7 @@ final infoPokemons = [
     "chance_4": 0.050,
     "chance_5": 0.200,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -3012,6 +3285,7 @@ final infoPokemons = [
     "chance_4": 0.050,
     "chance_5": 0.200,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -3023,6 +3297,7 @@ final infoPokemons = [
     "chance_4": 0.056,
     "chance_5": 0.222,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -3034,6 +3309,7 @@ final infoPokemons = [
     "chance_4": 0.050,
     "chance_5": 0.200,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -3045,6 +3321,7 @@ final infoPokemons = [
     "chance_4": 0.056,
     "chance_5": 0.222,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -3056,6 +3333,7 @@ final infoPokemons = [
     "chance_4": 0.050,
     "chance_5": 0.200,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -3067,6 +3345,7 @@ final infoPokemons = [
     "chance_4": 0.050,
     "chance_5": 0.200,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -3078,6 +3357,7 @@ final infoPokemons = [
     "chance_4": 0.222,
     "chance_5": 0.888,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -3089,6 +3369,7 @@ final infoPokemons = [
     "chance_4": 0.222,
     "chance_5": 0.888,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -3100,6 +3381,7 @@ final infoPokemons = [
     "chance_4": 0.222,
     "chance_5": 0.888,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -3111,6 +3393,7 @@ final infoPokemons = [
     "chance_4": 0.00,
     "chance_5": 0.00,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -3122,6 +3405,7 @@ final infoPokemons = [
     "chance_4": 0.013,
     "chance_5": 0.053,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -3133,6 +3417,7 @@ final infoPokemons = [
     "chance_4": 0.013,
     "chance_5": 0.053,
     "MEW": false,
+    "promoA": false,
   },
   {
     "obtido": false,
@@ -3144,5 +3429,288 @@ final infoPokemons = [
     "chance_4": 0.013,
     "chance_5": 0.053,
     "MEW": false,
+    "promoA": false,
+  },
+  {
+    "obtido": false,
+    "code": "P-A001",
+    "nome": "Potion",
+    "buster": "Shop",
+    "raridade": "promoA",
+    "chance_1_3": 0.00,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": true,
+  },
+  {
+    "obtido": false,
+    "code": "P-A002",
+    "nome": "X speed",
+    "buster": "Shop",
+    "raridade": "promoA",
+    "chance_1_3": 0.00,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": true,
+  },
+  {
+    "obtido": false,
+    "code": "P-A003",
+    "nome": "Hand scope",
+    "buster": "Shop",
+    "raridade": "promoA",
+    "chance_1_3": 0.00,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": true,
+  },
+  {
+    "obtido": false,
+    "code": "P-A004",
+    "nome": "Pokedex",
+    "buster": "Shop",
+    "raridade": "promoA",
+    "chance_1_3": 0.00,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": true,
+  },
+  {
+    "obtido": false,
+    "code": "P-A005",
+    "nome": "Poke ball",
+    "buster": "Shop",
+    "raridade": "promoA",
+    "chance_1_3": 0.00,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": true,
+  },
+  {
+    "obtido": false,
+    "code": "P-A006",
+    "nome": "Redcard",
+    "buster": "Shop",
+    "raridade": "promoA",
+    "chance_1_3": 0.00,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": true,
+  },
+  {
+    "obtido": false,
+    "code": "P-A007",
+    "nome": "Professor 's Research",
+    "buster": "Shop",
+    "raridade": "promoA",
+    "chance_1_3": 0.00,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": true,
+  },
+  {
+    "obtido": false,
+    "code": "P-A008",
+    "nome": "???",
+    "buster": "???",
+  },
+  {
+    "obtido": false,
+    "code": "P-A009",
+    "nome": "Pikachu",
+    "buster": "Shop",
+    "raridade": "promoA",
+    "chance_1_3": 0.00,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": true,
+  },
+  {
+    "obtido": false,
+    "code": "P-A010",
+    "nome": "Mewtwo",
+    "buster": "Mission",
+    "raridade": "promoA",
+    "chance_1_3": 0.00,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": true,
+  },
+  {
+    "obtido": false,
+    "code": "P-A011",
+    "nome": "Chansey",
+    "buster": "Wonder Pick",
+    "raridade": "promoA",
+    "chance_1_3": 0.00,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": true,
+  },
+  {
+    "obtido": false,
+    "code": "P-A012",
+    "nome": "Meowth",
+    "buster": "Wonder Pick",
+    "raridade": "promoA",
+    "chance_1_3": 0.00,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": true,
+  },
+  {
+    "obtido": false,
+    "code": "P-A013",
+    "nome": "Butterfree",
+    "buster": "Promo pack",
+    "raridade": "promoA",
+    "chance_1_3": 0.00,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": true,
+  },
+  {
+    "obtido": false,
+    "code": "P-A014",
+    "nome": "Lapras ex",
+    "buster": "Promo pack",
+    "raridade": "promoA",
+    "chance_1_3": 0.00,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": true,
+  },
+  {
+    "obtido": false,
+    "code": "P-A015",
+    "nome": "Pikachu",
+    "buster": "Promo pack",
+    "raridade": "promoA",
+    "chance_1_3": 0.00,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": true,
+  },
+  {
+    "obtido": false,
+    "code": "P-A016",
+    "nome": "Clefairy",
+    "buster": "Promo pack",
+    "raridade": "promoA",
+    "chance_1_3": 0.00,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": true,
+  },
+  {
+    "obtido": false,
+    "code": "P-A017",
+    "nome": "Mankey",
+    "buster": "Promo pack",
+    "raridade": "promoA",
+    "chance_1_3": 0.00,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": true,
+  },
+  {
+    "obtido": false,
+    "code": "P-A018",
+    "nome": "Venusaur",
+    "buster": "Promo pack",
+    "raridade": "promoA",
+    "chance_1_3": 0.00,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": true,
+  },
+  {
+    "obtido": false,
+    "code": "P-A019",
+    "nome": "Greninja",
+    "buster": "Promo pack",
+    "raridade": "promoA",
+    "chance_1_3": 0.00,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": true,
+  },
+  {
+    "obtido": false,
+    "code": "P-A020",
+    "nome": "Haunter",
+    "buster": "Promo pack",
+    "raridade": "promoA",
+    "chance_1_3": 0.00,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": true,
+  },
+  {
+    "obtido": false,
+    "code": "P-A021",
+    "nome": "Onix",
+    "buster": "Promo pack",
+    "raridade": "promoA",
+    "chance_1_3": 0.00,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": true,
+  },
+  {
+    "obtido": false,
+    "code": "P-A022",
+    "nome": "Jigglypuff",
+    "buster": "Promo pack",
+    "raridade": "promoA",
+    "chance_1_3": 0.00,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": true,
+  },
+  {
+    "obtido": false,
+    "code": "P-A023",
+    "nome": "Bulbasaur",
+    "buster": "Wonder Pick",
+    "raridade": "promoA",
+    "chance_1_3": 0.00,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": true,
+  },
+  {
+    "obtido": false,
+    "code": "P-A024",
+    "nome": "Magnemite",
+    "buster": "Wonder Pick",
+    "raridade": "promoA",
+    "chance_1_3": 0.00,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": true,
   },
 ];

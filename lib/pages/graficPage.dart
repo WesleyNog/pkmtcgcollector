@@ -2,9 +2,10 @@ import 'dart:convert';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:pkmtcgcollector/resources/pokemonInfos.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:fl_chart/fl_chart.dart';
+import 'package:pkmtcgcollector/resources/dataTable.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:pkmtcgcollector/resources/pokemonInfos.dart';
 
 class GraficPage extends StatelessWidget {
   const GraficPage({super.key});
@@ -231,46 +232,37 @@ class _GraficPageContentState extends State<GraficPageContent> {
               "Coleção",
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
-            DataTable(
-                headingTextStyle: TextStyle(fontWeight: FontWeight.bold),
-                sortColumnIndex: 0,
-                sortAscending: true,
-                columns: [
-                  DataColumn(label: Text("Buster")),
-                  DataColumn(label: Text("Totais")),
-                  DataColumn(label: Text("%")),
-                ],
-                rows: [
-                  DataRow(cells: [
-                    DataCell(Text("Charizard")),
-                    DataCell(Text(
-                        "${obtido("Charizard")}/${totalPokemon("Charizard")}")),
-                    DataCell(Text("${percentBuster("Charizard")}%")),
-                  ]),
-                  DataRow(cells: [
-                    DataCell(Text("Mewtwo")),
-                    DataCell(
-                        Text("${obtido("Mewtwo")}/${totalPokemon("Mewtwo")}")),
-                    DataCell(Text("${percentBuster("Mewtwo")}%")),
-                  ]),
-                  DataRow(cells: [
-                    DataCell(Text("Pikachu")),
-                    DataCell(Text(
-                        "${obtido("Pikachu")}/${totalPokemon("Pikachu")}")),
-                    DataCell(Text("${percentBuster("Pikachu")}%")),
-                  ]),
-                  DataRow(cells: [
-                    DataCell(Text("All")),
-                    DataCell(Text("${obtido("All")}/${totalPokemon("All")}")),
-                    DataCell(Text("${percentBuster("All")}%")),
-                  ]),
-                  DataRow(cells: [
-                    DataCell(Text("Total")),
-                    DataCell(
-                        Text("${obtido("Total")}/${totalPokemon("Total")}")),
-                    DataCell(Text("${percentBuster("Total")}%")),
-                  ]),
-                ]),
+            createDataTable(labels: [
+              "Buster",
+              "Totais",
+              "%"
+            ], packs: [
+              [
+                "Charizard",
+                "${obtido("Charizard")}/${totalPokemon("Charizard")}",
+                "${percentBuster("Charizard")}%"
+              ],
+              [
+                "Mewtwo",
+                "${obtido("Mewtwo")}/${totalPokemon("Mewtwo")}",
+                "${percentBuster("Mewtwo")}%"
+              ],
+              [
+                "Pikachu",
+                "${obtido("Pikachu")}/${totalPokemon("Pikachu")}",
+                "${percentBuster("Pikachu")}%"
+              ],
+              [
+                "All",
+                "${obtido("All")}/${totalPokemon("All")}",
+                "${percentBuster("All")}%"
+              ],
+              [
+                "Total",
+                "${obtido("Total")}/${totalPokemon("Total")}",
+                "${percentBuster("Total")}%"
+              ],
+            ]),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 30.0),
               child: Row(
@@ -348,41 +340,36 @@ class _GraficPageContentState extends State<GraficPageContent> {
               "Caminho p/ MEW",
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
-            DataTable(sortColumnIndex: 0, sortAscending: true, columns: [
-              DataColumn(label: Text("Buster")),
-              DataColumn(label: Text("Totais")),
-              DataColumn(label: Text("%")),
-            ], rows: [
-              DataRow(cells: [
-                DataCell(Text("Charizard")),
-                DataCell(Text(
-                    "${obtido("Charizard", tipo: "MEW")}/${totalPokemon("Charizard", tipo: "MEW")}")),
-                DataCell(Text("${percentBuster("Charizard", tipo: "MEW")}%")),
-              ]),
-              DataRow(cells: [
-                DataCell(Text("Mewtwo")),
-                DataCell(Text(
-                    "${obtido("Mewtwo", tipo: "MEW")}/${totalPokemon("Mewtwo", tipo: "MEW")}")),
-                DataCell(Text("${percentBuster("Mewtwo", tipo: "MEW")}%")),
-              ]),
-              DataRow(cells: [
-                DataCell(Text("Pikachu")),
-                DataCell(Text(
-                    "${obtido("Pikachu", tipo: "MEW")}/${totalPokemon("Pikachu", tipo: "MEW")}")),
-                DataCell(Text("${percentBuster("Pikachu", tipo: "MEW")}%")),
-              ]),
-              DataRow(cells: [
-                DataCell(Text("All")),
-                DataCell(Text(
-                    "${obtido("All", tipo: "MEW")}/${totalPokemon("All", tipo: "MEW")}")),
-                DataCell(Text("${percentBuster("All", tipo: "MEW")}%")),
-              ]),
-              DataRow(cells: [
-                DataCell(Text("Total")),
-                DataCell(Text(
-                    "${obtido("Total", tipo: "MEW")}/${totalPokemon("Total", tipo: "MEW")}")),
-                DataCell(Text("${percentBuster("Total", tipo: "MEW")}%")),
-              ]),
+            createDataTable(labels: [
+              "Buster",
+              "Totais",
+              "%"
+            ], packs: [
+              [
+                "Charizard",
+                "${obtido("Charizard", tipo: "MEW")}/${totalPokemon("Charizard", tipo: "MEW")}",
+                "${percentBuster("Charizard", tipo: "MEW")}%"
+              ],
+              [
+                "Mewtwo",
+                "${obtido("Mewtwo", tipo: "MEW")}/${totalPokemon("Mewtwo", tipo: "MEW")}",
+                "${percentBuster("Mewtwo", tipo: "MEW")}%"
+              ],
+              [
+                "Pikachu",
+                "${obtido("Pikachu", tipo: "MEW")}/${totalPokemon("Pikachu", tipo: "MEW")}",
+                "${percentBuster("Pikachu", tipo: "MEW")}%"
+              ],
+              [
+                "All",
+                "${obtido("All", tipo: "MEW")}/${totalPokemon("All", tipo: "MEW")}",
+                "${percentBuster("All", tipo: "MEW")}%"
+              ],
+              [
+                "Total",
+                "${obtido("Total", tipo: "MEW")}/${totalPokemon("Total", tipo: "MEW")}",
+                "${percentBuster("Total", tipo: "MEW")}%"
+              ],
             ]),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 30.0),
