@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: HomePageContent());
+    return const Center(child: HomePageContent());
   }
 }
 
@@ -25,7 +25,7 @@ class _HomePageContentState extends State<HomePageContent> {
   List<Map<String, dynamic>> _pokemonList = [];
   List<Map<String, dynamic>> _pokemonListFiltered = [];
   final TextEditingController _filterController = TextEditingController();
-  List<bool?> _raridades = [
+  final List<bool?> _raridades = [
     false,
     false,
     false,
@@ -47,7 +47,7 @@ class _HomePageContentState extends State<HomePageContent> {
     "👑",
     "promoA"
   ];
-  List<bool?> _packs = [false, false, false, false];
+  final List<bool?> _packs = [false, false, false, false];
   final List<String> nivelPakcs = [
     "Charizard",
     "Mewtwo",
@@ -130,6 +130,17 @@ class _HomePageContentState extends State<HomePageContent> {
     });
   }
 
+  bool verifyFilter() {
+    final isRarity = _raridades.contains(true);
+    final isPack = _packs.contains(true);
+    final isMew = mewCards;
+
+    if (isRarity || isPack || isMew) {
+      return true;
+    }
+    return false;
+  }
+
   Future _displayBottomSheet(BuildContext context) {
     return showModalBottomSheet(
         backgroundColor: Colors.blueAccent[50],
@@ -137,7 +148,7 @@ class _HomePageContentState extends State<HomePageContent> {
         context: context,
         builder: (context) {
           return StatefulBuilder(builder: (context, StateSetter setModalState) {
-            return Container(
+            return SizedBox(
               height: 500,
               width: double.infinity,
               child: Column(
@@ -151,8 +162,8 @@ class _HomePageContentState extends State<HomePageContent> {
                       borderRadius: BorderRadius.circular(10),
                     ),
                   ),
-                  Text("Raridade"),
-                  Divider(),
+                  const Text("Raridade"),
+                  const Divider(),
                   Row(
                     children: [
                       Checkbox(
@@ -165,7 +176,7 @@ class _HomePageContentState extends State<HomePageContent> {
                               _filterList("");
                             });
                           }),
-                      Text("🔹"),
+                      const Text("🔹"),
                       Checkbox(
                           value: _raridades[1],
                           onChanged: (bool? newValue) {
@@ -176,7 +187,7 @@ class _HomePageContentState extends State<HomePageContent> {
                               _filterList("");
                             });
                           }),
-                      Text("🔹🔹"),
+                      const Text("🔹🔹"),
                       Checkbox(
                           value: _raridades[2],
                           onChanged: (bool? newValue) {
@@ -187,7 +198,7 @@ class _HomePageContentState extends State<HomePageContent> {
                               _filterList("");
                             });
                           }),
-                      Text("🔹🔹🔹"),
+                      const Text("🔹🔹🔹"),
                       Checkbox(
                           value: _raridades[3],
                           onChanged: (bool? newValue) {
@@ -198,7 +209,7 @@ class _HomePageContentState extends State<HomePageContent> {
                               _filterList("");
                             });
                           }),
-                      Text("🔹🔹🔹🔹")
+                      const Text("🔹🔹🔹🔹")
                     ],
                   ),
                   Row(
@@ -213,7 +224,7 @@ class _HomePageContentState extends State<HomePageContent> {
                               _filterList("");
                             });
                           }),
-                      Text("⭐️"),
+                      const Text("⭐️"),
                       Checkbox(
                           value: _raridades[5],
                           onChanged: (bool? newValue) {
@@ -224,7 +235,7 @@ class _HomePageContentState extends State<HomePageContent> {
                               _filterList("");
                             });
                           }),
-                      Text("⭐️⭐️"),
+                      const Text("⭐️⭐️"),
                       Checkbox(
                           value: _raridades[6],
                           onChanged: (bool? newValue) {
@@ -235,7 +246,7 @@ class _HomePageContentState extends State<HomePageContent> {
                               _filterList("");
                             });
                           }),
-                      Text("⭐️⭐️⭐️"),
+                      const Text("⭐️⭐️⭐️"),
                       Checkbox(
                           value: _raridades[7],
                           onChanged: (bool? newValue) {
@@ -246,14 +257,14 @@ class _HomePageContentState extends State<HomePageContent> {
                               _filterList("");
                             });
                           }),
-                      Text("👑"),
+                      const Text("👑"),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
-                  Text("Packs"),
-                  Divider(),
+                  const Text("Packs"),
+                  const Divider(),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -292,7 +303,7 @@ class _HomePageContentState extends State<HomePageContent> {
                       Image.asset("assets/images/pikachu.jpg"),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Row(
@@ -361,7 +372,7 @@ class _HomePageContentState extends State<HomePageContent> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text(
+        title: const Text(
           "Coleção",
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -372,16 +383,16 @@ class _HomePageContentState extends State<HomePageContent> {
           children: [
             Container(
               alignment: Alignment.centerLeft,
-              padding: EdgeInsets.only(top: 20),
-              child: Text(
+              padding: const EdgeInsets.only(top: 20),
+              child: const Text(
                 "Lista de Pokemons",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
               ),
             ),
-            Divider(),
-            SizedBox(
+            const Divider(),
+            const SizedBox(
               height: 20,
             ),
             Row(
@@ -392,7 +403,7 @@ class _HomePageContentState extends State<HomePageContent> {
                       SizedBox(
                         height: 40,
                         child: TextField(
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             border: OutlineInputBorder(),
                             labelText: "Buscar Pokemon",
                             hintText: "Nome do pokemon",
@@ -409,14 +420,14 @@ class _HomePageContentState extends State<HomePageContent> {
                           onPressed: () {
                             _filterList(_filterController.text);
                           },
-                          icon: Icon(Icons.search_rounded),
+                          icon: const Icon(Icons.search_rounded),
                           color: Colors.deepPurple,
                         ),
                       ),
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
                 ElevatedButton(
@@ -438,16 +449,16 @@ class _HomePageContentState extends State<HomePageContent> {
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10.0),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(left: 10.0),
+                    padding: EdgeInsets.only(left: 10.0),
                     child: Text(
                       "#",
                       style:
@@ -473,7 +484,7 @@ class _HomePageContentState extends State<HomePageContent> {
                 ],
               ),
             ),
-            Divider(),
+            const Divider(),
             Expanded(
               child: ListView.builder(
                 itemCount: _pokemonListFiltered.length,
@@ -493,7 +504,7 @@ class _HomePageContentState extends State<HomePageContent> {
                         child: Container(
                           width: double.infinity,
                           height: 50,
-                          margin: EdgeInsets.symmetric(vertical: 5),
+                          margin: const EdgeInsets.symmetric(vertical: 5),
                           decoration: BoxDecoration(
                               color: item["buster"] == "Charizard"
                                   ? Colors.deepOrange[100]
@@ -536,7 +547,7 @@ class _HomePageContentState extends State<HomePageContent> {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Text(
+                                    const Text(
                                       "Taxas:",
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
@@ -544,13 +555,13 @@ class _HomePageContentState extends State<HomePageContent> {
                                     ),
                                     Text(
                                       "1-3º : ${item["chance_1_3"].toString()}%",
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontSize: 11),
                                     ),
                                     Text(
                                       "4º : ${item["chance_4"].toString()}%",
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontSize: 11),
                                     ),
