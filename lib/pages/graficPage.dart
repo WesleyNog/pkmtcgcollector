@@ -310,8 +310,11 @@ class _GraficPageContentState extends State<GraficPageContent> {
             SizedBox(
               height: 30,
             ),
-            centralLabel("Coleção", currentTask("Unit"), currentTask("Total"),
-                corFundo: Colors.green.shade100, complete: completeTask()),
+            centralLabel("Coleção",
+                obtido: currentTask("Unit"),
+                total: currentTask("Total"),
+                corFundo: Colors.green.shade100,
+                complete: completeTask()),
             createDataTable(labels: [
               "Buster",
               "Totais",
@@ -383,8 +386,7 @@ class _GraficPageContentState extends State<GraficPageContent> {
             SizedBox(
               height: 40,
             ),
-            centralLabel("% - Novas cartas", currentTask("Unit"),
-                currentTask("Total", remove: ["All"]),
+            centralLabel("Chance (%) - Novas cartas",
                 corFundo: Colors.green.shade100, complete: completeTask()),
             DataTable(
                 columnSpacing: 25,
@@ -418,8 +420,9 @@ class _GraficPageContentState extends State<GraficPageContent> {
             SizedBox(
               height: 40,
             ),
-            centralLabel("Caminho MEW", currentTask("Unit", tipoPack: "MEW"),
-                currentTask("Total"),
+            centralLabel("Caminho MEW",
+                obtido: currentTask("Unit", tipoPack: "MEW"),
+                total: currentTask("Total"),
                 corBordar: Colors.purple.shade100,
                 corFundo: Colors.purple.shade50,
                 complete: completeTask(tipo: "MEW")),

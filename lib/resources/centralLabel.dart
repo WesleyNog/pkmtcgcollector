@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
-Widget centralLabel(String label, String obtido, String total,
-    {Color corBordar = Colors.green,
+Widget centralLabel(String label,
+    {String obtido = "",
+    String total = "",
+    Color corBordar = Colors.green,
     Color corFundo = Colors.greenAccent,
     bool complete = false}) {
   return Container(
@@ -23,10 +25,13 @@ Widget centralLabel(String label, String obtido, String total,
           ),
           Row(
             children: [
-              Text(
-                "$obtido/$total",
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-              ),
+              obtido != "" || total != ""
+                  ? Text(
+                      "$obtido/$total",
+                      style:
+                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    )
+                  : Text(""),
               SizedBox(
                 width: 5,
               ),

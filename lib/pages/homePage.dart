@@ -2,7 +2,10 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:pkmtcgcollector/adState.dart';
 import 'package:pkmtcgcollector/resources/pokemonInfos.dart';
+import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class HomePage extends StatelessWidget {
@@ -22,6 +25,32 @@ class HomePageContent extends StatefulWidget {
 }
 
 class _HomePageContentState extends State<HomePageContent> {
+  BannerAd? banner;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final adState = Provider.of<AdState>(context);
+    adState.initialization.then((status) {
+      setState(() {
+        banner = BannerAd(
+          adUnitId: adState.bannerAdUnitId,
+          size: AdSize.banner,
+          request: AdRequest(),
+          listener: BannerAdListener(
+            onAdLoaded: (ad) => print('Ad loaded: ${ad.adUnitId}'),
+            onAdFailedToLoad: (ad, error) {
+              print('Ad failed to load: ${ad.adUnitId}, $error');
+              ad.dispose();
+            },
+            onAdOpened: (ad) => print('Ad opened: ${ad.adUnitId}'),
+            onAdClosed: (ad) => print('Ad closed: ${ad.adUnitId}'),
+          ),
+        )..load();
+      });
+    });
+  }
+
   List<Map<String, dynamic>> _pokemonList = [];
   List<Map<String, dynamic>> _pokemonListFiltered = [];
   final TextEditingController _filterController = TextEditingController();
@@ -487,9 +516,21 @@ class _HomePageContentState extends State<HomePageContent> {
             const Divider(),
             Expanded(
               child: ListView.builder(
-                itemCount: _pokemonListFiltered.length,
+                itemCount: _pokemonListFiltered.length +
+                    (_pokemonListFiltered.length ~/ 50),
                 itemBuilder: (context, index) {
-                  final item = _pokemonListFiltered[index];
+                  if ((index + 1) % 51 == 0) {
+                    return banner == null
+                        ? const SizedBox(
+                            height: 50,
+                          )
+                        : Container(
+                            height: 50,
+                            child: AdWidget(ad: banner!),
+                          );
+                  }
+                  final realIndex = index - (index ~/ 50);
+                  final item = _pokemonListFiltered[realIndex];
                   return Row(
                     children: [
                       Checkbox(
@@ -594,7 +635,15 @@ class _HomePageContentState extends State<HomePageContent> {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-            )
+            ),
+            // banner == null
+            //     ? SizedBox(
+            //         height: 50,
+            //       )
+            //     : Container(
+            //         height: 50,
+            //         child: AdWidget(ad: banner!),
+            //       )
           ],
         ),
       ),

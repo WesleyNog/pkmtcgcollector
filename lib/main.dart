@@ -1,18 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:pkmtcgcollector/adState.dart';
 import 'package:pkmtcgcollector/pages/graficPage.dart';
 import 'package:pkmtcgcollector/pages/homePage.dart';
 import 'package:pkmtcgcollector/pages/menuPage.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  MobileAds.instance.initialize();
+  final initFuture = MobileAds.instance.initialize();
+  final adState = AdState(initFuture);
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
   ]).then((_) {
-    runApp(const MyApp());
+    runApp(
+      Provider.value(
+        value: adState,
+        builder: (context, child) => const MyApp(),
+      ),
+    );
     configLoading();
   });
 }
