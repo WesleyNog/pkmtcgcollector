@@ -551,15 +551,19 @@ class _HomePageContentState extends State<HomePageContent> {
                                   ? Colors.deepOrange[100]
                                   : item["buster"] == "Mewtwo"
                                       ? Colors.deepPurple[100]
-                                      : item["buster"] == "Shop"
-                                          ? Colors.cyan[100]
-                                          : item["buster"] == "Wonder Pick"
-                                              ? Colors.orangeAccent[100]
-                                              : item["buster"] == "Promo pack"
-                                                  ? Colors.purple[100]
-                                                  : item["buster"] == "All"
-                                                      ? Colors.green[100]
-                                                      : Colors.amberAccent[100],
+                                      : item["buster"] == "MEW"
+                                          ? Colors.pinkAccent[100]
+                                          : item["buster"] == "Shop"
+                                              ? Colors.cyan[100]
+                                              : item["buster"] == "Wonder Pick"
+                                                  ? Colors.orangeAccent[100]
+                                                  : item["buster"] ==
+                                                          "Promo pack"
+                                                      ? Colors.purple[100]
+                                                      : item["buster"] == "All"
+                                                          ? Colors.green[100]
+                                                          : Colors
+                                                              .amberAccent[100],
                               borderRadius: BorderRadius.circular(5)),
                           child: Column(
                             children: [
