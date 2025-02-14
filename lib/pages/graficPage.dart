@@ -3,10 +3,10 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
-import 'package:pkmtcgcollector/resources/centralLabel.dart';
-import 'package:pkmtcgcollector/resources/dataTable.dart';
+import 'package:pkmtcgcollector/helpers/centralLabel.dart';
+import 'package:pkmtcgcollector/helpers/dataTable.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:pkmtcgcollector/resources/pokemonInfos.dart';
+import 'package:pkmtcgcollector/helpers/pokemonInfos.dart';
 
 class GraficPage extends StatelessWidget {
   const GraficPage({super.key});

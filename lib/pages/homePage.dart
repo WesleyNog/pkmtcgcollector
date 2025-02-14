@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:pkmtcgcollector/adState.dart';
-import 'package:pkmtcgcollector/resources/pokemonInfos.dart';
+import 'package:pkmtcgcollector/helpers/bottomSheet.dart';
+import 'package:pkmtcgcollector/helpers/pokemonInfos.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -108,10 +109,11 @@ class _HomePageContentState extends State<HomePageContent> {
     }
   }
 
-  Future<void> _clearPokemonList() async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.clear();
-  }
+  // Apenas para limpar a lista da memória //
+  // Future<void> _clearPokemonList() async {
+  //   final prefs = await SharedPreferences.getInstance();
+  //   await prefs.clear();
+  // }
 
   void _filterList(String query) {
     final lowerCaseQuery = query.toLowerCase();
@@ -168,216 +170,6 @@ class _HomePageContentState extends State<HomePageContent> {
       return true;
     }
     return false;
-  }
-
-  Future _displayBottomSheet(BuildContext context) {
-    return showModalBottomSheet(
-        backgroundColor: Colors.blueAccent[50],
-        barrierColor: Colors.black87.withOpacity(0.5),
-        context: context,
-        builder: (context) {
-          return StatefulBuilder(builder: (context, StateSetter setModalState) {
-            return SizedBox(
-              height: 500,
-              width: double.infinity,
-              child: Column(
-                children: [
-                  Container(
-                    margin: const EdgeInsets.only(top: 8.0, bottom: 12.0),
-                    width: 50,
-                    height: 4,
-                    decoration: BoxDecoration(
-                      color: Colors.grey[400],
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                  ),
-                  const Text("Raridade"),
-                  const Divider(),
-                  Row(
-                    children: [
-                      Checkbox(
-                          value: _raridades[0],
-                          onChanged: (bool? newValue) {
-                            setModalState(() {
-                              _raridades[0] = newValue ?? false;
-                            });
-                            setState(() {
-                              _filterList("");
-                            });
-                          }),
-                      const Text("🔹"),
-                      Checkbox(
-                          value: _raridades[1],
-                          onChanged: (bool? newValue) {
-                            setModalState(() {
-                              _raridades[1] = newValue ?? false;
-                            });
-                            setState(() {
-                              _filterList("");
-                            });
-                          }),
-                      const Text("🔹🔹"),
-                      Checkbox(
-                          value: _raridades[2],
-                          onChanged: (bool? newValue) {
-                            setModalState(() {
-                              _raridades[2] = newValue ?? false;
-                            });
-                            setState(() {
-                              _filterList("");
-                            });
-                          }),
-                      const Text("🔹🔹🔹"),
-                      Checkbox(
-                          value: _raridades[3],
-                          onChanged: (bool? newValue) {
-                            setModalState(() {
-                              _raridades[3] = newValue ?? false;
-                            });
-                            setState(() {
-                              _filterList("");
-                            });
-                          }),
-                      const Text("🔹🔹🔹🔹")
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      Checkbox(
-                          value: _raridades[4],
-                          onChanged: (bool? newValue) {
-                            setModalState(() {
-                              _raridades[4] = newValue ?? false;
-                            });
-                            setState(() {
-                              _filterList("");
-                            });
-                          }),
-                      const Text("⭐️"),
-                      Checkbox(
-                          value: _raridades[5],
-                          onChanged: (bool? newValue) {
-                            setModalState(() {
-                              _raridades[5] = newValue ?? false;
-                            });
-                            setState(() {
-                              _filterList("");
-                            });
-                          }),
-                      const Text("⭐️⭐️"),
-                      Checkbox(
-                          value: _raridades[6],
-                          onChanged: (bool? newValue) {
-                            setModalState(() {
-                              _raridades[6] = newValue ?? false;
-                            });
-                            setState(() {
-                              _filterList("");
-                            });
-                          }),
-                      const Text("⭐️⭐️⭐️"),
-                      Checkbox(
-                          value: _raridades[7],
-                          onChanged: (bool? newValue) {
-                            setModalState(() {
-                              _raridades[7] = newValue ?? false;
-                            });
-                            setState(() {
-                              _filterList("");
-                            });
-                          }),
-                      const Text("👑"),
-                    ],
-                  ),
-                  const SizedBox(
-                    height: 30,
-                  ),
-                  const Text("Packs"),
-                  const Divider(),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Checkbox(
-                          value: _packs[0],
-                          onChanged: (bool? newValue) {
-                            setModalState(() {
-                              _packs[0] = newValue ?? false;
-                            });
-                            setState(() {
-                              _filterList("");
-                            });
-                          }),
-                      Image.asset("assets/images/charizard.jpg"),
-                      Checkbox(
-                          value: _packs[1],
-                          onChanged: (bool? newValue) {
-                            setModalState(() {
-                              _packs[1] = newValue ?? false;
-                            });
-                            setState(() {
-                              _filterList("");
-                            });
-                          }),
-                      Image.asset("assets/images/mewtwo.jpg"),
-                      Checkbox(
-                          value: _packs[2],
-                          onChanged: (bool? newValue) {
-                            setModalState(() {
-                              _packs[2] = newValue ?? false;
-                            });
-                            setState(() {
-                              _filterList("");
-                            });
-                          }),
-                      Image.asset("assets/images/pikachu.jpg"),
-                    ],
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  Row(
-                    // mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      Checkbox(
-                          value: _raridades[8],
-                          onChanged: (bool? newValue) {
-                            setModalState(() {
-                              _raridades[8] = newValue ?? false;
-                            });
-                            setState(() {
-                              _filterList("");
-                            });
-                          }),
-                      Image.asset("assets/images/promoA.png"),
-                      Checkbox(
-                          value: _packs[3],
-                          onChanged: (bool? newValue) {
-                            setModalState(() {
-                              _packs[3] = newValue ?? false;
-                            });
-                            setState(() {
-                              _filterList("");
-                            });
-                          }),
-                      Image.asset("assets/images/buster_promoA.png"),
-                      Checkbox(
-                          value: mewCards,
-                          onChanged: (bool? newValue) {
-                            setModalState(() {
-                              mewCards = newValue ?? false;
-                            });
-                            setState(() {
-                              _filterList("");
-                            });
-                          }),
-                      Image.asset("assets/images/MEW.jpeg"),
-                    ],
-                  ),
-                ],
-              ),
-            );
-          });
-        });
   }
 
   @override
@@ -461,7 +253,14 @@ class _HomePageContentState extends State<HomePageContent> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    _displayBottomSheet(context);
+                    displayBottomSheet(
+                      context: context,
+                      raridades: _raridades,
+                      packs: _packs,
+                      mewCards: mewCards,
+                      filterList: _filterList,
+                      updateParentState: setState,
+                    );
                   },
                   child: Center(
                     child: Icon(
