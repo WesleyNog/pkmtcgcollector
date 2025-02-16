@@ -24,7 +24,9 @@ class _ApexMetricsState extends State<ApexMetrics> {
       if (pack == "Total") {
         return pokemonList
             .where((pokemon) =>
-                pokemon["MEW"] == true && pokemon["obtido"] == true)
+                pokemon["MEW"] == true &&
+                pokemon["obtido"] == true &&
+                pokemon["seasson"] == "Apex")
             .length;
       }
 
@@ -32,17 +34,23 @@ class _ApexMetricsState extends State<ApexMetrics> {
           .where((pokemon) =>
               pokemon["buster"] == pack &&
               pokemon["obtido"] == true &&
-              pokemon["MEW"] == true)
+              pokemon["MEW"] == true &&
+              pokemon["seasson"] == "Apex")
           .length;
     }
 
     if (pack == "Total") {
-      return pokemonList.where((pokemon) => pokemon["obtido"] == true).length;
+      return pokemonList
+          .where((pokemon) =>
+              pokemon["obtido"] == true && pokemon["seasson"] == "Apex")
+          .length;
     }
 
     return pokemonList
-        .where(
-            (pokemon) => pokemon["buster"] == pack && pokemon["obtido"] == true)
+        .where((pokemon) =>
+            pokemon["buster"] == pack &&
+            pokemon["obtido"] == true &&
+            pokemon["seasson"] == "Apex")
         .length;
   }
 
@@ -71,20 +79,30 @@ class _ApexMetricsState extends State<ApexMetrics> {
   int totalPokemon(String pack, {String tipo = "Normal"}) {
     if (tipo == "MEW") {
       if (pack == "Total") {
-        return pokemonList.where((pokemon) => pokemon["MEW"] == true).length;
+        return pokemonList
+            .where((pokemon) =>
+                pokemon["MEW"] == true && pokemon["seasson"] == "Apex")
+            .length;
       }
 
       return pokemonList
-          .where(
-              (pokemon) => pokemon["buster"] == pack && pokemon["MEW"] == true)
+          .where((pokemon) =>
+              pokemon["buster"] == pack &&
+              pokemon["MEW"] == true &&
+              pokemon["seasson"] == "Apex")
           .length;
     }
 
     if (pack == "Total") {
-      return pokemonList.length;
+      return pokemonList
+          .where((seasson) => seasson["seasson"] == "Apex")
+          .length;
     }
 
-    return pokemonList.where((pokemon) => pokemon["buster"] == pack).length;
+    return pokemonList
+        .where((pokemon) =>
+            pokemon["buster"] == pack && pokemon["seasson"] == "Apex")
+        .length;
   }
 
   String percentBuster(String pack, {String tipo = "Normal"}) {
@@ -139,7 +157,8 @@ class _ApexMetricsState extends State<ApexMetrics> {
               pokemon["obtido"] == false &&
               pokemon["raridade"] == raridade &&
               pokemon["buster"] == pack &&
-              pokemon["promoA"] == false)
+              pokemon["promoA"] == false &&
+              pokemon["seasson"] == "Apex")
           .fold(0.0, (soma, pokemon) {
         return soma + (pokemon[chance] ?? 0.0);
       });
@@ -148,7 +167,8 @@ class _ApexMetricsState extends State<ApexMetrics> {
               pokemon["obtido"] == false &&
               pokemon["raridade"] == raridade &&
               pokemon["buster"] == "All" &&
-              pokemon["promoA"] == false)
+              pokemon["promoA"] == false &&
+              pokemon["seasson"] == "Apex")
           .fold(0.0, (soma, pokemon) {
         return soma + (pokemon[chance] ?? 0.0);
       });
@@ -205,7 +225,8 @@ class _ApexMetricsState extends State<ApexMetrics> {
         .where((trainer) =>
             trainer["nome"] == nome &&
             trainer["raridade"] == "⭐️⭐️" &&
-            trainer["obtido"] == true)
+            trainer["obtido"] == true &&
+            trainer["seasson"] == "Apex")
         .length
         .toString()
         .padLeft(2, "0");
@@ -223,6 +244,7 @@ class _ApexMetricsState extends State<ApexMetrics> {
       "Mewtwo": obtido("Mewtwo"),
       "Pikachu": obtido("Pikachu"),
       "All": obtido("All"),
+      "Total": totalPokemon("Total") - obtido("Total"),
     };
 
     Map<String, Color> packColors = {
@@ -230,6 +252,7 @@ class _ApexMetricsState extends State<ApexMetrics> {
       "Mewtwo": Colors.deepPurple,
       "Pikachu": Colors.amberAccent,
       "All": Colors.green,
+      "Total": Colors.grey.shade200,
     };
 
     List<PieChartSectionData> sections = [];
@@ -237,17 +260,17 @@ class _ApexMetricsState extends State<ApexMetrics> {
     for (int i = 0; i < entries.length; i++) {
       final key = entries[i].key;
       final value = entries[i].value;
-      double percentage = (value / obtido("Total")) * 100;
+      double percentage = (value / totalPokemon("Total")) * 100;
       final isTouched = i == touchedIndex;
       final radios = isTouched ? 130.0 : 100.0;
       sections.add(
         PieChartSectionData(
           value: percentage,
-          title: '${percentage.toStringAsFixed(1)}%',
+          title: '${percentage.toStringAsFixed(2)}%',
           color: packColors[key] ?? Colors.grey,
           radius: radios,
           titleStyle: TextStyle(
-              fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),
+              fontSize: 14, fontWeight: FontWeight.bold, color: Colors.black),
         ),
       );
     }

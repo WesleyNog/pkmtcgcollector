@@ -21,7 +21,10 @@ class _MysticalMetricsState extends State<MysticalMetrics> {
 
   int obtido(String pack, {String tipo = "Normal"}) {
     if (pack == "Total") {
-      return pokemonList.where((pokemon) => pokemon["obtido"] == true).length;
+      return pokemonList
+          .where((pokemon) =>
+              pokemon["obtido"] == true && pokemon["seasson"] == "Mystical")
+          .length;
     }
 
     return pokemonList
@@ -54,7 +57,9 @@ class _MysticalMetricsState extends State<MysticalMetrics> {
 
   int totalPokemon(String pack, {String tipo = "Normal"}) {
     if (pack == "Total") {
-      return pokemonList.length;
+      return pokemonList
+          .where((seasson) => seasson["seasson"] == "Mystical")
+          .length;
     }
 
     return pokemonList.where((pokemon) => pokemon["buster"] == pack).length;
@@ -172,26 +177,32 @@ class _MysticalMetricsState extends State<MysticalMetrics> {
 
   @override
   Widget build(BuildContext context) {
-    Map<String, int> packCounts = {"MEW": obtido("MEW")};
+    Map<String, int> packCounts = {
+      "MEW": obtido("MEW"),
+      "Total": totalPokemon("Total") - obtido("MEW")
+    };
 
-    Map<String, Color> packColors = {"MEW": Colors.greenAccent};
+    Map<String, Color> packColors = {
+      "MEW": Colors.greenAccent,
+      "Total": Colors.grey.shade200
+    };
 
     List<PieChartSectionData> sections = [];
     final entries = packCounts.entries.toList();
     for (int i = 0; i < entries.length; i++) {
       final key = entries[i].key;
       final value = entries[i].value;
-      double percentage = (value / obtido("Total")) * 100;
+      double percentage = (value / totalPokemon("Total")) * 100;
       final isTouched = i == touchedIndex;
       final radios = isTouched ? 130.0 : 100.0;
       sections.add(
         PieChartSectionData(
           value: percentage,
-          title: '${percentage.toStringAsFixed(1)}%',
+          title: '${percentage.toStringAsFixed(2)}%',
           color: packColors[key] ?? Colors.grey,
           radius: radios,
           titleStyle: TextStyle(
-              fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),
+              fontSize: 14, fontWeight: FontWeight.bold, color: Colors.black),
         ),
       );
     }
