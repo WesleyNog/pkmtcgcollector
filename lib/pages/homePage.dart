@@ -26,15 +26,13 @@ class HomePageContent extends StatefulWidget {
 }
 
 class _HomePageContentState extends State<HomePageContent> {
-  BannerAd? banner;
+  BannerAd? _bannerAd;
 
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    final adState = Provider.of<AdState>(context);
+  void _loadBannerAd() {
+    final adState = Provider.of<AdState>(context, listen: false);
     adState.initialization.then((status) {
       setState(() {
-        banner = BannerAd(
+        _bannerAd = BannerAd(
           adUnitId: adState.bannerAdUnitId,
           size: AdSize.banner,
           request: AdRequest(),
@@ -44,8 +42,6 @@ class _HomePageContentState extends State<HomePageContent> {
               print('Ad failed to load: ${ad.adUnitId}, $error');
               ad.dispose();
             },
-            onAdOpened: (ad) => print('Ad opened: ${ad.adUnitId}'),
-            onAdClosed: (ad) => print('Ad closed: ${ad.adUnitId}'),
           ),
         )..load();
       });
@@ -176,6 +172,7 @@ class _HomePageContentState extends State<HomePageContent> {
   void initState() {
     super.initState();
     _initializeData();
+    _loadBannerAd();
   }
 
   void _initializeData() {
@@ -319,16 +316,16 @@ class _HomePageContentState extends State<HomePageContent> {
                     (_pokemonListFiltered.length ~/ 50),
                 itemBuilder: (context, index) {
                   if ((index + 1) % 51 == 0) {
-                    return banner == null
+                    return _bannerAd == null
                         ? const SizedBox(
                             height: 50,
                           )
                         : Container(
                             height: 50,
-                            child: AdWidget(ad: banner!),
+                            child: AdWidget(ad: _bannerAd!),
                           );
                   }
-                  final realIndex = index - (index ~/ 50);
+                  final realIndex = index - (index ~/ 51);
                   final item = _pokemonListFiltered[realIndex];
                   return Row(
                     children: [
