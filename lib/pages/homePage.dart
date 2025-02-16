@@ -436,14 +436,6 @@ class _HomePageContentState extends State<HomePageContent> {
                 ),
               ),
             ),
-            // banner == null
-            //     ? SizedBox(
-            //         height: 50,
-            //       )
-            //     : Container(
-            //         height: 50,
-            //         child: AdWidget(ad: banner!),
-            //       )
           ],
         ),
       ),
