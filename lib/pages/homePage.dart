@@ -73,12 +73,14 @@ class _HomePageContentState extends State<HomePageContent> {
     "👑",
     "promoA"
   ];
-  final List<bool?> _packs = [false, false, false, false];
+  final List<bool?> _packs = [false, false, false, false, false, false];
   final List<String> nivelPakcs = [
     "Charizard",
     "Mewtwo",
     "Pikachu",
-    "Promo pack"
+    "MEW",
+    "Dialga",
+    "Palkia"
   ];
   bool mewCards = false;
 
@@ -348,18 +350,12 @@ class _HomePageContentState extends State<HomePageContent> {
                                   : item["buster"] == "Mewtwo"
                                       ? Colors.deepPurple[100]
                                       : item["buster"] == "MEW"
-                                          ? Colors.pinkAccent[100]
-                                          : item["buster"] == "Shop"
-                                              ? Colors.cyan[100]
-                                              : item["buster"] == "Wonder Pick"
-                                                  ? Colors.orangeAccent[100]
-                                                  : item["buster"] ==
-                                                          "Promo pack"
-                                                      ? Colors.purple[100]
-                                                      : item["buster"] == "All"
-                                                          ? Colors.green[100]
-                                                          : Colors
-                                                              .amberAccent[100],
+                                          ? Colors.green[100]
+                                          : item["buster"] == "Pikachu"
+                                              ? Colors.amberAccent[100]
+                                              : item["buster"] == "All"
+                                                  ? Colors.grey[300]
+                                                  : Colors.cyan[100],
                               borderRadius: BorderRadius.circular(5)),
                           child: Column(
                             children: [

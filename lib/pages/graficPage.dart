@@ -27,6 +27,7 @@ class GraficPageContent extends StatefulWidget {
 class _GraficPageContentState extends State<GraficPageContent> {
   List<Map<String, dynamic>> _pokemonList = [];
   int touchedIndex = 0;
+  List<String> _pages = ["Apex", "Mystical", "Space"];
 
   Future<void> _loadPokemonList() async {
     final prefs = await SharedPreferences.getInstance();
@@ -262,17 +263,23 @@ class _GraficPageContentState extends State<GraficPageContent> {
 
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
-        title: Text(
-          "Métricas",
-          style: TextStyle(fontWeight: FontWeight.bold),
-        ),
+        title: Image.asset("assets/images/LogoApex.png"),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 10.0),
+            child: Icon(Icons.info_outline_rounded),
+          )
+        ],
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
+            // SizedBox(
+            //   height: 100,
+            // ),
+            // Image.asset("assets/images/LogoApex.png"),
             SizedBox(
-              height: 20,
+              height: 30,
             ),
             obtido("Total") <= 0
                 ? Container(
