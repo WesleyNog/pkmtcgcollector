@@ -95,16 +95,53 @@ class _HomePageContentState extends State<HomePageContent> {
     final prefs = await SharedPreferences.getInstance();
     final savedList = prefs.getString('pokemonList');
 
+    List<Map<String, dynamic>> updatedList = [];
+
     if (savedList != null) {
-      setState(() {
-        _pokemonList = List<Map<String, dynamic>>.from(jsonDecode(savedList));
-      });
+      List<Map<String, dynamic>> savedPokemonList =
+          List<Map<String, dynamic>>.from(jsonDecode(savedList));
+
+      // Verificar se as listas são iguais
+      EasyLoading.show(status: 'Carregando...');
+      if (savedPokemonList.length == infoPokemons.length) {
+        setState(() {
+          _pokemonList = savedPokemonList;
+        });
+
+        EasyLoading.dismiss();
+        return;
+      }
+
+      Map<String, Map<String, dynamic>> savedPokemonMap = {
+        for (var pokemon in savedPokemonList) pokemon["code"]: pokemon
+      };
+
+      int total = infoPokemons.length;
+      int count = 0;
+
+      for (var pokemon in infoPokemons) {
+        if (savedPokemonMap.containsKey(pokemon["code"])) {
+          updatedList.add(savedPokemonMap[pokemon["code"]]!);
+        } else {
+          updatedList.add(pokemon);
+        }
+
+        count++;
+        EasyLoading.showProgress(count / total,
+            status:
+                'Carregando... ${(count / total * 100).toStringAsFixed(0)}%');
+      }
     } else {
-      // Carregar a lista padrão
-      setState(() {
-        _pokemonList = infoPokemons;
-      });
+      updatedList = List.from(infoPokemons);
     }
+
+    setState(() {
+      _pokemonList = updatedList;
+    });
+
+    await prefs.setString('pokemonList', jsonEncode(updatedList));
+
+    EasyLoading.dismiss();
   }
 
   // Apenas para limpar a lista da memória //
@@ -353,9 +390,13 @@ class _HomePageContentState extends State<HomePageContent> {
                                           ? Colors.green[100]
                                           : item["buster"] == "Pikachu"
                                               ? Colors.amberAccent[100]
-                                              : item["buster"] == "All"
-                                                  ? Colors.grey[300]
-                                                  : Colors.cyan[100],
+                                              : item["buster"] == "Dialga"
+                                                  ? Colors.blueAccent[100]
+                                                  : item["buster"] == "Palkia"
+                                                      ? Colors.pink[50]
+                                                      : item["buster"] == "All"
+                                                          ? Colors.grey[300]
+                                                          : Colors.cyan[100],
                               borderRadius: BorderRadius.circular(5)),
                           child: Column(
                             children: [

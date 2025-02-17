@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pkmtcgcollector/pages/metricsSeasson.dart/SpaceMetrics.dart';
 import 'package:pkmtcgcollector/pages/metricsSeasson.dart/apexMetrics.dart';
 import 'package:pkmtcgcollector/pages/metricsSeasson.dart/mysticalMetrics.dart';
 
@@ -14,13 +15,7 @@ class _GraficPageState extends State<GraficPage> {
   int _currentIndex = 0;
   final List<String> _logos = ["LogoApex", "LogoMystical", "LogoSpace"];
 
-  List<Widget> _pages = [
-    ApexMetrics(),
-    MysticalMetrics(),
-    Center(
-      child: Text("Página Space"),
-    )
-  ];
+  List<Widget> _pages = [ApexMetrics(), MysticalMetrics(), SpaceMetrics()];
 
   void _onPageChanged(int index) {
     setState(() {
