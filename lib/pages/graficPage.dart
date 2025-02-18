@@ -27,6 +27,7 @@ class _GraficPageState extends State<GraficPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Image.asset("assets/images/${_logos[_currentIndex]}.png"),
         actions: [
           Padding(

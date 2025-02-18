@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:math';
 
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
@@ -67,16 +66,6 @@ class _MysticalMetricsState extends State<MysticalMetrics> {
 
   String percentBuster(String pack, {String tipo = "Normal"}) {
     return ((obtido(pack) / totalPokemon(pack)) * 100).toStringAsFixed(3);
-  }
-
-  // Verificar qual pack tem menos cartas obtidas
-  String bestPack({String tipo = "Normal"}) {
-    Map<double, dynamic> percentBusters = {
-      double.parse(percentBuster("MEW")): "MEW",
-    };
-    double minPercent = percentBusters.keys.reduce(min);
-
-    return percentBusters[minPercent];
   }
 
   // Função para calcular a chance que a carta ainda pode vir no buster

@@ -5,6 +5,7 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:pkmtcgcollector/adState.dart';
 import 'package:pkmtcgcollector/helpers/bottomSheet.dart';
+import 'package:pkmtcgcollector/helpers/getColors.dart';
 import 'package:pkmtcgcollector/helpers/pokemonInfos.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -382,21 +383,7 @@ class _HomePageContentState extends State<HomePageContent> {
                           height: 50,
                           margin: const EdgeInsets.symmetric(vertical: 5),
                           decoration: BoxDecoration(
-                              color: item["buster"] == "Charizard"
-                                  ? Colors.deepOrange[100]
-                                  : item["buster"] == "Mewtwo"
-                                      ? Colors.deepPurple[100]
-                                      : item["buster"] == "MEW"
-                                          ? Colors.green[100]
-                                          : item["buster"] == "Pikachu"
-                                              ? Colors.amberAccent[100]
-                                              : item["buster"] == "Dialga"
-                                                  ? Colors.blueAccent[100]
-                                                  : item["buster"] == "Palkia"
-                                                      ? Colors.pink[50]
-                                                      : item["buster"] == "All"
-                                                          ? Colors.grey[300]
-                                                          : Colors.cyan[100],
+                              color: getBusterColor(item["buster"]),
                               borderRadius: BorderRadius.circular(5)),
                           child: Column(
                             children: [
