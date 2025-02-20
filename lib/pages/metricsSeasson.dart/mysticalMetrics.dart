@@ -6,6 +6,7 @@ import 'package:pkmtcgcollector/helpers/centralLabel.dart';
 import 'package:pkmtcgcollector/helpers/dataTable.dart';
 import 'package:pkmtcgcollector/helpers/pokemonInfos.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class MysticalMetrics extends StatefulWidget {
   MysticalMetrics({super.key});
@@ -237,14 +238,14 @@ class _MysticalMetricsState extends State<MysticalMetrics> {
           SizedBox(
             height: 30,
           ),
-          centralLabel("Coleção",
+          centralLabel(AppLocalizations.of(context)!.colectionLabel,
               obtido: currentTask("Unit"),
               total: currentTask("Total"),
               corFundo: Colors.green.shade100,
               complete: completeTask()),
           createDataTable(labels: [
-            "Buster",
-            "Totais",
+            AppLocalizations.of(context)!.busterPack,
+            AppLocalizations.of(context)!.totalsLabel,
             "%"
           ], packs: [
             [

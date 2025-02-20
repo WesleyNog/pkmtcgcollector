@@ -7,6 +7,7 @@ import 'package:pkmtcgcollector/helpers/centralLabel.dart';
 import 'package:pkmtcgcollector/helpers/dataTable.dart';
 import 'package:pkmtcgcollector/helpers/pokemonInfos.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class SpaceMetrics extends StatefulWidget {
   SpaceMetrics({super.key});
@@ -261,14 +262,14 @@ class _SpaceMetricsState extends State<SpaceMetrics> {
           SizedBox(
             height: 30,
           ),
-          centralLabel("Coleção",
+          centralLabel(AppLocalizations.of(context)!.colectionLabel,
               obtido: currentTask("Unit"),
               total: currentTask("Total"),
               corFundo: Colors.green.shade100,
               complete: completeTask()),
           createDataTable(labels: [
-            "Buster",
-            "Totais",
+            AppLocalizations.of(context)!.busterPack,
+            AppLocalizations.of(context)!.totalsLabel,
             "%"
           ], packs: [
             [
@@ -282,7 +283,7 @@ class _SpaceMetricsState extends State<SpaceMetrics> {
               "${percentBuster("Palkia")}%"
             ],
             [
-              "All",
+              AppLocalizations.of(context)!.allLabel,
               "${obtido("All")}/${totalPokemon("All")}",
               "${percentBuster("All")}%"
             ],
@@ -298,7 +299,7 @@ class _SpaceMetricsState extends State<SpaceMetrics> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Text(
-                  "Melhor \nBuster",
+                  AppLocalizations.of(context)!.bestPackLabel,
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                 ),
                 Container(
@@ -332,13 +333,14 @@ class _SpaceMetricsState extends State<SpaceMetrics> {
           SizedBox(
             height: 40,
           ),
-          centralLabel("Chance (%) - Novas cartas",
+          centralLabel(AppLocalizations.of(context)!.newCards,
               corFundo: Colors.green.shade100, complete: completeTask()),
           DataTable(
               columnSpacing: 25,
               headingTextStyle: TextStyle(fontWeight: FontWeight.bold),
               columns: [
-                DataColumn(label: Text("Buster")),
+                DataColumn(
+                    label: Text(AppLocalizations.of(context)!.busterPack)),
                 DataColumn(label: Text("1-3")),
                 DataColumn(label: Text("4")),
                 DataColumn(label: Text("5")),

@@ -7,6 +7,7 @@ import 'package:pkmtcgcollector/helpers/centralLabel.dart';
 import 'package:pkmtcgcollector/helpers/dataTable.dart';
 import 'package:pkmtcgcollector/helpers/pokemonInfos.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ApexMetrics extends StatefulWidget {
   ApexMetrics({super.key});
@@ -278,10 +279,6 @@ class _ApexMetricsState extends State<ApexMetrics> {
     return SingleChildScrollView(
       child: Column(
         children: [
-          // SizedBox(
-          //   height: 100,
-          // ),
-          // Image.asset("assets/images/LogoApex.png"),
           SizedBox(
             height: 30,
           ),
@@ -320,14 +317,14 @@ class _ApexMetricsState extends State<ApexMetrics> {
           SizedBox(
             height: 30,
           ),
-          centralLabel("Coleção",
+          centralLabel(AppLocalizations.of(context)!.colectionLabel,
               obtido: currentTask("Unit"),
               total: currentTask("Total"),
               corFundo: Colors.green.shade100,
               complete: completeTask()),
           createDataTable(labels: [
-            "Buster",
-            "Totais",
+            AppLocalizations.of(context)!.busterPack,
+            AppLocalizations.of(context)!.totalsLabel,
             "%"
           ], packs: [
             [
@@ -346,7 +343,7 @@ class _ApexMetricsState extends State<ApexMetrics> {
               "${percentBuster("Pikachu")}%"
             ],
             [
-              "All",
+              AppLocalizations.of(context)!.allLabel,
               "${obtido("All")}/${totalPokemon("All")}",
               "${percentBuster("All")}%"
             ],
@@ -362,7 +359,7 @@ class _ApexMetricsState extends State<ApexMetrics> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Text(
-                  "Melhor \nBuster",
+                  AppLocalizations.of(context)!.bestPackLabel,
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                 ),
                 Container(
@@ -396,13 +393,14 @@ class _ApexMetricsState extends State<ApexMetrics> {
           SizedBox(
             height: 40,
           ),
-          centralLabel("Chance (%) - Novas cartas",
+          centralLabel(AppLocalizations.of(context)!.newCards,
               corFundo: Colors.green.shade100, complete: completeTask()),
           DataTable(
               columnSpacing: 25,
               headingTextStyle: TextStyle(fontWeight: FontWeight.bold),
               columns: [
-                DataColumn(label: Text("Buster")),
+                DataColumn(
+                    label: Text(AppLocalizations.of(context)!.busterPack)),
                 DataColumn(label: Text("1-3")),
                 DataColumn(label: Text("4")),
                 DataColumn(label: Text("5")),
@@ -430,15 +428,15 @@ class _ApexMetricsState extends State<ApexMetrics> {
           SizedBox(
             height: 40,
           ),
-          centralLabel("Caminho MEW",
+          centralLabel(AppLocalizations.of(context)!.mew,
               obtido: currentTask("Unit", tipoPack: "MEW"),
               total: currentTask("Total"),
               corBordar: Colors.purple.shade100,
               corFundo: Colors.purple.shade50,
               complete: completeTask(tipo: "MEW")),
           createDataTable(labels: [
-            "Buster",
-            "Totais",
+            AppLocalizations.of(context)!.busterPack,
+            AppLocalizations.of(context)!.totalsLabel,
             "%"
           ], packs: [
             [
@@ -457,7 +455,7 @@ class _ApexMetricsState extends State<ApexMetrics> {
               "${percentBuster("Pikachu", tipo: "MEW")}%"
             ],
             [
-              "All",
+              AppLocalizations.of(context)!.allLabel,
               "${obtido("All", tipo: "MEW")}/${totalPokemon("All", tipo: "MEW")}",
               "${percentBuster("All", tipo: "MEW")}%"
             ],
@@ -473,7 +471,7 @@ class _ApexMetricsState extends State<ApexMetrics> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Text(
-                  "Melhor \nBuster",
+                  AppLocalizations.of(context)!.bestPackLabel,
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                 ),
                 Container(
