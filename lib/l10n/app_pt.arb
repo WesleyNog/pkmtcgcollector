@@ -1,0 +1,23 @@
+{
+    "language": "português",
+    "colectionLabel": "Coleção",
+    "pkmList": "Lista de Pokémon",
+    "placeholders": "Buscar Pokémon",
+    "hintPlaceholder": "Pokémon Name",
+    "codeLabel": "Cód",
+    "nameLabel": "Nome",
+    "rarityLabel": "Raridade",
+    "rate": "Taxas",
+    "amountPokemon": "Pokémons",
+    "busterPack": "Buster",
+    "clear": "Limpar",
+    "help": "Ajuda / Guia",
+    "introHelp": "Guia e Informação",
+    "subIntroHelp": "Todos precisam saber como funciona o app",
+    "update": "Atualizações",
+    "updateDate": "01/01/2025",
+    "updateNote": "Versão 1.0.0\nImplementação inicial de todas as funcionalidades como marcação das carta que possui e métricas do quão próxima está para concluir a coleção e/ou os desafios",
+    "info": "Informação",
+    "infoDate": "01/01/2025",
+    "infoNote": ""
+}

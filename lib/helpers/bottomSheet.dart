@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 Future<void> displayBottomSheet({
   required BuildContext context,
@@ -38,7 +39,7 @@ Future<void> displayBottomSheet({
                           borderRadius: BorderRadius.circular(10),
                         ),
                       ),
-                      const Text("Raridade"),
+                      Text(AppLocalizations.of(context)!.rarityLabel),
                       Divider(
                         color: Colors.indigoAccent,
                       ),
@@ -145,7 +146,7 @@ Future<void> displayBottomSheet({
                       const SizedBox(
                         height: 30,
                       ),
-                      const Text("Busters"),
+                      Text(AppLocalizations.of(context)!.busterPack),
                       Divider(
                         color: Colors.indigoAccent,
                       ),
@@ -257,7 +258,7 @@ Future<void> displayBottomSheet({
                           onPressed: () {
                             print("Pressionou");
                           },
-                          child: Text("Limpar"))
+                          child: Text(AppLocalizations.of(context)!.clear))
                     ],
                   ),
                 );

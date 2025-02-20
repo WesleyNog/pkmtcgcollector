@@ -9,6 +9,7 @@ import 'package:pkmtcgcollector/helpers/getColors.dart';
 import 'package:pkmtcgcollector/helpers/pokemonInfos.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -230,9 +231,9 @@ class _HomePageContentState extends State<HomePageContent> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text(
-          "Coleção",
-          style: TextStyle(fontWeight: FontWeight.bold),
+        title: Text(
+          AppLocalizations.of(context)!.colectionLabel,
+          style: const TextStyle(fontWeight: FontWeight.bold),
         ),
       ),
       body: Padding(
@@ -242,8 +243,8 @@ class _HomePageContentState extends State<HomePageContent> {
             Container(
               alignment: Alignment.centerLeft,
               padding: const EdgeInsets.only(top: 20),
-              child: const Text(
-                "Lista de Pokemons",
+              child: Text(
+                AppLocalizations.of(context)!.pkmList,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
@@ -261,10 +262,12 @@ class _HomePageContentState extends State<HomePageContent> {
                       SizedBox(
                         height: 40,
                         child: TextField(
-                          decoration: const InputDecoration(
+                          decoration: InputDecoration(
                             border: OutlineInputBorder(),
-                            labelText: "Buscar Pokemon",
-                            hintText: "Nome do pokemon",
+                            labelText:
+                                AppLocalizations.of(context)!.placeholders,
+                            hintText:
+                                AppLocalizations.of(context)!.hintPlaceholder,
                           ),
                           onChanged: (value) => _filterList(value),
                           onSubmitted: (value) =>
@@ -317,12 +320,12 @@ class _HomePageContentState extends State<HomePageContent> {
             const SizedBox(
               height: 20,
             ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 10.0),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Padding(
+                  const Padding(
                     padding: EdgeInsets.only(left: 10.0),
                     child: Text(
                       "#",
@@ -331,11 +334,11 @@ class _HomePageContentState extends State<HomePageContent> {
                     ),
                   ),
                   Text(
-                    "code",
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                    AppLocalizations.of(context)!.codeLabel,
+                    style: const TextStyle(fontWeight: FontWeight.bold),
                   ),
                   Text(
-                    "nome",
+                    AppLocalizations.of(context)!.nameLabel,
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                   // Text(
@@ -343,7 +346,7 @@ class _HomePageContentState extends State<HomePageContent> {
                   //   style: TextStyle(fontWeight: FontWeight.bold),
                   // ),
                   Text(
-                    "raridade",
+                    AppLocalizations.of(context)!.rarityLabel,
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ],
@@ -412,8 +415,8 @@ class _HomePageContentState extends State<HomePageContent> {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
-                                    const Text(
-                                      "Taxas:",
+                                    Text(
+                                      AppLocalizations.of(context)!.rate,
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontSize: 11),
@@ -454,7 +457,7 @@ class _HomePageContentState extends State<HomePageContent> {
             Container(
               alignment: Alignment.topRight,
               child: Text(
-                "Pokemons: ${_pokemonListFiltered.where((pokemon) => pokemon["obtido"] == true).length.toString().padLeft(2, "0")}/${_pokemonListFiltered.length.toString().padLeft(2, "0")}",
+                "${AppLocalizations.of(context)!.amountPokemon} ${_pokemonListFiltered.where((pokemon) => pokemon["obtido"] == true).length.toString().padLeft(2, "0")}/${_pokemonListFiltered.length.toString().padLeft(2, "0")}",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class MenuPage extends StatelessWidget {
   const MenuPage({super.key});
@@ -23,7 +24,7 @@ class _ManuPageContentState extends State<ManuPageContent> {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          "Ajuda / Guia",
+          AppLocalizations.of(context)!.help,
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
       ),
@@ -43,7 +44,7 @@ class _ManuPageContentState extends State<ManuPageContent> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "Collect TCG Pocket\n FAQ, Guia e Informação",
+                    "${AppLocalizations.of(context)!.colectionLabel} TCG Pocket\n FAQ, ${AppLocalizations.of(context)!.introHelp}",
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 30,
@@ -54,7 +55,7 @@ class _ManuPageContentState extends State<ManuPageContent> {
                     height: 10,
                   ),
                   Text(
-                    "Todos precisão saber como funciona o app",
+                    AppLocalizations.of(context)!.subIntroHelp,
                     style: TextStyle(color: Colors.white, fontSize: 15),
                   )
                 ],
@@ -66,7 +67,7 @@ class _ManuPageContentState extends State<ManuPageContent> {
             Padding(
               padding: const EdgeInsets.only(left: 10.0),
               child: Text(
-                "Atualizações:",
+                AppLocalizations.of(context)!.update,
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 25,
@@ -79,7 +80,7 @@ class _ManuPageContentState extends State<ManuPageContent> {
             Padding(
               padding: EdgeInsets.only(left: 10.0),
               child: Text(
-                "01/01/2024:",
+                AppLocalizations.of(context)!.updateDate,
                 style: TextStyle(
                     color: Colors.grey,
                     fontWeight: FontWeight.bold,
@@ -93,7 +94,7 @@ class _ManuPageContentState extends State<ManuPageContent> {
               padding: EdgeInsets.symmetric(horizontal: 10.0),
               child: Text(
                 textAlign: TextAlign.justify,
-                """Versão 1.0.0\nImplementação inicial de todas as funcionalidades como marcação das carta que possui e métricas do quão próxima está para concluir a coleção e/ou os desafios""",
+                AppLocalizations.of(context)!.updateNote,
                 style: TextStyle(
                     color: Colors.grey,
                     fontWeight: FontWeight.bold,
@@ -106,7 +107,7 @@ class _ManuPageContentState extends State<ManuPageContent> {
             Padding(
               padding: EdgeInsets.only(left: 10),
               child: Text(
-                "Informação:",
+                AppLocalizations.of(context)!.info,
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 25,
