@@ -7,7 +7,7 @@ class MenuPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: ManuPageContent());
+    return const Center(child: ManuPageContent());
   }
 }
 
@@ -23,11 +23,35 @@ class _ManuPageContentState extends State<ManuPageContent> {
   Widget build(BuildContext context) {
     final locale = AppLocalizations.of(context)!;
     return Scaffold(
+      drawer: Drawer(
+        child: Column(
+          children: [
+            const UserAccountsDrawerHeader(
+              accountName: Text("Collector TCG Pocket"),
+              accountEmail: Text("example_mail@example.com"),
+            ),
+            ListTile(
+              leading: const Icon(Icons.live_help_rounded),
+              title: const Text("Help"),
+              onTap: () {
+                print("Clicou no Help");
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.feedback_rounded),
+              title: const Text("Feedback"),
+              onTap: () {
+                print("Clicou no feedback");
+              },
+            )
+          ],
+        ),
+      ),
       appBar: AppBar(
         centerTitle: true,
         title: Text(
           locale.help,
-          style: TextStyle(fontWeight: FontWeight.bold),
+          style: const TextStyle(fontWeight: FontWeight.bold),
         ),
       ),
       body: SingleChildScrollView(
@@ -37,7 +61,7 @@ class _ManuPageContentState extends State<ManuPageContent> {
             Container(
               height: 200,
               width: double.infinity,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                   gradient: LinearGradient(
                       colors: [Colors.deepOrange, Colors.amberAccent],
                       begin: Alignment.topLeft,
@@ -47,57 +71,44 @@ class _ManuPageContentState extends State<ManuPageContent> {
                 children: [
                   Text(
                     "${locale.colectionLabel} TCG Pocket\n FAQ, ${locale.introHelp}",
-                    style: TextStyle(
+                    style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 30,
                         color: Colors.white),
                     textAlign: TextAlign.center,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Text(
                     locale.subIntroHelp,
-                    style: TextStyle(color: Colors.white, fontSize: 15),
+                    style: const TextStyle(color: Colors.white, fontSize: 15),
                   )
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Padding(
               padding: const EdgeInsets.only(left: 10.0),
               child: Text(
                 locale.update,
-                style: TextStyle(
+                style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 25,
                     color: Colors.deepOrange),
               ),
             ),
-            SizedBox(
-              height: 10,
-            ),
-            Padding(
-              padding: EdgeInsets.only(left: 10.0),
-              child: Text(
-                locale.updateDate,
-                style: TextStyle(
-                    color: Colors.grey,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15),
-              ),
-            ),
             buildUpdateList(context),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Padding(
-              padding: EdgeInsets.only(left: 10),
+              padding: const EdgeInsets.only(left: 10),
               child: Text(
                 locale.info,
-                style: TextStyle(
+                style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 25,
                     color: Colors.deepOrange),

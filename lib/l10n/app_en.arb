@@ -20,10 +20,8 @@
     "introHelp": "Guide and Information",
     "subIntroHelp": "Everyone needs to know how the app works",
     "update": "Updates",
-    "updateDate": "2025-01-01",
     "info": "Information",
-    "infoDate": "2025-01-01",
-    "updateNote_0": "Version 1.0.0\nInitial implementation of all features such as marking the cards you have and metrics on how close you are to completing the collection and/or challenges",
+    "updateNote_0": "Version 1.0.0 in 2025-01-01:\n\nInitial implementation of all features such as marking the cards you have and metrics on how close you are to completing the collection and/or challenges",
     "infoNote_0": "Aqui é apenas um teste para saber se ele vai entender que tem vários textos separados.",
     "infoNote_1": "O segundo teste se inicia aqui, vou fazer a implementação dinâmica para isso.",
     "infoNote_2": "Veredito do teste vai ser aqui mesmo, testar se está funcionando de fato o que desejo que seja implementado e se não vai quebrar a aplicação."

@@ -20,10 +20,8 @@
     "introHelp": "Guia e Informação",
     "subIntroHelp": "Todos precisam saber como funciona o app",
     "update": "Atualizações",
-    "updateDate": "01/01/2025",
     "info": "Informação",
-    "infoDate": "01/01/2025",
-    "updateNote_0": "Versão 1.0.0\nImplementação inicial de todas as funcionalidades como marcação das carta que possui e métricas do quão próxima está para concluir a coleção e/ou os desafios",
+    "updateNote_0": "Versão 1.0.0 em 01/01/2025:\n\nImplementação inicial de todas as funcionalidades como marcação das carta que possui e métricas do quão próxima está para concluir a coleção e/ou os desafios",
     "infoNote_0": " - Aqui é apenas um teste para saber se ele vai entender que tem vários textos separados.",
     "infoNote_1": " - O segundo teste se inicia aqui, vou fazer a implementação dinâmica para isso.",
     "infoNote_2": " - Veredito do teste vai ser aqui mesmo, testar se está funcionando de fato o que desejo que seja implementado e se não vai quebrar a aplicação."
