@@ -17,7 +17,7 @@ class SpaceMetrics extends StatefulWidget {
 }
 
 class _SpaceMetricsState extends State<SpaceMetrics> {
-  int touchedIndex = 0;
+  int touchedIndex = -1;
   List<Map<String, dynamic>> pokemonList = [];
 
   int obtido(String pack, {String tipo = "Normal"}) {
@@ -187,18 +187,25 @@ class _SpaceMetricsState extends State<SpaceMetrics> {
 
   @override
   Widget build(BuildContext context) {
+    int totalObtido = obtido("Total");
+    int totalPokemonCount = totalPokemon("Total");
+
     Map<String, int> packCounts = {
       "Dialga": obtido("Dialga"),
       "Palkia": obtido("Palkia"),
       "All": obtido("All"),
-      "Total": totalPokemon("Total") - obtido("Total"),
     };
+
+    if (totalObtido > (totalPokemonCount * 0.5)) {
+      packCounts["Total"] = totalPokemonCount - totalObtido;
+    }
 
     Map<String, Color> packColors = {
       "Dialga": Colors.blue,
       "Palkia": Colors.pink.shade100,
       "All": Colors.green,
       "Total": Colors.grey.shade200,
+      if (packCounts.containsKey("Total")) "Total": Colors.grey.shade200,
     };
 
     List<PieChartSectionData> sections = [];

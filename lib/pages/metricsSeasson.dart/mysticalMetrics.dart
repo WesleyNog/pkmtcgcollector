@@ -16,7 +16,7 @@ class MysticalMetrics extends StatefulWidget {
 }
 
 class _MysticalMetricsState extends State<MysticalMetrics> {
-  int touchedIndex = 0;
+  int touchedIndex = -1;
   List<Map<String, dynamic>> pokemonList = [];
 
   int obtido(String pack, {String tipo = "Normal"}) {

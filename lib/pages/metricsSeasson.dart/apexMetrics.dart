@@ -17,7 +17,7 @@ class ApexMetrics extends StatefulWidget {
 }
 
 class _ApexMetricsState extends State<ApexMetrics> {
-  int touchedIndex = 0;
+  int touchedIndex = -1;
   List<Map<String, dynamic>> pokemonList = [];
 
   int obtido(String pack, {String tipo = "Normal"}) {
@@ -240,13 +240,19 @@ class _ApexMetricsState extends State<ApexMetrics> {
 
   @override
   Widget build(BuildContext context) {
+    int totalObtido = obtido("Total");
+    int totalPokemonCount = totalPokemon("Total");
+
     Map<String, int> packCounts = {
       "Charizard": obtido("Charizard"),
       "Mewtwo": obtido("Mewtwo"),
       "Pikachu": obtido("Pikachu"),
       "All": obtido("All"),
-      "Total": totalPokemon("Total") - obtido("Total"),
     };
+
+    if (totalObtido > (totalPokemonCount * 0.5)) {
+      packCounts["Total"] = totalPokemonCount - totalObtido;
+    }
 
     Map<String, Color> packColors = {
       "Charizard": Colors.deepOrange,
@@ -254,6 +260,7 @@ class _ApexMetricsState extends State<ApexMetrics> {
       "Pikachu": Colors.amberAccent,
       "All": Colors.green,
       "Total": Colors.grey.shade200,
+      if (packCounts.containsKey("Total")) "Total": Colors.grey.shade200,
     };
 
     List<PieChartSectionData> sections = [];

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:pkmtcgcollector/helpers/infosAndUpdates.dart';
 
 class MenuPage extends StatelessWidget {
   const MenuPage({super.key});
@@ -20,11 +21,12 @@ class ManuPageContent extends StatefulWidget {
 class _ManuPageContentState extends State<ManuPageContent> {
   @override
   Widget build(BuildContext context) {
+    final locale = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          AppLocalizations.of(context)!.help,
+          locale.help,
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
       ),
@@ -44,7 +46,7 @@ class _ManuPageContentState extends State<ManuPageContent> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "${AppLocalizations.of(context)!.colectionLabel} TCG Pocket\n FAQ, ${AppLocalizations.of(context)!.introHelp}",
+                    "${locale.colectionLabel} TCG Pocket\n FAQ, ${locale.introHelp}",
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 30,
@@ -55,7 +57,7 @@ class _ManuPageContentState extends State<ManuPageContent> {
                     height: 10,
                   ),
                   Text(
-                    AppLocalizations.of(context)!.subIntroHelp,
+                    locale.subIntroHelp,
                     style: TextStyle(color: Colors.white, fontSize: 15),
                   )
                 ],
@@ -67,7 +69,7 @@ class _ManuPageContentState extends State<ManuPageContent> {
             Padding(
               padding: const EdgeInsets.only(left: 10.0),
               child: Text(
-                AppLocalizations.of(context)!.update,
+                locale.update,
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 25,
@@ -80,40 +82,28 @@ class _ManuPageContentState extends State<ManuPageContent> {
             Padding(
               padding: EdgeInsets.only(left: 10.0),
               child: Text(
-                AppLocalizations.of(context)!.updateDate,
+                locale.updateDate,
                 style: TextStyle(
                     color: Colors.grey,
                     fontWeight: FontWeight.bold,
                     fontSize: 15),
               ),
             ),
-            SizedBox(
-              height: 10,
-            ),
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 10.0),
-              child: Text(
-                textAlign: TextAlign.justify,
-                AppLocalizations.of(context)!.updateNote,
-                style: TextStyle(
-                    color: Colors.grey,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15),
-              ),
-            ),
+            buildUpdateList(context),
             SizedBox(
               height: 30,
             ),
             Padding(
               padding: EdgeInsets.only(left: 10),
               child: Text(
-                AppLocalizations.of(context)!.info,
+                locale.info,
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 25,
                     color: Colors.deepOrange),
               ),
             ),
+            buildNoteList(context),
           ],
         ),
       ),
