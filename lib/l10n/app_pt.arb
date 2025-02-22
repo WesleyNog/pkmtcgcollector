@@ -22,7 +22,9 @@
     "update": "Atualizações",
     "info": "Informação",
     "updateNote_0": "Versão 1.0.0 em 01/01/2025:\n\nImplementação inicial de todas as funcionalidades como marcação das carta que possui e métricas do quão próxima está para concluir a coleção e/ou os desafios",
-    "infoNote_0": " - Aqui é apenas um teste para saber se ele vai entender que tem vários textos separados.",
-    "infoNote_1": " - O segundo teste se inicia aqui, vou fazer a implementação dinâmica para isso.",
-    "infoNote_2": " - Veredito do teste vai ser aqui mesmo, testar se está funcionando de fato o que desejo que seja implementado e se não vai quebrar a aplicação."
+    "infoNote_0": "Bem-vindo à nossa aplicação de gerenciamento de coleção de cartas Pokémon! Aqui você poderá organizar e acompanhar suas cartas de forma prática e eficiente. Abaixo, explicamos como utilizar cada funcionalidade disponível:",
+    "infoNote_1": "1. Marcando suas Cartas\nAo acessar a lista de cartas, você poderá visualizar todas as cartas disponíveis no jogo oficial. Para marcar uma carta como obtida, basta tocar sobre a caixa de verificação ao lado do pokémon correspondente. Você pode desmarcar a qualquer momento caso precise ajustar sua coleção.",
+    "infoNote_2": "2. Utilizando Filtros\nA lista de cartas pode ser filtrada para facilitar sua busca. Você pode aplicar filtros por:\n- Raridade: Selecione cartas comuns, raras ou lendárias.\n- Pacotes de Coleção: Escolha um conjunto específico de cartas.\n- Cartas Promocionais: Visualize apenas as cartas promocionais especiais.\nEsses filtros permitem uma navegação mais organizada e rápida dentro do aplicativo.",
+    "infoNote_3": "3. Acompanhando o Progresso da Coleção\nA aplicação disponibiliza uma tela de métricas onde você pode visualizar seu progresso na coleção através de gráficos interativos. Nessa tela, você encontrará:\n- Porcentagem de Busters Obtidos: Um gráfico exibindo o percentual de cartas que você já coletou em relação ao total disponível.\n- Desafios: Algumas missões personalizadas para incentivar sua coleção, como a obtenção da carta MEW na primeira coleção dentre outras mais.",
+    "infoNote_4": "Dicas Extras\n- Mantenha sua coleção sempre atualizada para acompanhar com precisão seu progresso.\n- Utilize os filtros para encontrar rapidamente as cartas que precisa.\n- Verifique frequentemente os desafios para motivar sua busca por novas cartas."
 }

@@ -22,7 +22,9 @@
     "update": "Updates",
     "info": "Information",
     "updateNote_0": "Version 1.0.0 in 2025-01-01:\n\nInitial implementation of all features such as marking the cards you have and metrics on how close you are to completing the collection and/or challenges",
-    "infoNote_0": "Aqui é apenas um teste para saber se ele vai entender que tem vários textos separados.",
-    "infoNote_1": "O segundo teste se inicia aqui, vou fazer a implementação dinâmica para isso.",
-    "infoNote_2": "Veredito do teste vai ser aqui mesmo, testar se está funcionando de fato o que desejo que seja implementado e se não vai quebrar a aplicação."
+    "infoNote_0": "Welcome to our Pokémon card collection management application! Here you can organize and track your letters in a practical and efficient way. Below, we explain how to use each available feature:",
+    "infoNote_1": "1. Marking your Cards\nWhen accessing the card list, you will be able to view all the cards available in the official game. To mark a card as obtained, simply tap the check box next to the corresponding Pokémon. You can deselect at any time if you need to adjust your collection.",
+    "infoNote_2": "2. Using Filters\nThe list of cards can be filtered to facilitate your search. You can apply filters by:\n- Rarity: Select common, rare or legendary cards.\n- Collection Packs: Choose a specific set of cards.\n- Promo Cards: View only special promotional letters.\nThese filters allow for more organized and faster navigation within the application.",
+    "infoNote_3": "3. Tracking Collection Progress\nThe application provides a metrics screen where you can view your collection progress through interactive graphs. On this screen you will find:\n- Percentage of Busters Obtained: A graph displaying the percentage of cards you have already collected in relation to the total available.\n- Challenges: Some personalized missions to encourage your collection, such as obtaining the MEW card in the first collection, among others.",
+    "infoNote_4": "Extra Tips\n- Keep your collection up to date to accurately track your progress.\n- Use the filters to quickly find the cards you need.\n- Check back frequently for challenges to motivate your search for new cards."
 }

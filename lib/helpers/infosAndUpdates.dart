@@ -7,6 +7,8 @@ Widget buildNoteList(BuildContext context) {
     localization?.infoNote_0,
     localization?.infoNote_1,
     localization?.infoNote_2,
+    localization?.infoNote_3,
+    localization?.infoNote_4,
     // Adicione mais notas aqui
   ];
 
@@ -15,7 +17,7 @@ Widget buildNoteList(BuildContext context) {
       return Column(
         children: [
           SizedBox(
-            height: 10,
+            height: 20,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10),

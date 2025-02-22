@@ -23,30 +23,30 @@ class _ManuPageContentState extends State<ManuPageContent> {
   Widget build(BuildContext context) {
     final locale = AppLocalizations.of(context)!;
     return Scaffold(
-      drawer: Drawer(
-        child: Column(
-          children: [
-            const UserAccountsDrawerHeader(
-              accountName: Text("Collector TCG Pocket"),
-              accountEmail: Text("example_mail@example.com"),
-            ),
-            ListTile(
-              leading: const Icon(Icons.live_help_rounded),
-              title: const Text("Help"),
-              onTap: () {
-                print("Clicou no Help");
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.feedback_rounded),
-              title: const Text("Feedback"),
-              onTap: () {
-                print("Clicou no feedback");
-              },
-            )
-          ],
-        ),
-      ),
+      // drawer: Drawer(
+      //   child: Column(
+      //     children: [
+      //       const UserAccountsDrawerHeader(
+      //         accountName: Text("Collector TCG Pocket"),
+      //         accountEmail: Text("example_mail@example.com"),
+      //       ),
+      //       ListTile(
+      //         leading: const Icon(Icons.live_help_rounded),
+      //         title: const Text("Help"),
+      //         onTap: () {
+      //           print("Clicou no Help");
+      //         },
+      //       ),
+      //       ListTile(
+      //         leading: const Icon(Icons.feedback_rounded),
+      //         title: const Text("Feedback"),
+      //         onTap: () {
+      //           print("Clicou no feedback");
+      //         },
+      //       )
+      //     ],
+      //   ),
+      // ),
       appBar: AppBar(
         centerTitle: true,
         title: Text(
