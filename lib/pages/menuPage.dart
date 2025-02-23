@@ -115,6 +115,70 @@ class _ManuPageContentState extends State<ManuPageContent> {
               ),
             ),
             buildNoteList(context),
+            const SizedBox(
+              height: 30,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 10.0),
+              child: Text(
+                textAlign: TextAlign.justify,
+                locale.guid,
+                style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 25,
+                    color: Colors.deepOrange),
+              ),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10.0),
+              child: Text(
+                textAlign: TextAlign.justify,
+                locale.guidInfo_0,
+                style: const TextStyle(
+                    color: Colors.grey,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15),
+              ),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Image.asset("assets/images/ExempleColors.png"),
+            const SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10.0),
+              child: Text(
+                textAlign: TextAlign.justify,
+                locale.guidInfo_1,
+                style: const TextStyle(
+                    color: Colors.grey,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15),
+              ),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Image.asset("assets/images/ExempleGrafic.png"),
+            const SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10.0),
+              child: Text(
+                textAlign: TextAlign.justify,
+                locale.guidInfo_2,
+                style: const TextStyle(
+                    color: Colors.grey,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15),
+              ),
+            ),
           ],
         ),
       ),

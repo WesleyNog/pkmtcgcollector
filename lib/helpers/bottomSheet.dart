@@ -248,17 +248,17 @@ Future<void> displayBottomSheet({
                           Image.asset("assets/images/promoA.png"),
                         ],
                       ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      Divider(
-                        color: Colors.indigoAccent,
-                      ),
-                      TextButton(
-                          onPressed: () {
-                            print("Pressionou");
-                          },
-                          child: Text(AppLocalizations.of(context)!.clear))
+                      // SizedBox(
+                      //   height: 20,
+                      // ),
+                      // Divider(
+                      //   color: Colors.indigoAccent,
+                      // ),
+                      // TextButton(
+                      //     onPressed: () {
+                      //       print("Pressionou");
+                      //     },
+                      //     child: Text(AppLocalizations.of(context)!.clear))
                     ],
                   ),
                 );
