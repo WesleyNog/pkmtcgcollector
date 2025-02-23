@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="pkmtcgcollector"
+        android:label="Pocket Collect"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:exported="true"

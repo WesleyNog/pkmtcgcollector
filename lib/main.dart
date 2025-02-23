@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:pkmtcgcollector/adState.dart';
-import 'package:pkmtcgcollector/pages/graficPage.dart';
-import 'package:pkmtcgcollector/pages/homePage.dart';
-import 'package:pkmtcgcollector/pages/menuPage.dart';
+import 'package:pocket_collect/adState.dart';
+import 'package:pocket_collect/pages/graficPage.dart';
+import 'package:pocket_collect/pages/homePage.dart';
+import 'package:pocket_collect/pages/menuPage.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:provider/provider.dart';

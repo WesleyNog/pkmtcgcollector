@@ -2,9 +2,9 @@ import 'dart:convert';
 
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:pkmtcgcollector/helpers/centralLabel.dart';
-import 'package:pkmtcgcollector/helpers/dataTable.dart';
-import 'package:pkmtcgcollector/helpers/pokemonInfos.dart';
+import 'package:pocket_collect/helpers/centralLabel.dart';
+import 'package:pocket_collect/helpers/dataTable.dart';
+import 'package:pocket_collect/helpers/pokemonInfos.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 

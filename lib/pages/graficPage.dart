@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:pkmtcgcollector/pages/metricsSeasson.dart/SpaceMetrics.dart';
-import 'package:pkmtcgcollector/pages/metricsSeasson.dart/apexMetrics.dart';
-import 'package:pkmtcgcollector/pages/metricsSeasson.dart/mysticalMetrics.dart';
+import 'package:pocket_collect/pages/metricsSeasson.dart/SpaceMetrics.dart';
+import 'package:pocket_collect/pages/metricsSeasson.dart/apexMetrics.dart';
+import 'package:pocket_collect/pages/metricsSeasson.dart/mysticalMetrics.dart';
 
 class GraficPage extends StatefulWidget {
   GraficPage({super.key});
