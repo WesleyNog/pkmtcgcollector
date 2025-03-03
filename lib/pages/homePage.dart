@@ -75,14 +75,15 @@ class _HomePageContentState extends State<HomePageContent> {
     "👑",
     "promoA"
   ];
-  final List<bool?> _packs = [false, false, false, false, false, false];
+  final List<bool?> _packs = [false, false, false, false, false, false, false];
   final List<String> nivelPakcs = [
     "Charizard",
     "Mewtwo",
     "Pikachu",
     "MEW",
     "Dialga",
-    "Palkia"
+    "Palkia",
+    "Arceus"
   ];
   bool mewCards = false;
 

@@ -8,8 +8,13 @@ Color getBusterColor(String buster) {
     "Pikachu": Colors.amberAccent,
     "Dialga": Colors.blueAccent,
     "Palkia": Colors.pink,
+    "Arceus": Colors.amber,
     "All": Colors.grey
   };
 
-  return busterColors[buster]?.withOpacity(0.4) ?? Colors.cyan.withOpacity(0.4);
+  var color = busterColors[buster] == "Arceus"
+      ? busterColors[buster]?.withOpacity(0.8)
+      : busterColors[buster]?.withOpacity(0.4);
+
+  return color ?? Colors.cyan.withOpacity(0.4);
 }

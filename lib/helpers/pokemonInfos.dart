@@ -2,7 +2,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1001",
+    "code": "A1-001",
     "nome": "Bulbasaur",
     "buster": "Mewtwo",
     "raridade": "🔹",
@@ -15,7 +15,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1002",
+    "code": "A1-002",
     "nome": "Ivysaur",
     "buster": "Mewtwo",
     "raridade": "🔹🔹",
@@ -28,7 +28,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1003",
+    "code": "A1-003",
     "nome": "Venusaur",
     "buster": "Mewtwo",
     "raridade": "🔹🔹🔹",
@@ -41,7 +41,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1004",
+    "code": "A1-004",
     "nome": "Venusaur ex",
     "buster": "Mewtwo",
     "raridade": "🔹🔹🔹🔹",
@@ -54,7 +54,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1005",
+    "code": "A1-005",
     "nome": "Caterpie",
     "buster": "Pikachu",
     "raridade": "🔹",
@@ -67,7 +67,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1006",
+    "code": "A1-006",
     "nome": "Metapod",
     "buster": "Pikachu",
     "raridade": "🔹",
@@ -80,7 +80,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1007",
+    "code": "A1-007",
     "nome": "Butterfree",
     "buster": "Pikachu",
     "raridade": "🔹🔹🔹",
@@ -93,7 +93,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1008",
+    "code": "A1-008",
     "nome": "Weedle",
     "buster": "Mewtwo",
     "raridade": "🔹",
@@ -106,7 +106,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1009",
+    "code": "A1-009",
     "nome": "Kakuna",
     "buster": "Mewtwo",
     "raridade": "🔹",
@@ -119,7 +119,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1010",
+    "code": "A1-010",
     "nome": "Beedrill",
     "buster": "Mewtwo",
     "raridade": "🔹🔹🔹",
@@ -132,7 +132,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1011",
+    "code": "A1-011",
     "nome": "Oddish",
     "buster": "Charizard",
     "raridade": "🔹",
@@ -145,7 +145,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1012",
+    "code": "A1-012",
     "nome": "Gloom",
     "buster": "Charizard",
     "raridade": "🔹🔹",
@@ -158,7 +158,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1013",
+    "code": "A1-013",
     "nome": "Vileplume",
     "buster": "Charizard",
     "raridade": "🔹🔹🔹",
@@ -171,7 +171,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1014",
+    "code": "A1-014",
     "nome": "Paras",
     "buster": "Pikachu",
     "raridade": "🔹",
@@ -184,7 +184,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1015",
+    "code": "A1-015",
     "nome": "Parasect",
     "buster": "Pikachu",
     "raridade": "🔹🔹",
@@ -197,7 +197,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1016",
+    "code": "A1-016",
     "nome": "Venonat",
     "buster": "Mewtwo",
     "raridade": "🔹",
@@ -210,7 +210,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1017",
+    "code": "A1-017",
     "nome": "Venomoth",
     "buster": "Mewtwo",
     "raridade": "🔹🔹",
@@ -223,7 +223,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1018",
+    "code": "A1-018",
     "nome": "Bellsprout",
     "buster": "Charizard",
     "raridade": "🔹",
@@ -236,7 +236,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1019",
+    "code": "A1-019",
     "nome": "Weepinbell",
     "buster": "Charizard",
     "raridade": "🔹🔹",
@@ -249,7 +249,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1020",
+    "code": "A1-020",
     "nome": "Victreebel",
     "buster": "Charizard",
     "raridade": "🔹🔹🔹",
@@ -262,7 +262,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1021",
+    "code": "A1-021",
     "nome": "Exeggcute",
     "buster": "Charizard",
     "raridade": "🔹",
@@ -275,7 +275,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1022",
+    "code": "A1-022",
     "nome": "Exeggutor",
     "buster": "Charizard",
     "raridade": "🔹🔹🔹",
@@ -288,7 +288,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1023",
+    "code": "A1-023",
     "nome": "Exeggutor ex",
     "buster": "Charizard",
     "raridade": "🔹🔹🔹🔹",
@@ -301,7 +301,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1024",
+    "code": "A1-024",
     "nome": "Tangela",
     "buster": "Charizard",
     "raridade": "🔹",
@@ -314,7 +314,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1025",
+    "code": "A1-025",
     "nome": "Scyther",
     "buster": "Mewtwo",
     "raridade": "🔹",
@@ -327,7 +327,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1026",
+    "code": "A1-026",
     "nome": "Pinsir",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -340,7 +340,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1027",
+    "code": "A1-027",
     "nome": "Cottonee",
     "buster": "All",
     "raridade": "🔹",
@@ -353,7 +353,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1028",
+    "code": "A1-028",
     "nome": "Whimsicott",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -366,7 +366,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1029",
+    "code": "A1-029",
     "nome": "Petilil",
     "buster": "All",
     "raridade": "🔹",
@@ -379,7 +379,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1030",
+    "code": "A1-030",
     "nome": "Lilligant",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -392,7 +392,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1031",
+    "code": "A1-031",
     "nome": "Skiddo",
     "buster": "Charizard",
     "raridade": "🔹",
@@ -405,7 +405,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1032",
+    "code": "A1-032",
     "nome": "Gogoat",
     "buster": "Charizard",
     "raridade": "🔹",
@@ -418,7 +418,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1033",
+    "code": "A1-033",
     "nome": "Charmander",
     "buster": "Charizard",
     "raridade": "🔹",
@@ -431,7 +431,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1034",
+    "code": "A1-034",
     "nome": "Charmeleon",
     "buster": "Charizard",
     "raridade": "🔹🔹",
@@ -444,7 +444,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1035",
+    "code": "A1-035",
     "nome": "Charizard",
     "buster": "Charizard",
     "raridade": "🔹🔹🔹",
@@ -457,7 +457,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1036",
+    "code": "A1-036",
     "nome": "Charizard ex",
     "buster": "Charizard",
     "raridade": "🔹🔹🔹🔹",
@@ -470,7 +470,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1037",
+    "code": "A1-037",
     "nome": "Vulpix",
     "buster": "Charizard",
     "raridade": "🔹",
@@ -483,7 +483,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1038",
+    "code": "A1-038",
     "nome": "Ninetales",
     "buster": "Charizard",
     "raridade": "🔹🔹",
@@ -496,7 +496,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1039",
+    "code": "A1-039",
     "nome": "Growlithe",
     "buster": "Pikachu",
     "raridade": "🔹",
@@ -509,7 +509,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1040",
+    "code": "A1-040",
     "nome": "Arcanine",
     "buster": "Pikachu",
     "raridade": "🔹🔹🔹",
@@ -522,7 +522,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1041",
+    "code": "A1-041",
     "nome": "Arcanine ex",
     "buster": "Pikachu",
     "raridade": "🔹🔹🔹🔹",
@@ -535,7 +535,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1042",
+    "code": "A1-042",
     "nome": "Ponyta",
     "buster": "All",
     "raridade": "🔹",
@@ -548,7 +548,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1043",
+    "code": "A1-043",
     "nome": "Rapidash",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -561,7 +561,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1044",
+    "code": "A1-044",
     "nome": "Magmar",
     "buster": "Charizard",
     "raridade": "🔹",
@@ -574,7 +574,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1045",
+    "code": "A1-045",
     "nome": "Flareon",
     "buster": "Charizard",
     "raridade": "🔹🔹🔹",
@@ -587,7 +587,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1046",
+    "code": "A1-046",
     "nome": "Moltres",
     "buster": "Charizard",
     "raridade": "🔹🔹🔹",
@@ -600,7 +600,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1047",
+    "code": "A1-047",
     "nome": "Moltres ex",
     "buster": "Charizard",
     "raridade": "🔹🔹🔹🔹",
@@ -613,7 +613,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1048",
+    "code": "A1-048",
     "nome": "Heatmor",
     "buster": "All",
     "raridade": "🔹",
@@ -626,7 +626,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1049",
+    "code": "A1-049",
     "nome": "Salandit",
     "buster": "Mewtwo",
     "raridade": "🔹",
@@ -639,7 +639,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1050",
+    "code": "A1-050",
     "nome": "Salazzle",
     "buster": "Mewtwo",
     "raridade": "🔹",
@@ -652,7 +652,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1051",
+    "code": "A1-051",
     "nome": "Sizzlipede",
     "buster": "All",
     "raridade": "🔹",
@@ -665,7 +665,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1052",
+    "code": "A1-052",
     "nome": "Centiskorch",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -678,7 +678,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1053",
+    "code": "A1-053",
     "nome": "Squirtle",
     "buster": "Pikachu",
     "raridade": "🔹",
@@ -691,7 +691,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1054",
+    "code": "A1-054",
     "nome": "Wartortle",
     "buster": "Pikachu",
     "raridade": "🔹🔹",
@@ -704,7 +704,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1055",
+    "code": "A1-055",
     "nome": "Blastoise",
     "buster": "Pikachu",
     "raridade": "🔹🔹🔹",
@@ -717,7 +717,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1056",
+    "code": "A1-056",
     "nome": "Blastoise ex",
     "buster": "Pikachu",
     "raridade": "🔹🔹🔹🔹",
@@ -730,7 +730,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1057",
+    "code": "A1-057",
     "nome": "Psyduck",
     "buster": "All",
     "raridade": "🔹",
@@ -743,7 +743,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1058",
+    "code": "A1-058",
     "nome": "Golduck",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -756,7 +756,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1059",
+    "code": "A1-059",
     "nome": "Poliwag",
     "buster": "Charizard",
     "raridade": "🔹",
@@ -769,7 +769,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1060",
+    "code": "A1-060",
     "nome": "Poliwhirl",
     "buster": "Charizard",
     "raridade": "🔹🔹",
@@ -782,7 +782,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1061",
+    "code": "A1-061",
     "nome": "Poliwrath",
     "buster": "Charizard",
     "raridade": "🔹🔹🔹",
@@ -795,7 +795,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1062",
+    "code": "A1-062",
     "nome": "Tentacool",
     "buster": "Mewtwo",
     "raridade": "🔹",
@@ -808,7 +808,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1063",
+    "code": "A1-063",
     "nome": "Tentacruel",
     "buster": "Mewtwo",
     "raridade": "🔹🔹",
@@ -821,7 +821,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1064",
+    "code": "A1-064",
     "nome": "Seel",
     "buster": "Pikachu",
     "raridade": "🔹",
@@ -834,7 +834,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1065",
+    "code": "A1-065",
     "nome": "Dewgong",
     "buster": "Pikachu",
     "raridade": "🔹🔹",
@@ -847,7 +847,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1066",
+    "code": "A1-066",
     "nome": "Shellder",
     "buster": "Mewtwo",
     "raridade": "🔹",
@@ -860,7 +860,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1067",
+    "code": "A1-067",
     "nome": "Cloyster",
     "buster": "Mewtwo",
     "raridade": "🔹🔹",
@@ -873,7 +873,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1068",
+    "code": "A1-068",
     "nome": "Krabby",
     "buster": "Mewtwo",
     "raridade": "🔹",
@@ -886,7 +886,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1069",
+    "code": "A1-069",
     "nome": "Kingler",
     "buster": "Mewtwo",
     "raridade": "🔹🔹",
@@ -899,7 +899,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1070",
+    "code": "A1-070",
     "nome": "Horsea",
     "buster": "Pikachu",
     "raridade": "🔹",
@@ -912,7 +912,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1071",
+    "code": "A1-071",
     "nome": "Seadra",
     "buster": "Pikachu",
     "raridade": "🔹🔹",
@@ -925,7 +925,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1072",
+    "code": "A1-072",
     "nome": "Goldeen",
     "buster": "Pikachu",
     "raridade": "🔹",
@@ -938,7 +938,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1073",
+    "code": "A1-073",
     "nome": "Seaking",
     "buster": "Pikachu",
     "raridade": "🔹",
@@ -951,7 +951,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1074",
+    "code": "A1-074",
     "nome": "Staryu",
     "buster": "Charizard",
     "raridade": "🔹",
@@ -964,7 +964,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1075",
+    "code": "A1-075",
     "nome": "Starmie",
     "buster": "Charizard",
     "raridade": "🔹🔹",
@@ -977,7 +977,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1076",
+    "code": "A1-076",
     "nome": "Starmie ex",
     "buster": "Charizard",
     "raridade": "🔹🔹🔹🔹",
@@ -990,7 +990,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1077",
+    "code": "A1-077",
     "nome": "Magikarp",
     "buster": "Pikachu",
     "raridade": "🔹",
@@ -1003,7 +1003,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1078",
+    "code": "A1-078",
     "nome": "Gyarados",
     "buster": "Pikachu",
     "raridade": "🔹🔹🔹",
@@ -1016,7 +1016,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1079",
+    "code": "A1-079",
     "nome": "Lapras",
     "buster": "Charizard",
     "raridade": "🔹🔹🔹",
@@ -1029,7 +1029,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1080",
+    "code": "A1-080",
     "nome": "Vaporeon",
     "buster": "Mewtwo",
     "raridade": "🔹🔹🔹",
@@ -1042,7 +1042,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1081",
+    "code": "A1-081",
     "nome": "Omanyte",
     "buster": "Pikachu",
     "raridade": "🔹🔹",
@@ -1055,7 +1055,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1082",
+    "code": "A1-082",
     "nome": "Omastar",
     "buster": "Pikachu",
     "raridade": "🔹🔹🔹",
@@ -1068,7 +1068,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1083",
+    "code": "A1-083",
     "nome": "Articuno",
     "buster": "Mewtwo",
     "raridade": "🔹🔹🔹",
@@ -1081,7 +1081,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1084",
+    "code": "A1-084",
     "nome": "Articuno ex",
     "buster": "Mewtwo",
     "raridade": "🔹🔹🔹🔹",
@@ -1094,7 +1094,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1085",
+    "code": "A1-085",
     "nome": "Ducklett",
     "buster": "Charizard",
     "raridade": "🔹",
@@ -1107,7 +1107,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1086",
+    "code": "A1-086",
     "nome": "Swanna",
     "buster": "Charizard",
     "raridade": "🔹🔹",
@@ -1120,7 +1120,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1087",
+    "code": "A1-087",
     "nome": "Froakie",
     "buster": "Charizard",
     "raridade": "🔹",
@@ -1133,7 +1133,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1088",
+    "code": "A1-088",
     "nome": "Frogadier",
     "buster": "Charizard",
     "raridade": "🔹🔹",
@@ -1146,7 +1146,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1089",
+    "code": "A1-089",
     "nome": "Greninja",
     "buster": "Charizard",
     "raridade": "🔹🔹🔹",
@@ -1159,7 +1159,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1090",
+    "code": "A1-090",
     "nome": "Pyukumuku",
     "buster": "Charizard",
     "raridade": "🔹",
@@ -1172,7 +1172,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1091",
+    "code": "A1-091",
     "nome": "Bruxish",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -1185,7 +1185,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1092",
+    "code": "A1-092",
     "nome": "Snom",
     "buster": "All",
     "raridade": "🔹",
@@ -1198,7 +1198,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1093",
+    "code": "A1-093",
     "nome": "Frosmoth",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -1211,7 +1211,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1094",
+    "code": "A1-094",
     "nome": "Pikachu",
     "buster": "Pikachu",
     "raridade": "🔹",
@@ -1224,7 +1224,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1095",
+    "code": "A1-095",
     "nome": "Raichu",
     "buster": "Pikachu",
     "raridade": "🔹🔹🔹",
@@ -1237,7 +1237,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1096",
+    "code": "A1-096",
     "nome": "Pikachu ex",
     "buster": "Pikachu",
     "raridade": "🔹🔹🔹🔹",
@@ -1250,7 +1250,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1097",
+    "code": "A1-097",
     "nome": "Magnemite",
     "buster": "Pikachu",
     "raridade": "🔹",
@@ -1263,7 +1263,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1098",
+    "code": "A1-098",
     "nome": "Magneton",
     "buster": "Pikachu",
     "raridade": "🔹🔹🔹",
@@ -1276,7 +1276,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1099",
+    "code": "A1-099",
     "nome": "Voltorb",
     "buster": "Pikachu",
     "raridade": "🔹",
@@ -1289,7 +1289,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1100",
+    "code": "A1-100",
     "nome": "Electrode",
     "buster": "Pikachu",
     "raridade": "🔹🔹",
@@ -1302,7 +1302,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1101",
+    "code": "A1-101",
     "nome": "Electabuzz",
     "buster": "Pikachu",
     "raridade": "🔹",
@@ -1315,7 +1315,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1102",
+    "code": "A1-102",
     "nome": "Jolteon",
     "buster": "Pikachu",
     "raridade": "🔹🔹🔹",
@@ -1328,7 +1328,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1103",
+    "code": "A1-103",
     "nome": "Zapdos",
     "buster": "Pikachu",
     "raridade": "🔹🔹🔹",
@@ -1341,7 +1341,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1104",
+    "code": "A1-104",
     "nome": "Zapdos ex",
     "buster": "Pikachu",
     "raridade": "🔹🔹🔹🔹",
@@ -1354,7 +1354,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1105",
+    "code": "A1-105",
     "nome": "Blitzle",
     "buster": "All",
     "raridade": "🔹",
@@ -1367,7 +1367,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1106",
+    "code": "A1-106",
     "nome": "Zebstrika",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -1380,7 +1380,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1107",
+    "code": "A1-107",
     "nome": "Tynamo",
     "buster": "Mewtwo",
     "raridade": "🔹",
@@ -1393,7 +1393,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1108",
+    "code": "A1-108",
     "nome": "Eelektrik",
     "buster": "Mewtwo",
     "raridade": "🔹🔹",
@@ -1406,7 +1406,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1109",
+    "code": "A1-109",
     "nome": "Eelektross",
     "buster": "Mewtwo",
     "raridade": "🔹🔹🔹",
@@ -1419,7 +1419,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1110",
+    "code": "A1-110",
     "nome": "Helioptile",
     "buster": "All",
     "raridade": "🔹",
@@ -1432,7 +1432,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1111",
+    "code": "A1-111",
     "nome": "Heliolisk",
     "buster": "All",
     "raridade": "🔹",
@@ -1445,7 +1445,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1112",
+    "code": "A1-112",
     "nome": "Pincurchin",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -1458,7 +1458,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1113",
+    "code": "A1-113",
     "nome": "Clefairy",
     "buster": "Pikachu",
     "raridade": "🔹",
@@ -1471,7 +1471,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1114",
+    "code": "A1-114",
     "nome": "Clefable",
     "buster": "Pikachu",
     "raridade": "🔹🔹",
@@ -1484,7 +1484,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1115",
+    "code": "A1-115",
     "nome": "Abra",
     "buster": "Charizard",
     "raridade": "🔹",
@@ -1497,7 +1497,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1116",
+    "code": "A1-116",
     "nome": "Kadabra",
     "buster": "Charizard",
     "raridade": "🔹🔹",
@@ -1510,7 +1510,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1117",
+    "code": "A1-117",
     "nome": "Alakazam",
     "buster": "Charizard",
     "raridade": "🔹🔹🔹",
@@ -1523,7 +1523,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1118",
+    "code": "A1-118",
     "nome": "Slowpoke",
     "buster": "All",
     "raridade": "🔹",
@@ -1536,7 +1536,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1119",
+    "code": "A1-119",
     "nome": "Slowbro",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -1549,7 +1549,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1120",
+    "code": "A1-120",
     "nome": "Gastly",
     "buster": "Mewtwo",
     "raridade": "🔹",
@@ -1562,7 +1562,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1121",
+    "code": "A1-121",
     "nome": "Haunter",
     "buster": "Mewtwo",
     "raridade": "🔹🔹",
@@ -1575,7 +1575,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1122",
+    "code": "A1-122",
     "nome": "Gengar",
     "buster": "Mewtwo",
     "raridade": "🔹🔹🔹",
@@ -1588,7 +1588,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1123",
+    "code": "A1-123",
     "nome": "Gengar ex",
     "buster": "Mewtwo",
     "raridade": "🔹🔹🔹🔹",
@@ -1601,7 +1601,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1124",
+    "code": "A1-124",
     "nome": "Drowzee",
     "buster": "Pikachu",
     "raridade": "🔹",
@@ -1614,7 +1614,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1125",
+    "code": "A1-125",
     "nome": "Hypno",
     "buster": "Pikachu",
     "raridade": "🔹🔹🔹",
@@ -1627,7 +1627,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1126",
+    "code": "A1-126",
     "nome": "Mr.Mime",
     "buster": "Mewtwo",
     "raridade": "🔹🔹",
@@ -1640,7 +1640,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1127",
+    "code": "A1-127",
     "nome": "Jynx",
     "buster": "Mewtwo",
     "raridade": "🔹",
@@ -1653,7 +1653,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1128",
+    "code": "A1-128",
     "nome": "Mewtwo",
     "buster": "Mewtwo",
     "raridade": "🔹🔹🔹",
@@ -1666,7 +1666,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1129",
+    "code": "A1-129",
     "nome": "Mewtwo ex",
     "buster": "Mewtwo",
     "raridade": "🔹🔹🔹🔹",
@@ -1679,7 +1679,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1130",
+    "code": "A1-130",
     "nome": "Ralts",
     "buster": "Mewtwo",
     "raridade": "🔹",
@@ -1692,7 +1692,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1131",
+    "code": "A1-131",
     "nome": "Kirlia",
     "buster": "Mewtwo",
     "raridade": "🔹🔹",
@@ -1705,7 +1705,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1132",
+    "code": "A1-132",
     "nome": "Gardevoir",
     "buster": "Mewtwo",
     "raridade": "🔹🔹🔹",
@@ -1718,7 +1718,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1133",
+    "code": "A1-133",
     "nome": "Woobat",
     "buster": "All",
     "raridade": "🔹",
@@ -1731,7 +1731,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1134",
+    "code": "A1-134",
     "nome": "Swoobat",
     "buster": "All",
     "raridade": "🔹",
@@ -1744,7 +1744,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1135",
+    "code": "A1-135",
     "nome": "Golett",
     "buster": "All",
     "raridade": "🔹",
@@ -1757,7 +1757,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1136",
+    "code": "A1-136",
     "nome": "Golurk",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -1770,7 +1770,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1137",
+    "code": "A1-137",
     "nome": "Sandshrew",
     "buster": "All",
     "raridade": "🔹",
@@ -1783,7 +1783,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1138",
+    "code": "A1-138",
     "nome": "Sandslash",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -1796,7 +1796,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1139",
+    "code": "A1-139",
     "nome": "Diglett",
     "buster": "Pikachu",
     "raridade": "🔹",
@@ -1809,7 +1809,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1140",
+    "code": "A1-140",
     "nome": "Dugtrio",
     "buster": "Pikachu",
     "raridade": "🔹🔹",
@@ -1822,7 +1822,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1141",
+    "code": "A1-141",
     "nome": "Mankey",
     "buster": "Charizard",
     "raridade": "🔹",
@@ -1835,7 +1835,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1142",
+    "code": "A1-142",
     "nome": "Primeape",
     "buster": "Charizard",
     "raridade": "🔹🔹",
@@ -1848,7 +1848,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1143",
+    "code": "A1-143",
     "nome": "Machop",
     "buster": "Charizard",
     "raridade": "🔹",
@@ -1861,7 +1861,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1144",
+    "code": "A1-144",
     "nome": "Machoke",
     "buster": "Charizard",
     "raridade": "🔹🔹",
@@ -1874,7 +1874,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1145",
+    "code": "A1-145",
     "nome": "Machamp",
     "buster": "Charizard",
     "raridade": "🔹🔹🔹",
@@ -1887,7 +1887,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1146",
+    "code": "A1-146",
     "nome": "Machamp ex",
     "buster": "Charizard",
     "raridade": "🔹🔹🔹🔹",
@@ -1900,7 +1900,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1147",
+    "code": "A1-147",
     "nome": "Geodude",
     "buster": "Pikachu",
     "raridade": "🔹",
@@ -1913,7 +1913,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1148",
+    "code": "A1-148",
     "nome": "Graveler",
     "buster": "Pikachu",
     "raridade": "🔹🔹",
@@ -1926,7 +1926,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1149",
+    "code": "A1-149",
     "nome": "Golem",
     "buster": "Pikachu",
     "raridade": "🔹🔹🔹",
@@ -1939,7 +1939,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1150",
+    "code": "A1-150",
     "nome": "Onix",
     "buster": "Pikachu",
     "raridade": "🔹🔹",
@@ -1952,7 +1952,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1151",
+    "code": "A1-151",
     "nome": "Cubone",
     "buster": "Mewtwo",
     "raridade": "🔹",
@@ -1965,7 +1965,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1152",
+    "code": "A1-152",
     "nome": "Marowak",
     "buster": "Mewtwo",
     "raridade": "🔹🔹",
@@ -1978,7 +1978,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1153",
+    "code": "A1-153",
     "nome": "Marowak ex",
     "buster": "Mewtwo",
     "raridade": "🔹🔹🔹🔹",
@@ -1991,7 +1991,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1154",
+    "code": "A1-154",
     "nome": "Hitmonlee",
     "buster": "Mewtwo",
     "raridade": "🔹",
@@ -2004,7 +2004,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1155",
+    "code": "A1-155",
     "nome": "Hitmonchan",
     "buster": "Charizard",
     "raridade": "🔹",
@@ -2017,7 +2017,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1156",
+    "code": "A1-156",
     "nome": "Rhyhorn",
     "buster": "Mewtwo",
     "raridade": "🔹",
@@ -2030,7 +2030,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1157",
+    "code": "A1-157",
     "nome": "Rhydon",
     "buster": "Mewtwo",
     "raridade": "🔹🔹",
@@ -2043,7 +2043,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1158",
+    "code": "A1-158",
     "nome": "Kabuto",
     "buster": "Charizard",
     "raridade": "🔹🔹",
@@ -2056,7 +2056,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1159",
+    "code": "A1-159",
     "nome": "Kabutops",
     "buster": "Charizard",
     "raridade": "🔹🔹🔹",
@@ -2069,7 +2069,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1160",
+    "code": "A1-160",
     "nome": "Mienfoo",
     "buster": "Pikachu",
     "raridade": "🔹",
@@ -2082,7 +2082,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1161",
+    "code": "A1-161",
     "nome": "Mienshao",
     "buster": "Pikachu",
     "raridade": "🔹🔹",
@@ -2095,7 +2095,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1162",
+    "code": "A1-162",
     "nome": "Clobbopus",
     "buster": "All",
     "raridade": "🔹",
@@ -2108,7 +2108,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1163",
+    "code": "A1-163",
     "nome": "Grapploct",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -2121,7 +2121,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1164",
+    "code": "A1-164",
     "nome": "Ekans",
     "buster": "All",
     "raridade": "🔹",
@@ -2134,7 +2134,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1165",
+    "code": "A1-165",
     "nome": "Arbok",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -2147,7 +2147,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1166",
+    "code": "A1-166",
     "nome": "Nidoran♀",
     "buster": "Pikachu",
     "raridade": "🔹",
@@ -2160,7 +2160,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1167",
+    "code": "A1-167",
     "nome": "Nidorina",
     "buster": "Pikachu",
     "raridade": "🔹🔹",
@@ -2173,7 +2173,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1168",
+    "code": "A1-168",
     "nome": "Nidoqueen",
     "buster": "Pikachu",
     "raridade": "🔹🔹🔹",
@@ -2186,7 +2186,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1169",
+    "code": "A1-169",
     "nome": "Nidoran♂",
     "buster": "Pikachu",
     "raridade": "🔹",
@@ -2199,7 +2199,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1170",
+    "code": "A1-170",
     "nome": "Nidorino",
     "buster": "Pikachu",
     "raridade": "🔹🔹",
@@ -2212,7 +2212,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1171",
+    "code": "A1-171",
     "nome": "Nidoking",
     "buster": "Pikachu",
     "raridade": "🔹🔹🔹",
@@ -2225,7 +2225,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1172",
+    "code": "A1-172",
     "nome": "Zubat",
     "buster": "Mewtwo",
     "raridade": "🔹",
@@ -2238,7 +2238,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1173",
+    "code": "A1-173",
     "nome": "Golbat",
     "buster": "Mewtwo",
     "raridade": "🔹🔹",
@@ -2251,7 +2251,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1174",
+    "code": "A1-174",
     "nome": "Grimer",
     "buster": "Mewtwo",
     "raridade": "🔹",
@@ -2264,7 +2264,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1175",
+    "code": "A1-175",
     "nome": "Muk",
     "buster": "Mewtwo",
     "raridade": "🔹🔹🔹",
@@ -2277,7 +2277,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1176",
+    "code": "A1-176",
     "nome": "Koffing",
     "buster": "Mewtwo",
     "raridade": "🔹",
@@ -2290,7 +2290,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1177",
+    "code": "A1-177",
     "nome": "Weezing",
     "buster": "Mewtwo",
     "raridade": "🔹🔹🔹",
@@ -2303,7 +2303,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1178",
+    "code": "A1-178",
     "nome": "Mawile",
     "buster": "Charizard",
     "raridade": "🔹",
@@ -2316,7 +2316,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1179",
+    "code": "A1-179",
     "nome": "Pawniard",
     "buster": "All",
     "raridade": "🔹",
@@ -2329,7 +2329,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1180",
+    "code": "A1-180",
     "nome": "Bisharp",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -2342,7 +2342,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1181",
+    "code": "A1-181",
     "nome": "Meltan",
     "buster": "Charizard",
     "raridade": "🔹",
@@ -2355,7 +2355,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1182",
+    "code": "A1-182",
     "nome": "Melmetal",
     "buster": "Charizard",
     "raridade": "🔹🔹🔹",
@@ -2368,7 +2368,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1183",
+    "code": "A1-183",
     "nome": "Dratini",
     "buster": "Mewtwo",
     "raridade": "🔹",
@@ -2381,7 +2381,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1184",
+    "code": "A1-184",
     "nome": "Dragonair",
     "buster": "Mewtwo",
     "raridade": "🔹🔹",
@@ -2394,7 +2394,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1185",
+    "code": "A1-185",
     "nome": "Dragonite",
     "buster": "Mewtwo",
     "raridade": "🔹🔹🔹",
@@ -2407,7 +2407,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1186",
+    "code": "A1-186",
     "nome": "Pidgey",
     "buster": "Mewtwo",
     "raridade": "🔹",
@@ -2420,7 +2420,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1187",
+    "code": "A1-187",
     "nome": "Pidgeotto",
     "buster": "Mewtwo",
     "raridade": "🔹",
@@ -2433,7 +2433,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1188",
+    "code": "A1-188",
     "nome": "Pidgeot",
     "buster": "Mewtwo",
     "raridade": "🔹🔹🔹",
@@ -2446,7 +2446,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1189",
+    "code": "A1-189",
     "nome": "Rattata",
     "buster": "All",
     "raridade": "🔹",
@@ -2459,7 +2459,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1190",
+    "code": "A1-190",
     "nome": "Raticate",
     "buster": "All",
     "raridade": "🔹",
@@ -2472,7 +2472,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1191",
+    "code": "A1-191",
     "nome": "Spearow",
     "buster": "Charizard",
     "raridade": "🔹",
@@ -2485,7 +2485,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1192",
+    "code": "A1-192",
     "nome": "Fearow",
     "buster": "Charizard",
     "raridade": "🔹",
@@ -2498,7 +2498,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1193",
+    "code": "A1-193",
     "nome": "Jigglypuff",
     "buster": "Pikachu",
     "raridade": "🔹",
@@ -2511,7 +2511,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1194",
+    "code": "A1-194",
     "nome": "Wigglytuff",
     "buster": "Pikachu",
     "raridade": "🔹",
@@ -2524,7 +2524,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1195",
+    "code": "A1-195",
     "nome": "Wigglytuff ex",
     "buster": "Pikachu",
     "raridade": "🔹🔹🔹🔹",
@@ -2537,7 +2537,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1196",
+    "code": "A1-196",
     "nome": "Meowth",
     "buster": "Charizard",
     "raridade": "🔹",
@@ -2550,7 +2550,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1197",
+    "code": "A1-197",
     "nome": "Persian",
     "buster": "Charizard",
     "raridade": "🔹🔹",
@@ -2563,7 +2563,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1198",
+    "code": "A1-198",
     "nome": "Farfetchd",
     "buster": "All",
     "raridade": "🔹",
@@ -2576,7 +2576,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1199",
+    "code": "A1-199",
     "nome": "Doduo",
     "buster": "All",
     "raridade": "🔹",
@@ -2589,7 +2589,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1200",
+    "code": "A1-200",
     "nome": "Dodrio",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -2602,7 +2602,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1201",
+    "code": "A1-201",
     "nome": "Lickitung",
     "buster": "Mewtwo",
     "raridade": "🔹🔹",
@@ -2615,7 +2615,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1202",
+    "code": "A1-202",
     "nome": "Chansey",
     "buster": "Pikachu",
     "raridade": "🔹🔹",
@@ -2628,7 +2628,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1203",
+    "code": "A1-203",
     "nome": "Kangaskhan",
     "buster": "Charizard",
     "raridade": "🔹🔹🔹",
@@ -2641,7 +2641,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1204",
+    "code": "A1-204",
     "nome": "Tauros",
     "buster": "Charizard",
     "raridade": "🔹🔹",
@@ -2654,7 +2654,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1205",
+    "code": "A1-205",
     "nome": "Ditto",
     "buster": "Mewtwo",
     "raridade": "🔹🔹🔹",
@@ -2667,7 +2667,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1206",
+    "code": "A1-206",
     "nome": "Eevee",
     "buster": "Charizard",
     "raridade": "🔹",
@@ -2680,7 +2680,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1207",
+    "code": "A1-207",
     "nome": "Eevee",
     "buster": "Mewtwo",
     "raridade": "🔹",
@@ -2693,7 +2693,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1208",
+    "code": "A1-208",
     "nome": "Eevee",
     "buster": "Pikachu",
     "raridade": "🔹",
@@ -2706,7 +2706,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1209",
+    "code": "A1-209",
     "nome": "Porygon",
     "buster": "Mewtwo",
     "raridade": "🔹🔹",
@@ -2719,7 +2719,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1210",
+    "code": "A1-210",
     "nome": "Aerodactyl",
     "buster": "Mewtwo",
     "raridade": "🔹🔹🔹",
@@ -2732,7 +2732,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1211",
+    "code": "A1-211",
     "nome": "Snorlax",
     "buster": "Pikachu",
     "raridade": "🔹🔹🔹",
@@ -2745,7 +2745,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1212",
+    "code": "A1-212",
     "nome": "Minccino",
     "buster": "All",
     "raridade": "🔹",
@@ -2758,7 +2758,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1213",
+    "code": "A1-213",
     "nome": "Cinccino",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -2771,7 +2771,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1214",
+    "code": "A1-214",
     "nome": "Wooloo",
     "buster": "All",
     "raridade": "🔹",
@@ -2784,7 +2784,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1215",
+    "code": "A1-215",
     "nome": "Dubwool",
     "buster": "All",
     "raridade": "🔹",
@@ -2797,7 +2797,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1216",
+    "code": "A1-216",
     "nome": "Helix Fossil",
     "buster": "Pikachu",
     "raridade": "🔹",
@@ -2810,7 +2810,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1217",
+    "code": "A1-217",
     "nome": "Dome Fossil",
     "buster": "Charizard",
     "raridade": "🔹",
@@ -2823,7 +2823,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1218",
+    "code": "A1-218",
     "nome": "Old Amber",
     "buster": "Mewtwo",
     "raridade": "🔹",
@@ -2836,7 +2836,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1219",
+    "code": "A1-219",
     "nome": "Erika",
     "buster": "Charizard",
     "raridade": "🔹🔹",
@@ -2849,7 +2849,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1220",
+    "code": "A1-220",
     "nome": "Misty",
     "buster": "Pikachu",
     "raridade": "🔹🔹",
@@ -2862,7 +2862,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1221",
+    "code": "A1-221",
     "nome": "Blaine",
     "buster": "Charizard",
     "raridade": "🔹🔹",
@@ -2875,7 +2875,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1222",
+    "code": "A1-222",
     "nome": "Koga",
     "buster": "Mewtwo",
     "raridade": "🔹🔹",
@@ -2888,7 +2888,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1223",
+    "code": "A1-223",
     "nome": "Giovanni",
     "buster": "Mewtwo",
     "raridade": "🔹🔹",
@@ -2901,7 +2901,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1224",
+    "code": "A1-224",
     "nome": "Brock",
     "buster": "Pikachu",
     "raridade": "🔹🔹",
@@ -2914,7 +2914,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1225",
+    "code": "A1-225",
     "nome": "Sabrina",
     "buster": "Charizard",
     "raridade": "🔹🔹",
@@ -2927,7 +2927,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1226",
+    "code": "A1-226",
     "nome": "Lt.Surge",
     "buster": "Pikachu",
     "raridade": "🔹🔹",
@@ -2940,7 +2940,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1227",
+    "code": "A1-227",
     "nome": "Bulbasaur",
     "buster": "Mewtwo",
     "raridade": "⭐️",
@@ -2953,7 +2953,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1228",
+    "code": "A1-228",
     "nome": "Gloom",
     "buster": "Charizard",
     "raridade": "⭐️",
@@ -2966,7 +2966,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1229",
+    "code": "A1-229",
     "nome": "Pinsir",
     "buster": "Charizard",
     "raridade": "⭐️",
@@ -2979,7 +2979,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1230",
+    "code": "A1-230",
     "nome": "Charmander",
     "buster": "Charizard",
     "raridade": "⭐️",
@@ -2992,7 +2992,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1231",
+    "code": "A1-231",
     "nome": "Rapidash",
     "buster": "Charizard",
     "raridade": "⭐️",
@@ -3005,7 +3005,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1232",
+    "code": "A1-232",
     "nome": "Squirtle",
     "buster": "Pikachu",
     "raridade": "⭐️",
@@ -3018,7 +3018,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1233",
+    "code": "A1-233",
     "nome": "Gyarados",
     "buster": "Pikachu",
     "raridade": "⭐️",
@@ -3031,7 +3031,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1234",
+    "code": "A1-234",
     "nome": "Lapras",
     "buster": "Charizard",
     "raridade": "⭐️",
@@ -3044,7 +3044,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1235",
+    "code": "A1-235",
     "nome": "Electrode",
     "buster": "Pikachu",
     "raridade": "⭐️",
@@ -3057,7 +3057,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1236",
+    "code": "A1-236",
     "nome": "Alakazam",
     "buster": "Charizard",
     "raridade": "⭐️",
@@ -3070,7 +3070,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1237",
+    "code": "A1-237",
     "nome": "Slowpoke",
     "buster": "Charizard",
     "raridade": "⭐️",
@@ -3083,7 +3083,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1238",
+    "code": "A1-238",
     "nome": "Diglett",
     "buster": "Pikachu",
     "raridade": "⭐️",
@@ -3096,7 +3096,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1239",
+    "code": "A1-239",
     "nome": "Cubone",
     "buster": "Mewtwo",
     "raridade": "⭐️",
@@ -3109,7 +3109,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1240",
+    "code": "A1-240",
     "nome": "Nidoqueen",
     "buster": "Pikachu",
     "raridade": "⭐️",
@@ -3122,7 +3122,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1241",
+    "code": "A1-241",
     "nome": "Nidoking",
     "buster": "Pikachu",
     "raridade": "⭐️",
@@ -3135,7 +3135,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1242",
+    "code": "A1-242",
     "nome": "Golbat",
     "buster": "Mewtwo",
     "raridade": "⭐️",
@@ -3148,7 +3148,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1243",
+    "code": "A1-243",
     "nome": "Weezing",
     "buster": "Mewtwo",
     "raridade": "⭐️",
@@ -3161,7 +3161,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1244",
+    "code": "A1-244",
     "nome": "Dragonite",
     "buster": "Mewtwo",
     "raridade": "⭐️",
@@ -3174,7 +3174,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1245",
+    "code": "A1-245",
     "nome": "Pidgeot",
     "buster": "Mewtwo",
     "raridade": "⭐️",
@@ -3187,7 +3187,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1246",
+    "code": "A1-246",
     "nome": "Meowth",
     "buster": "Charizard",
     "raridade": "⭐️",
@@ -3200,7 +3200,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1247",
+    "code": "A1-247",
     "nome": "Ditto",
     "buster": "Mewtwo",
     "raridade": "⭐️",
@@ -3213,7 +3213,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1248",
+    "code": "A1-248",
     "nome": "Eevee",
     "buster": "Pikachu",
     "raridade": "⭐️",
@@ -3226,7 +3226,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1249",
+    "code": "A1-249",
     "nome": "Porygon",
     "buster": "Mewtwo",
     "raridade": "⭐️",
@@ -3239,7 +3239,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1250",
+    "code": "A1-250",
     "nome": "Snorlax",
     "buster": "Pikachu",
     "raridade": "⭐️",
@@ -3252,7 +3252,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1251",
+    "code": "A1-251",
     "nome": "Venusaur ex",
     "buster": "Mewtwo",
     "raridade": "⭐️⭐️",
@@ -3265,7 +3265,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1252",
+    "code": "A1-252",
     "nome": "Exeggutor ex",
     "buster": "Charizard",
     "raridade": "⭐️⭐️",
@@ -3278,7 +3278,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1253",
+    "code": "A1-253",
     "nome": "Charizard ex",
     "buster": "Charizard",
     "raridade": "⭐️⭐️",
@@ -3291,7 +3291,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1254",
+    "code": "A1-254",
     "nome": "Arcanine ex",
     "buster": "Pikachu",
     "raridade": "⭐️⭐️",
@@ -3304,7 +3304,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1255",
+    "code": "A1-255",
     "nome": "Moltres ex",
     "buster": "Charizard",
     "raridade": "⭐️⭐️",
@@ -3317,7 +3317,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1256",
+    "code": "A1-256",
     "nome": "Blastoise ex",
     "buster": "Pikachu",
     "raridade": "⭐️⭐️",
@@ -3330,7 +3330,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1257",
+    "code": "A1-257",
     "nome": "Starmie ex",
     "buster": "Charizard",
     "raridade": "⭐️⭐️",
@@ -3343,7 +3343,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1258",
+    "code": "A1-258",
     "nome": "Articuno ex",
     "buster": "Mewtwo",
     "raridade": "⭐️⭐️",
@@ -3356,7 +3356,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1259",
+    "code": "A1-259",
     "nome": "Pikachu ex",
     "buster": "Pikachu",
     "raridade": "⭐️⭐️",
@@ -3369,7 +3369,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1260",
+    "code": "A1-260",
     "nome": "Zapdos ex",
     "buster": "Pikachu",
     "raridade": "⭐️⭐️",
@@ -3382,7 +3382,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1261",
+    "code": "A1-261",
     "nome": "Gengar ex",
     "buster": "Mewtwo",
     "raridade": "⭐️⭐️",
@@ -3395,7 +3395,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1262",
+    "code": "A1-262",
     "nome": "Mewtwo ex",
     "buster": "Mewtwo",
     "raridade": "⭐️⭐️",
@@ -3408,7 +3408,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1263",
+    "code": "A1-263",
     "nome": "Machamp ex",
     "buster": "Charizard",
     "raridade": "⭐️⭐️",
@@ -3421,7 +3421,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1264",
+    "code": "A1-264",
     "nome": "Marowak ex",
     "buster": "Mewtwo",
     "raridade": "⭐️⭐️",
@@ -3434,7 +3434,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1265",
+    "code": "A1-265",
     "nome": "Wigglytuff ex",
     "buster": "Pikachu",
     "raridade": "⭐️⭐️",
@@ -3447,7 +3447,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1266",
+    "code": "A1-266",
     "nome": "Erika",
     "buster": "Charizard",
     "raridade": "⭐️⭐️",
@@ -3460,7 +3460,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1267",
+    "code": "A1-267",
     "nome": "Misty",
     "buster": "Pikachu",
     "raridade": "⭐️⭐️",
@@ -3473,7 +3473,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1268",
+    "code": "A1-268",
     "nome": "Blaine",
     "buster": "Charizard",
     "raridade": "⭐️⭐️",
@@ -3486,7 +3486,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1269",
+    "code": "A1-269",
     "nome": "Koga",
     "buster": "Mewtwo",
     "raridade": "⭐️⭐️",
@@ -3499,7 +3499,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1270",
+    "code": "A1-270",
     "nome": "Giovanni",
     "buster": "Mewtwo",
     "raridade": "⭐️⭐️",
@@ -3512,7 +3512,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1271",
+    "code": "A1-271",
     "nome": "Brock",
     "buster": "Pikachu",
     "raridade": "⭐️⭐️",
@@ -3525,7 +3525,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1272",
+    "code": "A1-272",
     "nome": "Sabrina",
     "buster": "Charizard",
     "raridade": "⭐️⭐️",
@@ -3538,7 +3538,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1273",
+    "code": "A1-273",
     "nome": "Lt.Surge",
     "buster": "Pikachu",
     "raridade": "⭐️⭐️",
@@ -3551,7 +3551,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1274",
+    "code": "A1-274",
     "nome": "Moltres ex",
     "buster": "Charizard",
     "raridade": "⭐️⭐️",
@@ -3564,7 +3564,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1275",
+    "code": "A1-275",
     "nome": "Articuno ex",
     "buster": "Mewtwo",
     "raridade": "⭐️⭐️",
@@ -3577,7 +3577,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1276",
+    "code": "A1-276",
     "nome": "Zapdos ex",
     "buster": "Pikachu",
     "raridade": "⭐️⭐️",
@@ -3590,7 +3590,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1277",
+    "code": "A1-277",
     "nome": "Gengar ex",
     "buster": "Mewtwo",
     "raridade": "⭐️⭐️",
@@ -3603,7 +3603,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1278",
+    "code": "A1-278",
     "nome": "Machamp ex",
     "buster": "Charizard",
     "raridade": "⭐️⭐️",
@@ -3616,7 +3616,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1279",
+    "code": "A1-279",
     "nome": "Wigglytuff ex",
     "buster": "Pikachu",
     "raridade": "⭐️⭐️",
@@ -3629,7 +3629,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1280",
+    "code": "A1-280",
     "nome": "Charizard ex",
     "buster": "Charizard",
     "raridade": "⭐️⭐️⭐️",
@@ -3642,7 +3642,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1281",
+    "code": "A1-281",
     "nome": "Pikachu ex",
     "buster": "Pikachu",
     "raridade": "⭐️⭐️⭐️",
@@ -3655,7 +3655,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1282",
+    "code": "A1-282",
     "nome": "Mewtwo ex",
     "buster": "Mewtwo",
     "raridade": "⭐️⭐️⭐️",
@@ -3668,7 +3668,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1283",
+    "code": "A1-283",
     "nome": "Mew",
     "buster": "Mission",
     "raridade": "👑",
@@ -3681,7 +3681,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1284",
+    "code": "A1-284",
     "nome": "Charizard ex",
     "buster": "All",
     "raridade": "👑",
@@ -3694,7 +3694,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1285",
+    "code": "A1-285",
     "nome": "Pikachu ex",
     "buster": "All",
     "raridade": "👑",
@@ -3707,7 +3707,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Apex",
-    "code": "A1286",
+    "code": "A1-286",
     "nome": "Mewtwo ex",
     "buster": "All",
     "raridade": "👑",
@@ -4092,7 +4092,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A001",
+    "code": "A1a-001",
     "nome": "Exeggcute",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4105,7 +4105,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A002",
+    "code": "A1a-002",
     "nome": "Exeggutor",
     "buster": "MEW",
     "raridade": "🔹🔹",
@@ -4118,7 +4118,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A003",
+    "code": "A1a-003",
     "nome": "Celebi ex",
     "buster": "MEW",
     "raridade": "🔹🔹🔹🔹",
@@ -4131,7 +4131,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A004",
+    "code": "A1a-004",
     "nome": "Snivy",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4144,7 +4144,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A005",
+    "code": "A1a-005",
     "nome": "Servine",
     "buster": "MEW",
     "raridade": "🔹🔹",
@@ -4157,7 +4157,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A006",
+    "code": "A1a-006",
     "nome": "Serperior",
     "buster": "MEW",
     "raridade": "🔹🔹🔹",
@@ -4170,7 +4170,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A007",
+    "code": "A1a-007",
     "nome": "Morelull",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4183,7 +4183,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A008",
+    "code": "A1a-008",
     "nome": "Shiinotic",
     "buster": "MEW",
     "raridade": "🔹🔹",
@@ -4196,7 +4196,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A009",
+    "code": "A1a-009",
     "nome": "Dhelmise",
     "buster": "MEW",
     "raridade": "🔹🔹",
@@ -4209,7 +4209,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A010",
+    "code": "A1a-010",
     "nome": "Ponyta",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4222,7 +4222,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A011",
+    "code": "A1a-011",
     "nome": "Rapidash",
     "buster": "MEW",
     "raridade": "🔹🔹",
@@ -4235,7 +4235,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A012",
+    "code": "A1a-012",
     "nome": "Magmar",
     "buster": "MEW",
     "raridade": "🔹🔹",
@@ -4248,7 +4248,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A013",
+    "code": "A1a-013",
     "nome": "Larvesta",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4261,7 +4261,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A014",
+    "code": "A1a-014",
     "nome": "Volcarona",
     "buster": "MEW",
     "raridade": "🔹🔹🔹",
@@ -4274,7 +4274,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A015",
+    "code": "A1a-015",
     "nome": "Salandit",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4287,7 +4287,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A016",
+    "code": "A1a-016",
     "nome": "Salazzle",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4300,7 +4300,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A017",
+    "code": "A1a-017",
     "nome": "Magikarp",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4313,7 +4313,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A018",
+    "code": "A1a-018",
     "nome": "Gyarados ex",
     "buster": "MEW",
     "raridade": "🔹🔹🔹🔹",
@@ -4326,7 +4326,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A019",
+    "code": "A1a-019",
     "nome": "Vaporeon",
     "buster": "MEW",
     "raridade": "🔹🔹🔹",
@@ -4339,7 +4339,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A020",
+    "code": "A1a-020",
     "nome": "Finneon",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4352,7 +4352,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A021",
+    "code": "A1a-021",
     "nome": "Lumineon",
     "buster": "MEW",
     "raridade": "🔹🔹",
@@ -4365,7 +4365,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A022",
+    "code": "A1a-022",
     "nome": "Chewtle",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4378,7 +4378,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A023",
+    "code": "A1a-023",
     "nome": "Drednaw",
     "buster": "MEW",
     "raridade": "🔹🔹",
@@ -4391,7 +4391,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A024",
+    "code": "A1a-024",
     "nome": "Cramorant",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4404,7 +4404,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A025",
+    "code": "A1a-025",
     "nome": "Pikachu",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4417,7 +4417,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A026",
+    "code": "A1a-026",
     "nome": "Raichu",
     "buster": "MEW",
     "raridade": "🔹🔹🔹",
@@ -4430,7 +4430,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A027",
+    "code": "A1a-027",
     "nome": "Electabuzz",
     "buster": "MEW",
     "raridade": "🔹🔹",
@@ -4443,7 +4443,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A028",
+    "code": "A1a-028",
     "nome": "Joltik",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4456,7 +4456,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A029",
+    "code": "A1a-029",
     "nome": "Galvantula",
     "buster": "MEW",
     "raridade": "🔹🔹",
@@ -4469,7 +4469,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A030",
+    "code": "A1a-030",
     "nome": "Dedenne",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4482,7 +4482,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A031",
+    "code": "A1a-031",
     "nome": "Mew",
     "buster": "MEW",
     "raridade": "🔹🔹🔹",
@@ -4495,7 +4495,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A032",
+    "code": "A1a-032",
     "nome": "Mew ex",
     "buster": "MEW",
     "raridade": "🔹🔹🔹🔹",
@@ -4508,7 +4508,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A033",
+    "code": "A1a-033",
     "nome": "Sigilyph",
     "buster": "MEW",
     "raridade": "🔹🔹",
@@ -4521,7 +4521,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A034",
+    "code": "A1a-034",
     "nome": "Elgyem",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4534,7 +4534,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A035",
+    "code": "A1a-035",
     "nome": "Beheeyem",
     "buster": "MEW",
     "raridade": "🔹🔹",
@@ -4547,7 +4547,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A036",
+    "code": "A1a-036",
     "nome": "Flabébé",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4560,7 +4560,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A037",
+    "code": "A1a-037",
     "nome": "Floette",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4573,7 +4573,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A038",
+    "code": "A1a-038",
     "nome": "Florges",
     "buster": "MEW",
     "raridade": "🔹🔹",
@@ -4586,7 +4586,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A039",
+    "code": "A1a-039",
     "nome": "Swirlix",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4599,7 +4599,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A040",
+    "code": "A1a-040",
     "nome": "Slurpuff",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4612,7 +4612,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A041",
+    "code": "A1a-041",
     "nome": "Mankey",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4625,7 +4625,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A042",
+    "code": "A1a-042",
     "nome": "Primeape",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4638,7 +4638,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A043",
+    "code": "A1a-043",
     "nome": "Geodude",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4651,7 +4651,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A044",
+    "code": "A1a-044",
     "nome": "Graveller",
     "buster": "MEW",
     "raridade": "🔹🔹",
@@ -4664,7 +4664,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A045",
+    "code": "A1a-045",
     "nome": "Golem",
     "buster": "MEW",
     "raridade": "🔹🔹🔹",
@@ -4677,7 +4677,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A046",
+    "code": "A1a-046",
     "nome": "Aerodactyl ex",
     "buster": "MEW",
     "raridade": "🔹🔹🔹🔹",
@@ -4690,7 +4690,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A047",
+    "code": "A1a-047",
     "nome": "Marshadow",
     "buster": "MEW",
     "raridade": "🔹🔹🔹",
@@ -4703,7 +4703,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A048",
+    "code": "A1a-048",
     "nome": "Stonjourner",
     "buster": "MEW",
     "raridade": "🔹🔹",
@@ -4716,7 +4716,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A049",
+    "code": "A1a-049",
     "nome": "Koffing",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4729,7 +4729,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A050",
+    "code": "A1a-050",
     "nome": "Weezing",
     "buster": "MEW",
     "raridade": "🔹🔹",
@@ -4742,7 +4742,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A051",
+    "code": "A1a-051",
     "nome": "Purrloin",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4755,7 +4755,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A052",
+    "code": "A1a-052",
     "nome": "Liepard",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4768,7 +4768,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A053",
+    "code": "A1a-053",
     "nome": "Venipede",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4781,7 +4781,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A054",
+    "code": "A1a-054",
     "nome": "Whirlipede",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4794,7 +4794,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A055",
+    "code": "A1a-055",
     "nome": "Scolipede",
     "buster": "MEW",
     "raridade": "🔹🔹",
@@ -4807,7 +4807,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A056",
+    "code": "A1a-056",
     "nome": "Druddigon",
     "buster": "MEW",
     "raridade": "🔹🔹",
@@ -4820,7 +4820,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A057",
+    "code": "A1a-057",
     "nome": "Pidgey",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4833,7 +4833,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A058",
+    "code": "A1a-058",
     "nome": "Pidgeotto",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4846,7 +4846,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A059",
+    "code": "A1a-059",
     "nome": "Pidgeot ex",
     "buster": "MEW",
     "raridade": "🔹🔹🔹🔹",
@@ -4859,7 +4859,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A060",
+    "code": "A1a-060",
     "nome": "Tauros",
     "buster": "MEW",
     "raridade": "🔹🔹🔹",
@@ -4872,7 +4872,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A061",
+    "code": "A1a-061",
     "nome": "Eevee",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4885,7 +4885,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A062",
+    "code": "A1a-062",
     "nome": "Chatot",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4898,7 +4898,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A063",
+    "code": "A1a-063",
     "nome": "Old Amber",
     "buster": "MEW",
     "raridade": "🔹",
@@ -4911,7 +4911,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A064",
+    "code": "A1a-064",
     "nome": "Pokemon Flute",
     "buster": "MEW",
     "raridade": "🔹🔹",
@@ -4924,7 +4924,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A065",
+    "code": "A1a-065",
     "nome": "Mythical Slab",
     "buster": "MEW",
     "raridade": "🔹🔹",
@@ -4937,7 +4937,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A066",
+    "code": "A1a-066",
     "nome": "Budding Expeditioner",
     "buster": "MEW",
     "raridade": "🔹🔹",
@@ -4950,7 +4950,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A067",
+    "code": "A1a-067",
     "nome": "Blue",
     "buster": "MEW",
     "raridade": "🔹🔹",
@@ -4963,7 +4963,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A068",
+    "code": "A1a-068",
     "nome": "Leaf",
     "buster": "MEW",
     "raridade": "🔹🔹",
@@ -4976,7 +4976,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A069",
+    "code": "A1a-069",
     "nome": "Exeggutor",
     "buster": "MEW",
     "raridade": "⭐️",
@@ -4989,7 +4989,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A070",
+    "code": "A1a-070",
     "nome": "Serperior",
     "buster": "MEW",
     "raridade": "⭐️",
@@ -5002,7 +5002,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A071",
+    "code": "A1a-071",
     "nome": "Salandit",
     "buster": "MEW",
     "raridade": "⭐️",
@@ -5015,7 +5015,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A072",
+    "code": "A1a-072",
     "nome": "Vaporeon",
     "buster": "MEW",
     "raridade": "⭐️",
@@ -5028,7 +5028,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A073",
+    "code": "A1a-073",
     "nome": "Dedenne",
     "buster": "MEW",
     "raridade": "⭐️",
@@ -5041,7 +5041,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A074",
+    "code": "A1a-074",
     "nome": "Marshadow",
     "buster": "MEW",
     "raridade": "⭐️",
@@ -5054,7 +5054,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A075",
+    "code": "A1a-075",
     "nome": "Celebi ex",
     "buster": "MEW",
     "raridade": "⭐️⭐️",
@@ -5067,7 +5067,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A076",
+    "code": "A1a-076",
     "nome": "Gyarados ex",
     "buster": "MEW",
     "raridade": "⭐️⭐️",
@@ -5080,7 +5080,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A077",
+    "code": "A1a-077",
     "nome": "Mew ex",
     "buster": "MEW",
     "raridade": "⭐️⭐️",
@@ -5093,7 +5093,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A078",
+    "code": "A1a-078",
     "nome": "Aerodactyl ex",
     "buster": "MEW",
     "raridade": "⭐️⭐️",
@@ -5106,7 +5106,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A079",
+    "code": "A1a-079",
     "nome": "Pidgeot ex",
     "buster": "MEW",
     "raridade": "⭐️⭐️",
@@ -5119,7 +5119,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A080",
+    "code": "A1a-080",
     "nome": "Budding Expeditioner",
     "buster": "MEW",
     "raridade": "⭐️⭐️",
@@ -5132,7 +5132,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A081",
+    "code": "A1a-081",
     "nome": "Blue",
     "buster": "MEW",
     "raridade": "⭐️⭐️",
@@ -5145,7 +5145,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A082",
+    "code": "A1a-082",
     "nome": "Leaf",
     "buster": "MEW",
     "raridade": "⭐️⭐️",
@@ -5158,7 +5158,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A083",
+    "code": "A1a-083",
     "nome": "Mew ex",
     "buster": "MEW",
     "raridade": "⭐️⭐️",
@@ -5171,7 +5171,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A084",
+    "code": "A1a-084",
     "nome": "Aerodactyl ex",
     "buster": "MEW",
     "raridade": "⭐️⭐️",
@@ -5184,7 +5184,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A085",
+    "code": "A1a-085",
     "nome": "Celebi ex",
     "buster": "MEW",
     "raridade": "⭐️⭐️⭐️",
@@ -5197,7 +5197,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Mystical",
-    "code": "A1A086",
+    "code": "A1a-086",
     "nome": "Mew ex",
     "buster": "MEW",
     "raridade": "👑",
@@ -5367,7 +5367,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2001",
+    "code": "A2-001",
     "nome": "Oddish",
     "buster": "All",
     "raridade": "🔹",
@@ -5380,7 +5380,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2002",
+    "code": "A2-002",
     "nome": "Gloom",
     "buster": "All",
     "raridade": "🔹",
@@ -5393,7 +5393,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2003",
+    "code": "A2-003",
     "nome": "Bellossom",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -5406,7 +5406,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2004",
+    "code": "A2-004",
     "nome": "Tangela",
     "buster": "Dialga",
     "raridade": "🔹",
@@ -5419,7 +5419,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2005",
+    "code": "A2-005",
     "nome": "Tangrowth",
     "buster": "Dialga",
     "raridade": "🔹🔹",
@@ -5432,7 +5432,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2006",
+    "code": "A2-006",
     "nome": "Yanma",
     "buster": "Dialga",
     "raridade": "🔹",
@@ -5445,7 +5445,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2007",
+    "code": "A2-007",
     "nome": "Yanmega ex",
     "buster": "Dialga",
     "raridade": "🔹🔹🔹🔹",
@@ -5458,7 +5458,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2008",
+    "code": "A2-008",
     "nome": "Roselia",
     "buster": "All",
     "raridade": "🔹",
@@ -5471,7 +5471,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2009",
+    "code": "A2-009",
     "nome": "Roserade",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -5484,7 +5484,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2010",
+    "code": "A2-010",
     "nome": "Turtwig",
     "buster": "Palkia",
     "raridade": "🔹",
@@ -5497,7 +5497,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2011",
+    "code": "A2-011",
     "nome": "Grotle",
     "buster": "Palkia",
     "raridade": "🔹🔹",
@@ -5510,7 +5510,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2012",
+    "code": "A2-012",
     "nome": "Torterra",
     "buster": "Palkia",
     "raridade": "🔹🔹🔹",
@@ -5523,7 +5523,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2013",
+    "code": "A2-013",
     "nome": "Kricketot",
     "buster": "Palkia",
     "raridade": "🔹",
@@ -5536,7 +5536,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2014",
+    "code": "A2-014",
     "nome": "Kricketune",
     "buster": "Palkia",
     "raridade": "🔹",
@@ -5549,7 +5549,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2015",
+    "code": "A2-015",
     "nome": "Burmy",
     "buster": "All",
     "raridade": "🔹",
@@ -5562,7 +5562,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2016",
+    "code": "A2-016",
     "nome": "Wormadam",
     "buster": "All",
     "raridade": "🔹",
@@ -5575,7 +5575,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2017",
+    "code": "A2-017",
     "nome": "Combee",
     "buster": "Dialga",
     "raridade": "🔹",
@@ -5588,7 +5588,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2018",
+    "code": "A2-018",
     "nome": "Vespiquen",
     "buster": "Dialga",
     "raridade": "🔹🔹",
@@ -5601,7 +5601,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2019",
+    "code": "A2-019",
     "nome": "Carnivine",
     "buster": "Palkia",
     "raridade": "🔹🔹",
@@ -5614,7 +5614,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2020",
+    "code": "A2-020",
     "nome": "Leafeon",
     "buster": "Dialga",
     "raridade": "🔹🔹🔹",
@@ -5627,7 +5627,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2021",
+    "code": "A2-021",
     "nome": "Mow Rotom",
     "buster": "All",
     "raridade": "🔹",
@@ -5640,7 +5640,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2022",
+    "code": "A2-022",
     "nome": "Shaymin",
     "buster": "Dialga",
     "raridade": "🔹🔹🔹",
@@ -5653,7 +5653,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2023",
+    "code": "A2-023",
     "nome": "Magmar",
     "buster": "Palkia",
     "raridade": "🔹",
@@ -5666,7 +5666,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2024",
+    "code": "A2-024",
     "nome": "Magmortar",
     "buster": "Palkia",
     "raridade": "🔹🔹🔹",
@@ -5679,7 +5679,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2025",
+    "code": "A2-025",
     "nome": "Slugma",
     "buster": "All",
     "raridade": "🔹",
@@ -5692,7 +5692,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2026",
+    "code": "A2-026",
     "nome": "Magcargo",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -5705,7 +5705,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2027",
+    "code": "A2-027",
     "nome": "Chimchar",
     "buster": "Palkia",
     "raridade": "🔹",
@@ -5718,7 +5718,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2028",
+    "code": "A2-028",
     "nome": "Monferno",
     "buster": "Palkia",
     "raridade": "🔹🔹",
@@ -5731,7 +5731,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2029",
+    "code": "A2-029",
     "nome": "Infernape ex",
     "buster": "Palkia",
     "raridade": "🔹🔹🔹🔹",
@@ -5744,7 +5744,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2030",
+    "code": "A2-030",
     "nome": "Heat Rotom",
     "buster": "All",
     "raridade": "🔹",
@@ -5757,7 +5757,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2031",
+    "code": "A2-031",
     "nome": "Swinub",
     "buster": "Dialga",
     "raridade": "🔹",
@@ -5770,7 +5770,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2032",
+    "code": "A2-032",
     "nome": "Piloswine",
     "buster": "Dialga",
     "raridade": "🔹🔹",
@@ -5783,7 +5783,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2033",
+    "code": "A2-033",
     "nome": "Mamoswine",
     "buster": "Dialga",
     "raridade": "🔹🔹🔹",
@@ -5796,7 +5796,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2034",
+    "code": "A2-034",
     "nome": "Regice",
     "buster": "Palkia",
     "raridade": "🔹🔹",
@@ -5809,7 +5809,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2035",
+    "code": "A2-035",
     "nome": "Piplup",
     "buster": "Palkia",
     "raridade": "🔹",
@@ -5822,7 +5822,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2036",
+    "code": "A2-036",
     "nome": "Prinplup",
     "buster": "Palkia",
     "raridade": "🔹🔹",
@@ -5835,7 +5835,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2037",
+    "code": "A2-037",
     "nome": "Empoleon",
     "buster": "Palkia",
     "raridade": "🔹🔹🔹",
@@ -5848,7 +5848,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2038",
+    "code": "A2-038",
     "nome": "Buizel",
     "buster": "All",
     "raridade": "🔹",
@@ -5861,7 +5861,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2039",
+    "code": "A2-039",
     "nome": "Floatzel",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -5874,7 +5874,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2040",
+    "code": "A2-040",
     "nome": "Shellos",
     "buster": "Palkia",
     "raridade": "🔹",
@@ -5887,7 +5887,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2041",
+    "code": "A2-041",
     "nome": "Gastrodon",
     "buster": "Palkia",
     "raridade": "🔹🔹",
@@ -5900,7 +5900,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2042",
+    "code": "A2-042",
     "nome": "Finneon",
     "buster": "All",
     "raridade": "🔹",
@@ -5913,7 +5913,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2043",
+    "code": "A2-043",
     "nome": "Lumineon",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -5926,7 +5926,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2044",
+    "code": "A2-044",
     "nome": "Snover",
     "buster": "All",
     "raridade": "🔹",
@@ -5939,7 +5939,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2045",
+    "code": "A2-045",
     "nome": "Abomasnow",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -5952,7 +5952,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2046",
+    "code": "A2-046",
     "nome": "Glaceon",
     "buster": "Palkia",
     "raridade": "🔹🔹🔹",
@@ -5965,7 +5965,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2047",
+    "code": "A2-047",
     "nome": "Wash Rotom",
     "buster": "All",
     "raridade": "🔹",
@@ -5978,7 +5978,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2048",
+    "code": "A2-048",
     "nome": "Frost Rotom",
     "buster": "All",
     "raridade": "🔹",
@@ -5991,7 +5991,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2049",
+    "code": "A2-049",
     "nome": "Palkia ex",
     "buster": "Palkia",
     "raridade": "🔹🔹🔹🔹",
@@ -6004,7 +6004,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2050",
+    "code": "A2-050",
     "nome": "Manaphy",
     "buster": "Palkia",
     "raridade": "🔹🔹",
@@ -6017,7 +6017,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2051",
+    "code": "A2-051",
     "nome": "Magnemite",
     "buster": "All",
     "raridade": "🔹",
@@ -6030,7 +6030,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2052",
+    "code": "A2-052",
     "nome": "Magneton",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -6043,7 +6043,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2053",
+    "code": "A2-053",
     "nome": "Magnezone",
     "buster": "All",
     "raridade": "🔹🔹🔹",
@@ -6056,7 +6056,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2054",
+    "code": "A2-054",
     "nome": "Voltorb",
     "buster": "All",
     "raridade": "🔹",
@@ -6069,7 +6069,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2055",
+    "code": "A2-055",
     "nome": "Electrode",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -6082,7 +6082,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2056",
+    "code": "A2-056",
     "nome": "Electabuzz",
     "buster": "Dialga",
     "raridade": "🔹",
@@ -6095,7 +6095,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2057",
+    "code": "A2-057",
     "nome": "Electivire",
     "buster": "Dialga",
     "raridade": "🔹🔹🔹",
@@ -6108,7 +6108,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2058",
+    "code": "A2-058",
     "nome": "Shinx",
     "buster": "Dialga",
     "raridade": "🔹",
@@ -6121,7 +6121,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2059",
+    "code": "A2-059",
     "nome": "Luxio",
     "buster": "Dialga",
     "raridade": "🔹🔹",
@@ -6134,7 +6134,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2060",
+    "code": "A2-060",
     "nome": "Luxray",
     "buster": "Dialga",
     "raridade": "🔹🔹🔹",
@@ -6147,7 +6147,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2061",
+    "code": "A2-061",
     "nome": "Pachirisu ex",
     "buster": "Dialga",
     "raridade": "🔹🔹🔹🔹",
@@ -6160,7 +6160,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2062",
+    "code": "A2-062",
     "nome": "Rotom",
     "buster": "Palkia",
     "raridade": "🔹",
@@ -6173,7 +6173,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2063",
+    "code": "A2-063",
     "nome": "Togepi",
     "buster": "All",
     "raridade": "🔹",
@@ -6186,7 +6186,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2064",
+    "code": "A2-064",
     "nome": "Togetic",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -6199,7 +6199,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2065",
+    "code": "A2-065",
     "nome": "Togekiss",
     "buster": "All",
     "raridade": "🔹🔹🔹",
@@ -6212,7 +6212,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2066",
+    "code": "A2-066",
     "nome": "Misdreavus",
     "buster": "Palkia",
     "raridade": "🔹",
@@ -6225,7 +6225,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2067",
+    "code": "A2-067",
     "nome": "Mismagius ex",
     "buster": "Palkia",
     "raridade": "🔹🔹🔹🔹",
@@ -6238,7 +6238,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2068",
+    "code": "A2-068",
     "nome": "Ralts",
     "buster": "Dialga",
     "raridade": "🔹",
@@ -6251,7 +6251,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2069",
+    "code": "A2-069",
     "nome": "Kirlia",
     "buster": "Dialga",
     "raridade": "🔹",
@@ -6264,7 +6264,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2070",
+    "code": "A2-070",
     "nome": "Duskull",
     "buster": "Dialga",
     "raridade": "🔹",
@@ -6277,7 +6277,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2071",
+    "code": "A2-071",
     "nome": "Dusclops",
     "buster": "Dialga",
     "raridade": "🔹🔹",
@@ -6290,7 +6290,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2072",
+    "code": "A2-072",
     "nome": "Dusknoir",
     "buster": "Dialga",
     "raridade": "🔹🔹🔹",
@@ -6303,7 +6303,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2073",
+    "code": "A2-073",
     "nome": "Drifloon",
     "buster": "Dialga",
     "raridade": "🔹",
@@ -6316,7 +6316,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2074",
+    "code": "A2-074",
     "nome": "Drifblim",
     "buster": "Dialga",
     "raridade": "🔹🔹",
@@ -6329,7 +6329,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2075",
+    "code": "A2-075",
     "nome": "Uxie",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -6342,7 +6342,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2076",
+    "code": "A2-076",
     "nome": "Mesprit",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -6355,7 +6355,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2077",
+    "code": "A2-077",
     "nome": "Azelf",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -6368,7 +6368,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2078",
+    "code": "A2-078",
     "nome": "Giratina",
     "buster": "Palkia",
     "raridade": "🔹🔹🔹",
@@ -6381,7 +6381,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2079",
+    "code": "A2-079",
     "nome": "Cresselia",
     "buster": "Palkia",
     "raridade": "🔹🔹🔹",
@@ -6394,7 +6394,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2080",
+    "code": "A2-080",
     "nome": "Rhyhorn",
     "buster": "Palkia",
     "raridade": "🔹",
@@ -6407,7 +6407,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2081",
+    "code": "A2-081",
     "nome": "Rhydon",
     "buster": "Palkia",
     "raridade": "🔹🔹",
@@ -6420,7 +6420,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2082",
+    "code": "A2-082",
     "nome": "Rhyperior",
     "buster": "Palkia",
     "raridade": "🔹🔹🔹",
@@ -6433,7 +6433,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2083",
+    "code": "A2-083",
     "nome": "Gligar",
     "buster": "Dialga",
     "raridade": "🔹",
@@ -6446,7 +6446,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2084",
+    "code": "A2-084",
     "nome": "Gliscor",
     "buster": "Dialga",
     "raridade": "🔹🔹",
@@ -6459,7 +6459,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2085",
+    "code": "A2-085",
     "nome": "Hitmontop",
     "buster": "Dialga",
     "raridade": "🔹",
@@ -6472,7 +6472,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2086",
+    "code": "A2-086",
     "nome": "Nosepass",
     "buster": "All",
     "raridade": "🔹",
@@ -6485,7 +6485,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2087",
+    "code": "A2-087",
     "nome": "Regirock",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -6498,7 +6498,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2088",
+    "code": "A2-088",
     "nome": "Cranidos",
     "buster": "Dialga",
     "raridade": "🔹🔹",
@@ -6511,7 +6511,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2089",
+    "code": "A2-089",
     "nome": "Rampardos",
     "buster": "Dialga",
     "raridade": "🔹🔹🔹",
@@ -6524,7 +6524,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2090",
+    "code": "A2-090",
     "nome": "Wormadam",
     "buster": "Dialga",
     "raridade": "🔹",
@@ -6537,7 +6537,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2091",
+    "code": "A2-091",
     "nome": "Riolu",
     "buster": "Dialga",
     "raridade": "🔹",
@@ -6550,7 +6550,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2092",
+    "code": "A2-092",
     "nome": "Lucario",
     "buster": "Dialga",
     "raridade": "🔹🔹🔹",
@@ -6563,7 +6563,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2093",
+    "code": "A2-093",
     "nome": "Hippopotas",
     "buster": "Palkia",
     "raridade": "🔹",
@@ -6576,7 +6576,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2094",
+    "code": "A2-094",
     "nome": "Hippowdon",
     "buster": "Palkia",
     "raridade": "🔹🔹",
@@ -6589,7 +6589,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2095",
+    "code": "A2-095",
     "nome": "Gallade ex",
     "buster": "Dialga",
     "raridade": "🔹🔹🔹🔹",
@@ -6602,7 +6602,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2096",
+    "code": "A2-096",
     "nome": "Murkrow",
     "buster": "Dialga",
     "raridade": "🔹",
@@ -6615,7 +6615,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2097",
+    "code": "A2-097",
     "nome": "Honchkrow",
     "buster": "Dialga",
     "raridade": "🔹🔹",
@@ -6628,7 +6628,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2098",
+    "code": "A2-098",
     "nome": "Sneasel",
     "buster": "Palkia",
     "raridade": "🔹",
@@ -6641,7 +6641,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2099",
+    "code": "A2-099",
     "nome": "Weavile ex",
     "buster": "Palkia",
     "raridade": "🔹🔹🔹🔹",
@@ -6654,7 +6654,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2100",
+    "code": "A2-100",
     "nome": "Poochyena",
     "buster": "All",
     "raridade": "🔹",
@@ -6667,7 +6667,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2101",
+    "code": "A2-101",
     "nome": "Mightyena",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -6680,7 +6680,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2102",
+    "code": "A2-102",
     "nome": "Stunky",
     "buster": "Dialga",
     "raridade": "🔹",
@@ -6693,7 +6693,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2103",
+    "code": "A2-103",
     "nome": "Skuntank",
     "buster": "Dialga",
     "raridade": "🔹🔹",
@@ -6706,7 +6706,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2104",
+    "code": "A2-104",
     "nome": "Spiritomb",
     "buster": "Palkia",
     "raridade": "🔹🔹",
@@ -6719,7 +6719,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2105",
+    "code": "A2-105",
     "nome": "Skorupi",
     "buster": "All",
     "raridade": "🔹",
@@ -6732,7 +6732,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2106",
+    "code": "A2-106",
     "nome": "Drapion",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -6745,7 +6745,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2107",
+    "code": "A2-107",
     "nome": "Croagunk",
     "buster": "Dialga",
     "raridade": "🔹",
@@ -6758,7 +6758,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2108",
+    "code": "A2-108",
     "nome": "Toxicroak",
     "buster": "Dialga",
     "raridade": "🔹🔹",
@@ -6771,7 +6771,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2109",
+    "code": "A2-109",
     "nome": "Darkrai",
     "buster": "Dialga",
     "raridade": "🔹🔹🔹",
@@ -6784,7 +6784,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2110",
+    "code": "A2-110",
     "nome": "Darkrai ex",
     "buster": "Dialga",
     "raridade": "🔹🔹🔹🔹",
@@ -6797,7 +6797,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2111",
+    "code": "A2-111",
     "nome": "Skarmory",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -6810,7 +6810,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2112",
+    "code": "A2-112",
     "nome": "Registeel",
     "buster": "Dialga",
     "raridade": "🔹🔹",
@@ -6823,7 +6823,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2113",
+    "code": "A2-113",
     "nome": "Shieldon",
     "buster": "Palkia",
     "raridade": "🔹🔹",
@@ -6836,7 +6836,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2114",
+    "code": "A2-114",
     "nome": "Bastiodon",
     "buster": "Palkia",
     "raridade": "🔹🔹🔹",
@@ -6849,7 +6849,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2115",
+    "code": "A2-115",
     "nome": "Wormadam",
     "buster": "Palkia",
     "raridade": "🔹",
@@ -6862,7 +6862,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2116",
+    "code": "A2-116",
     "nome": "Bronzor",
     "buster": "Dialga",
     "raridade": "🔹",
@@ -6875,7 +6875,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2117",
+    "code": "A2-117",
     "nome": "Bronzong",
     "buster": "Dialga",
     "raridade": "🔹🔹",
@@ -6888,7 +6888,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2118",
+    "code": "A2-118",
     "nome": "Probopass",
     "buster": "All",
     "raridade": "🔹🔹",
@@ -6901,7 +6901,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2119",
+    "code": "A2-119",
     "nome": "Dialga ex",
     "buster": "Dialga",
     "raridade": "🔹🔹🔹🔹",
@@ -6914,7 +6914,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2120",
+    "code": "A2-120",
     "nome": "Heatran",
     "buster": "Dialga",
     "raridade": "🔹🔹🔹",
@@ -6927,7 +6927,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2121",
+    "code": "A2-121",
     "nome": "Gible",
     "buster": "Palkia",
     "raridade": "🔹",
@@ -6940,7 +6940,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2122",
+    "code": "A2-122",
     "nome": "Gabite",
     "buster": "Palkia",
     "raridade": "🔹🔹",
@@ -6953,7 +6953,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2123",
+    "code": "A2-123",
     "nome": "Garchomp",
     "buster": "Palkia",
     "raridade": "🔹🔹🔹",
@@ -6966,7 +6966,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2124",
+    "code": "A2-124",
     "nome": "Lickitung",
     "buster": "Palkia",
     "raridade": "🔹",
@@ -6979,7 +6979,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2125",
+    "code": "A2-125",
     "nome": "Lickilicky ex",
     "buster": "Palkia",
     "raridade": "🔹🔹🔹🔹",
@@ -6992,7 +6992,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2126",
+    "code": "A2-126",
     "nome": "Eevee",
     "buster": "All",
     "raridade": "🔹",
@@ -7005,7 +7005,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2127",
+    "code": "A2-127",
     "nome": "Porygon",
     "buster": "Palkia",
     "raridade": "🔹",
@@ -7018,7 +7018,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2128",
+    "code": "A2-128",
     "nome": "Porygon 2",
     "buster": "Palkia",
     "raridade": "🔹🔹",
@@ -7031,7 +7031,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2129",
+    "code": "A2-129",
     "nome": "Porygon-Z",
     "buster": "Palkia",
     "raridade": "🔹🔹🔹",
@@ -7044,7 +7044,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2130",
+    "code": "A2-130",
     "nome": "Aipom",
     "buster": "All",
     "raridade": "🔹",
@@ -7057,7 +7057,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2131",
+    "code": "A2-131",
     "nome": "Ambipom",
     "buster": "All",
     "raridade": "🔹",
@@ -7070,7 +7070,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2132",
+    "code": "A2-132",
     "nome": "Starly",
     "buster": "Palkia",
     "raridade": "🔹",
@@ -7083,7 +7083,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2133",
+    "code": "A2-133",
     "nome": "Staravia",
     "buster": "Palkia",
     "raridade": "🔹",
@@ -7096,7 +7096,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2134",
+    "code": "A2-134",
     "nome": "Staraptor",
     "buster": "Palkia",
     "raridade": "🔹🔹",
@@ -7109,7 +7109,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2135",
+    "code": "A2-135",
     "nome": "Bidoof",
     "buster": "Dialga",
     "raridade": "🔹",
@@ -7122,7 +7122,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2136",
+    "code": "A2-136",
     "nome": "Bibarel",
     "buster": "Dialga",
     "raridade": "🔹",
@@ -7135,7 +7135,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2137",
+    "code": "A2-137",
     "nome": "Buneary",
     "buster": "Dialga",
     "raridade": "🔹",
@@ -7148,7 +7148,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2138",
+    "code": "A2-138",
     "nome": "Lopunny",
     "buster": "Dialga",
     "raridade": "🔹",
@@ -7161,7 +7161,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2139",
+    "code": "A2-139",
     "nome": "Glameow",
     "buster": "Palkia",
     "raridade": "🔹",
@@ -7174,7 +7174,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2140",
+    "code": "A2-140",
     "nome": "Purugly",
     "buster": "Palkia",
     "raridade": "🔹🔹",
@@ -7187,7 +7187,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2141",
+    "code": "A2-141",
     "nome": "Chatot",
     "buster": "Palkia",
     "raridade": "🔹",
@@ -7200,7 +7200,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2142",
+    "code": "A2-142",
     "nome": "Fan Rotom",
     "buster": "All",
     "raridade": "🔹",
@@ -7213,7 +7213,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2143",
+    "code": "A2-143",
     "nome": "Regigigas",
     "buster": "All",
     "raridade": "🔹🔹🔹",
@@ -7226,7 +7226,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2144",
+    "code": "A2-144",
     "nome": "Skull Fossil",
     "buster": "Dialga",
     "raridade": "🔹",
@@ -7239,7 +7239,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2145",
+    "code": "A2-145",
     "nome": "Armor Fossil",
     "buster": "Palkia",
     "raridade": "🔹",
@@ -7252,7 +7252,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2146",
+    "code": "A2-146",
     "nome": "Pok\u00e9mon Communication",
     "buster": "Dialga",
     "raridade": "🔹🔹",
@@ -7265,7 +7265,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2147",
+    "code": "A2-147",
     "nome": "Giant Cape",
     "buster": "Dialga",
     "raridade": "🔹🔹",
@@ -7278,7 +7278,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2148",
+    "code": "A2-148",
     "nome": "Rock Helmet",
     "buster": "Palkia",
     "raridade": "🔹🔹",
@@ -7291,7 +7291,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2149",
+    "code": "A2-149",
     "nome": "Lum Berry",
     "buster": "Palkia",
     "raridade": "🔹🔹",
@@ -7304,7 +7304,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2150",
+    "code": "A2-150",
     "nome": "Cyrus",
     "buster": "Palkia",
     "raridade": "🔹🔹",
@@ -7317,7 +7317,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2151",
+    "code": "A2-151",
     "nome": "Team Galactic Grunt",
     "buster": "Dialga",
     "raridade": "🔹🔹",
@@ -7330,7 +7330,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2152",
+    "code": "A2-152",
     "nome": "Cynthia",
     "buster": "Palkia",
     "raridade": "🔹🔹",
@@ -7343,7 +7343,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2153",
+    "code": "A2-153",
     "nome": "Volkner",
     "buster": "Dialga",
     "raridade": "🔹🔹",
@@ -7356,7 +7356,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2154",
+    "code": "A2-154",
     "nome": "Dawn",
     "buster": "Dialga",
     "raridade": "🔹🔹",
@@ -7369,7 +7369,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2155",
+    "code": "A2-155",
     "nome": "Mars",
     "buster": "Palkia",
     "raridade": "🔹🔹",
@@ -7382,7 +7382,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2156",
+    "code": "A2-156",
     "nome": "Tangrowth",
     "buster": "Dialga",
     "raridade": "⭐️",
@@ -7395,7 +7395,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2157",
+    "code": "A2-157",
     "nome": "Combee",
     "buster": "Dialga",
     "raridade": "⭐️",
@@ -7408,7 +7408,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2158",
+    "code": "A2-158",
     "nome": "Carnivine",
     "buster": "Palkia",
     "raridade": "⭐️",
@@ -7421,7 +7421,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2159",
+    "code": "A2-159",
     "nome": "Shaymin",
     "buster": "Dialga",
     "raridade": "⭐️",
@@ -7434,7 +7434,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2160",
+    "code": "A2-160",
     "nome": "Mamoswine",
     "buster": "Dialga",
     "raridade": "⭐️",
@@ -7447,7 +7447,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2161",
+    "code": "A2-161",
     "nome": "Gastrodon",
     "buster": "Palkia",
     "raridade": "⭐️",
@@ -7460,7 +7460,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2162",
+    "code": "A2-162",
     "nome": "Manaphy",
     "buster": "Palkia",
     "raridade": "⭐️",
@@ -7473,7 +7473,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2163",
+    "code": "A2-163",
     "nome": "Shinx",
     "buster": "Dialga",
     "raridade": "⭐️",
@@ -7486,7 +7486,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2164",
+    "code": "A2-164",
     "nome": "Rotom",
     "buster": "Palkia",
     "raridade": "⭐️",
@@ -7499,7 +7499,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2165",
+    "code": "A2-165",
     "nome": "Drifloon",
     "buster": "Dialga",
     "raridade": "⭐️",
@@ -7512,7 +7512,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2166",
+    "code": "A2-166",
     "nome": "Mesprit",
     "buster": "Dialga",
     "raridade": "⭐️",
@@ -7525,7 +7525,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2167",
+    "code": "A2-167",
     "nome": "Giratina",
     "buster": "Palkia",
     "raridade": "⭐️",
@@ -7538,7 +7538,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2168",
+    "code": "A2-168",
     "nome": "Cresselia",
     "buster": "Palkia",
     "raridade": "⭐️",
@@ -7551,7 +7551,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2169",
+    "code": "A2-169",
     "nome": "Rhyperior",
     "buster": "Palkia",
     "raridade": "⭐️",
@@ -7564,7 +7564,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2170",
+    "code": "A2-170",
     "nome": "Lucario",
     "buster": "Dialga",
     "raridade": "⭐️",
@@ -7577,7 +7577,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2171",
+    "code": "A2-171",
     "nome": "Hippopotas",
     "buster": "Palkia",
     "raridade": "⭐️",
@@ -7590,7 +7590,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2172",
+    "code": "A2-172",
     "nome": "Spiritomb",
     "buster": "Palkia",
     "raridade": "⭐️",
@@ -7603,7 +7603,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2173",
+    "code": "A2-173",
     "nome": "Croagunk",
     "buster": "Dialga",
     "raridade": "⭐️",
@@ -7616,7 +7616,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2174",
+    "code": "A2-174",
     "nome": "Heatran",
     "buster": "Dialga",
     "raridade": "⭐️",
@@ -7629,7 +7629,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2175",
+    "code": "A2-175",
     "nome": "Garchomp",
     "buster": "Palkia",
     "raridade": "⭐️",
@@ -7642,7 +7642,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2176",
+    "code": "A2-176",
     "nome": "Staraptor",
     "buster": "Palkia",
     "raridade": "⭐️",
@@ -7655,7 +7655,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2177",
+    "code": "A2-177",
     "nome": "Bidoof",
     "buster": "Dialga",
     "raridade": "⭐️",
@@ -7668,7 +7668,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2178",
+    "code": "A2-178",
     "nome": "Glameow",
     "buster": "Palkia",
     "raridade": "⭐️",
@@ -7681,7 +7681,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2179",
+    "code": "A2-179",
     "nome": "Regigigas",
     "buster": "Dialga",
     "raridade": "⭐️",
@@ -7694,7 +7694,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2180",
+    "code": "A2-180",
     "nome": "Yanmega ex",
     "buster": "Dialga",
     "raridade": "⭐️⭐️",
@@ -7707,7 +7707,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2181",
+    "code": "A2-181",
     "nome": "Infernape ex",
     "buster": "Palkia",
     "raridade": "⭐️⭐️",
@@ -7720,7 +7720,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2182",
+    "code": "A2-182",
     "nome": "Palkia ex",
     "buster": "Palkia",
     "raridade": "⭐️⭐️",
@@ -7733,7 +7733,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2183",
+    "code": "A2-183",
     "nome": "Pachirisu ex",
     "buster": "Dialga",
     "raridade": "⭐️⭐️",
@@ -7746,7 +7746,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2184",
+    "code": "A2-184",
     "nome": "Mismagius ex",
     "buster": "Palkia",
     "raridade": "⭐️⭐️",
@@ -7759,7 +7759,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2185",
+    "code": "A2-185",
     "nome": "Gallade ex",
     "buster": "Dialga",
     "raridade": "⭐️⭐️",
@@ -7772,7 +7772,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2186",
+    "code": "A2-186",
     "nome": "Weavile ex",
     "buster": "Palkia",
     "raridade": "⭐️⭐️",
@@ -7785,7 +7785,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2187",
+    "code": "A2-187",
     "nome": "Darkrai ex",
     "buster": "Dialga",
     "raridade": "⭐️⭐️",
@@ -7798,7 +7798,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2188",
+    "code": "A2-188",
     "nome": "Dialga ex",
     "buster": "Dialga",
     "raridade": "⭐️⭐️",
@@ -7811,7 +7811,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2189",
+    "code": "A2-189",
     "nome": "Lickilicky ex",
     "buster": "Palkia",
     "raridade": "⭐️⭐️",
@@ -7824,7 +7824,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2190",
+    "code": "A2-190",
     "nome": "Cyrus",
     "buster": "Palkia",
     "raridade": "⭐️⭐️",
@@ -7837,7 +7837,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2191",
+    "code": "A2-191",
     "nome": "Team Galactic Grunt",
     "buster": "Dialga",
     "raridade": "⭐️⭐️",
@@ -7850,7 +7850,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2192",
+    "code": "A2-192",
     "nome": "Cynthia",
     "buster": "Palkia",
     "raridade": "⭐️⭐️",
@@ -7863,7 +7863,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2193",
+    "code": "A2-193",
     "nome": "Volkner",
     "buster": "Dialga",
     "raridade": "⭐️⭐️",
@@ -7876,7 +7876,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2194",
+    "code": "A2-194",
     "nome": "Dawn",
     "buster": "Dialga",
     "raridade": "⭐️⭐️",
@@ -7889,7 +7889,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2195",
+    "code": "A2-195",
     "nome": "Mars",
     "buster": "Palkia",
     "raridade": "⭐️⭐️",
@@ -7902,7 +7902,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2196",
+    "code": "A2-196",
     "nome": "Yanmega ex",
     "buster": "Dialga",
     "raridade": "⭐️⭐️",
@@ -7915,7 +7915,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2197",
+    "code": "A2-197",
     "nome": "Infernape ex",
     "buster": "Palkia",
     "raridade": "⭐️⭐️",
@@ -7928,7 +7928,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2198",
+    "code": "A2-198",
     "nome": "Pachirisu ex",
     "buster": "Dialga",
     "raridade": "⭐️⭐️",
@@ -7941,7 +7941,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2199",
+    "code": "A2-199",
     "nome": "Mismagius ex",
     "buster": "Palkia",
     "raridade": "⭐️⭐️",
@@ -7954,7 +7954,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2200",
+    "code": "A2-200",
     "nome": "Gallade ex",
     "buster": "Dialga",
     "raridade": "⭐️⭐️",
@@ -7967,7 +7967,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2201",
+    "code": "A2-201",
     "nome": "Weavile ex",
     "buster": "Palkia",
     "raridade": "⭐️⭐️",
@@ -7980,7 +7980,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2202",
+    "code": "A2-202",
     "nome": "Darkrai ex",
     "buster": "Dialga",
     "raridade": "⭐️⭐️",
@@ -7993,7 +7993,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2203",
+    "code": "A2-203",
     "nome": "Lickilicky ex",
     "buster": "Palkia",
     "raridade": "⭐️⭐️",
@@ -8006,7 +8006,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2204",
+    "code": "A2-204",
     "nome": "Palkia ex",
     "buster": "Palkia",
     "raridade": "⭐️⭐️⭐️",
@@ -8019,7 +8019,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2205",
+    "code": "A2-205",
     "nome": "Dialga ex",
     "buster": "Dialga",
     "raridade": "⭐️⭐️⭐️",
@@ -8032,7 +8032,7 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2206",
+    "code": "A2-206",
     "nome": "Palkia ex",
     "buster": "All",
     "raridade": "👑",
@@ -8045,13 +8045,1262 @@ final infoPokemons = [
   {
     "obtido": false,
     "seasson": "Space",
-    "code": "A2207",
+    "code": "A2-207",
     "nome": "Dialga ex",
     "buster": "All",
     "raridade": "👑",
     "chance_1_3": 0.000,
     "chance_4": 0.020,
     "chance_5": 0.080,
+    "MEW": false,
+    "promoA": false
+  },
+  // Aqui inicia o Arceus
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-001",
+    "nome": "Heracross",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-002",
+    "nome": "Burmy",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-003",
+    "nome": "Mothim",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 3.462,
+    "chance_5": 2.308,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-004",
+    "nome": "Combee",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-005",
+    "nome": "Vespiquen",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 3.462,
+    "chance_5": 2.308,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-006",
+    "nome": "Cherubi",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-007",
+    "nome": "Cherrim",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 3.462,
+    "chance_5": 2.308,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-008",
+    "nome": "Cherrim",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 3.462,
+    "chance_5": 2.308,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-009",
+    "nome": "Carnivine",
+    "buster": "Arceus",
+    "raridade": "🔹🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 0.385,
+    "chance_5": 1.538,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-010",
+    "nome": "Leafeon ex",
+    "buster": "Arceus",
+    "raridade": "🔹🔹🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 0.333,
+    "chance_5": 1.333,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-011",
+    "nome": "Houndour",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-012",
+    "nome": "Houndoom",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 3.462,
+    "chance_5": 2.308,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-013",
+    "nome": "Heatran",
+    "buster": "Arceus",
+    "raridade": "🔹🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 0.385,
+    "chance_5": 1.538,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-014",
+    "nome": "Marill",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-015",
+    "nome": "Azumarill",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-016",
+    "nome": "Barboach",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-017",
+    "nome": "Whiscash",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 3.462,
+    "chance_5": 2.308,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-018",
+    "nome": "Snorunt",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-019",
+    "nome": "Froslass",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 3.462,
+    "chance_5": 2.308,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-020",
+    "nome": "Snover",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-021",
+    "nome": "Abomasnow",
+    "buster": "Arceus",
+    "raridade": "🔹🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 0.385,
+    "chance_5": 1.538,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-022",
+    "nome": "Glaceon ex",
+    "buster": "Arceus",
+    "raridade": "🔹🔹🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 0.333,
+    "chance_5": 1.333,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-023",
+    "nome": "Palkia",
+    "buster": "Arceus",
+    "raridade": "🔹🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 0.385,
+    "chance_5": 1.538,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-024",
+    "nome": "Phione",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 3.462,
+    "chance_5": 2.308,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-025",
+    "nome": "Pikachu",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-026",
+    "nome": "Raichu",
+    "buster": "Arceus",
+    "raridade": "🔹🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 0.385,
+    "chance_5": 1.538,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-027",
+    "nome": "Electrike",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-028",
+    "nome": "Manectric",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 3.462,
+    "chance_5": 2.308,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-029",
+    "nome": "Clefairy",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-030",
+    "nome": "Clefable",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 3.462,
+    "chance_5": 2.308,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-031",
+    "nome": "Gastly",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-032",
+    "nome": "Haunter",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-033",
+    "nome": "Gengar",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 3.462,
+    "chance_5": 2.308,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-034",
+    "nome": "Unown",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 3.462,
+    "chance_5": 2.308,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-035",
+    "nome": "Rotom",
+    "buster": "Arceus",
+    "raridade": "🔹🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 0.385,
+    "chance_5": 1.538,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-036",
+    "nome": "Sudowoodo",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 3.462,
+    "chance_5": 2.308,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-037",
+    "nome": "Phanpy",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-038",
+    "nome": "Donphan",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 3.462,
+    "chance_5": 2.308,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-039",
+    "nome": "Larvitar",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-040",
+    "nome": "Pupitar",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 3.462,
+    "chance_5": 2.308,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-041",
+    "nome": "Tyranitar",
+    "buster": "Arceus",
+    "raridade": "🔹🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 0.385,
+    "chance_5": 1.538,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-042",
+    "nome": "Nosepass",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-043",
+    "nome": "Meditite",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-044",
+    "nome": "Medicham",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 3.462,
+    "chance_5": 2.308,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-045",
+    "nome": "Gible",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-046",
+    "nome": "Gabite",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-047",
+    "nome": "Garchomp ex",
+    "buster": "Arceus",
+    "raridade": "🔹🔹🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 0.333,
+    "chance_5": 1.333,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-048",
+    "nome": "Zubat",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-049",
+    "nome": "Golbat",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-050",
+    "nome": "Crobat",
+    "buster": "Arceus",
+    "raridade": "🔹🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 0.385,
+    "chance_5": 1.538,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-051",
+    "nome": "Croagunk",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-052",
+    "nome": "Toxicroak",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 3.462,
+    "chance_5": 2.308,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-053",
+    "nome": "Magnemite",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-054",
+    "nome": "Magneton",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-055",
+    "nome": "Magnezone",
+    "buster": "Arceus",
+    "raridade": "🔹🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 0.385,
+    "chance_5": 1.538,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-056",
+    "nome": "Mawile",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-057",
+    "nome": "Probopass ex",
+    "buster": "Arceus",
+    "raridade": "🔹🔹🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 0.333,
+    "chance_5": 1.333,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-058",
+    "nome": "Bronzor",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-059",
+    "nome": "Bronzong",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 3.462,
+    "chance_5": 2.308,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-060",
+    "nome": "Dialga",
+    "buster": "Arceus",
+    "raridade": "🔹🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 0.385,
+    "chance_5": 1.538,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-061",
+    "nome": "Giratina",
+    "buster": "Arceus",
+    "raridade": "🔹🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 0.385,
+    "chance_5": 1.538,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-062",
+    "nome": "Eevee",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-063",
+    "nome": "Snorlax",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 3.462,
+    "chance_5": 2.308,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-064",
+    "nome": "Hoothoot",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-065",
+    "nome": "Noctowl",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 3.462,
+    "chance_5": 2.308,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-066",
+    "nome": "Starly",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-067",
+    "nome": "Staravia",
+    "buster": "Arceus",
+    "raridade": "🔹",
+    "chance_1_3": 3.226,
+    "chance_4": 0.000,
+    "chance_5": 0.000,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-068",
+    "nome": "Staraptor",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 3.462,
+    "chance_5": 2.308,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-069",
+    "nome": "Shaymin",
+    "buster": "Arceus",
+    "raridade": "🔹🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 0.385,
+    "chance_5": 1.538,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-070",
+    "nome": "Arceus",
+    "buster": "Arceus",
+    "raridade": "🔹🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 0.385,
+    "chance_5": 1.538,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-071",
+    "nome": "Arceus ex",
+    "buster": "Arceus",
+    "raridade": "🔹🔹🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 0.333,
+    "chance_5": 1.333,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-072",
+    "nome": "Irida",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 3.462,
+    "chance_5": 2.308,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-073",
+    "nome": "Celestic Town Elder",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 3.462,
+    "chance_5": 2.308,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-074",
+    "nome": "Barry",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 3.462,
+    "chance_5": 2.308,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-075",
+    "nome": "Adaman",
+    "buster": "Arceus",
+    "raridade": "🔹🔹",
+    "chance_1_3": 0.000,
+    "chance_4": 3.462,
+    "chance_5": 2.308,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-076",
+    "nome": "Houndoom",
+    "buster": "Arceus",
+    "raridade": "⭐️",
+    "chance_1_3": 0.000,
+    "chance_4": 0.429,
+    "chance_5": 1.715,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-077",
+    "nome": "Marill",
+    "buster": "Arceus",
+    "raridade": "⭐️",
+    "chance_1_3": 0.000,
+    "chance_4": 0.429,
+    "chance_5": 1.715,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-078",
+    "nome": "Unown",
+    "buster": "Arceus",
+    "raridade": "⭐️",
+    "chance_1_3": 0.000,
+    "chance_4": 0.429,
+    "chance_5": 1.715,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-079",
+    "nome": "Sudowoodo",
+    "buster": "Arceus",
+    "raridade": "⭐️",
+    "chance_1_3": 0.000,
+    "chance_4": 0.429,
+    "chance_5": 1.715,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-080",
+    "nome": "Magnemite",
+    "buster": "Arceus",
+    "raridade": "⭐️",
+    "chance_1_3": 0.000,
+    "chance_4": 0.429,
+    "chance_5": 1.715,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-081",
+    "nome": "Shaymin",
+    "buster": "Arceus",
+    "raridade": "⭐️",
+    "chance_1_3": 0.000,
+    "chance_4": 0.429,
+    "chance_5": 1.715,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-082",
+    "nome": "Leafeon ex",
+    "buster": "Arceus",
+    "raridade": "⭐️⭐️",
+    "chance_1_3": 0.000,
+    "chance_4": 0.038,
+    "chance_5": 0.154,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-083",
+    "nome": "Glaceon ex",
+    "buster": "Arceus",
+    "raridade": "⭐️⭐️",
+    "chance_1_3": 0.000,
+    "chance_4": 0.038,
+    "chance_5": 0.154,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-084",
+    "nome": "Garchomp ex",
+    "buster": "Arceus",
+    "raridade": "⭐️⭐️",
+    "chance_1_3": 0.000,
+    "chance_4": 0.038,
+    "chance_5": 0.154,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-085",
+    "nome": "Probopass ex",
+    "buster": "Arceus",
+    "raridade": "⭐️⭐️",
+    "chance_1_3": 0.000,
+    "chance_4": 0.038,
+    "chance_5": 0.154,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-086",
+    "nome": "Arceus ex",
+    "buster": "Arceus",
+    "raridade": "⭐️⭐️",
+    "chance_1_3": 0.000,
+    "chance_4": 0.038,
+    "chance_5": 0.154,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-087",
+    "nome": "Irida",
+    "buster": "Arceus",
+    "raridade": "⭐️⭐️",
+    "chance_1_3": 0.000,
+    "chance_4": 0.038,
+    "chance_5": 0.154,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-088",
+    "nome": "Celestic Town Elder",
+    "buster": "Arceus",
+    "raridade": "⭐️⭐️",
+    "chance_1_3": 0.000,
+    "chance_4": 0.038,
+    "chance_5": 0.154,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-089",
+    "nome": "Barry",
+    "buster": "Arceus",
+    "raridade": "⭐️⭐️",
+    "chance_1_3": 0.000,
+    "chance_4": 0.038,
+    "chance_5": 0.154,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-090",
+    "nome": "Adaman",
+    "buster": "Arceus",
+    "raridade": "⭐️⭐️",
+    "chance_1_3": 0.000,
+    "chance_4": 0.038,
+    "chance_5": 0.154,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-091",
+    "nome": "Leafeon ex",
+    "buster": "Arceus",
+    "raridade": "⭐️⭐️",
+    "chance_1_3": 0.000,
+    "chance_4": 0.038,
+    "chance_5": 0.154,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-092",
+    "nome": "Glaceon ex",
+    "buster": "Arceus",
+    "raridade": "⭐️⭐️",
+    "chance_1_3": 0.000,
+    "chance_4": 0.038,
+    "chance_5": 0.154,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-093",
+    "nome": "Garchomp ex",
+    "buster": "Arceus",
+    "raridade": "⭐️⭐️",
+    "chance_1_3": 0.000,
+    "chance_4": 0.038,
+    "chance_5": 0.154,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-094",
+    "nome": "Probopass ex",
+    "buster": "Arceus",
+    "raridade": "⭐️⭐️",
+    "chance_1_3": 0.000,
+    "chance_4": 0.038,
+    "chance_5": 0.154,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-095",
+    "nome": "Arceus ex",
+    "buster": "Arceus",
+    "raridade": "⭐️⭐️⭐️",
+    "chance_1_3": 0.000,
+    "chance_4": 0.222,
+    "chance_5": 0.888,
+    "MEW": false,
+    "promoA": false
+  },
+  {
+    "obtido": false,
+    "seasson": "Triumphant",
+    "code": "A2a-096",
+    "nome": "Arceus ex",
+    "buster": "Arceus",
+    "raridade": "👑",
+    "chance_1_3": 0.000,
+    "chance_4": 0.040,
+    "chance_5": 0.160,
     "MEW": false,
     "promoA": false
   }
