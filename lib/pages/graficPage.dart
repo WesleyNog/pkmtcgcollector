@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:pocket_collect/pages/metricsSeasson.dart/SpaceMetrics.dart';
+import 'package:pocket_collect/pages/metricsSeasson.dart/TriumphantMetrics.dart';
 import 'package:pocket_collect/pages/metricsSeasson.dart/apexMetrics.dart';
 import 'package:pocket_collect/pages/metricsSeasson.dart/mysticalMetrics.dart';
+import 'package:pocket_collect/pages/metricsSeasson.dart/shiningMetrics.dart';
 
 class GraficPage extends StatefulWidget {
   GraficPage({super.key});
@@ -13,9 +15,21 @@ class GraficPage extends StatefulWidget {
 class _GraficPageState extends State<GraficPage> {
   final PageController _pageController = PageController();
   int _currentIndex = 0;
-  final List<String> _logos = ["LogoApex", "LogoMystical", "LogoSpace"];
+  final List<String> _logos = [
+    "mewtwo",
+    "MEW",
+    "LogoSpace",
+    "LogoMystical",
+    "LogoApex"
+  ];
 
-  List<Widget> _pages = [ApexMetrics(), MysticalMetrics(), SpaceMetrics()];
+  List<Widget> _pages = [
+    ShiningMetrics(),
+    TriumphantMetrics(),
+    SpaceMetrics(),
+    MysticalMetrics(),
+    ApexMetrics()
+  ];
 
   void _onPageChanged(int index) {
     setState(() {
