@@ -1,20 +1,31 @@
 import 'package:flutter/material.dart';
 
-Color getBusterColor(String buster) {
-  const Map<String, Color> busterColors = {
-    "Charizard": Colors.deepOrange,
-    "Mewtwo": Colors.deepPurple,
-    "MEW": Colors.green,
-    "Pikachu": Colors.amberAccent,
-    "Dialga": Colors.blueAccent,
-    "Palkia": Colors.pink,
-    "Arceus": Colors.amber,
-    "All": Colors.grey
+Gradient getBusterGradient(String buster) {
+  const Map<String, List<Color>> baseColors = {
+    "Charizard": [Colors.deepOrange, Colors.deepOrange],
+    "Mewtwo": [Colors.deepPurple, Colors.deepPurple],
+    "MEW": [Colors.green, Colors.green],
+    "Pikachu": [Colors.amberAccent, Colors.amberAccent],
+    "Dialga": [Colors.blueAccent, Colors.blueAccent],
+    "Palkia": [Colors.pink, Colors.pink],
+    "Arceus": [Colors.amber, Colors.amberAccent],
+    "LucarioShining": [Colors.deepPurple, Colors.green, Colors.amberAccent],
+    "All": [Colors.grey, Colors.grey],
   };
 
-  var color = busterColors[buster] == "Arceus"
-      ? busterColors[buster]?.withOpacity(0.8)
-      : busterColors[buster]?.withOpacity(0.4);
+  final defaultColors = [
+    Colors.cyan.withOpacity(0.4),
+    Colors.cyan.withOpacity(0.4)
+  ];
+  final base = baseColors[buster] ?? defaultColors;
 
-  return color ?? Colors.cyan.withOpacity(0.4);
+  double opacity = (buster == "Arceus") ? 0.8 : 0.4;
+
+  final fadedColors = base.map((c) => c.withOpacity(opacity)).toList();
+
+  return LinearGradient(
+    colors: fadedColors,
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+  );
 }
