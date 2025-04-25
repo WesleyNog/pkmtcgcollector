@@ -186,14 +186,6 @@ Future<void> displayBottomSheet({
                                 });
                               }),
                           Image.asset("assets/images/pikachu.png"),
-                        ],
-                      ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
                           Checkbox(
                               value: packs[3],
                               onChanged: (bool? newValue) {
@@ -205,6 +197,14 @@ Future<void> displayBottomSheet({
                                 });
                               }),
                           Image.asset("assets/images/MEW.png"),
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
                           Checkbox(
                               value: packs[4],
                               onChanged: (bool? newValue) {
@@ -227,6 +227,28 @@ Future<void> displayBottomSheet({
                                 });
                               }),
                           Image.asset("assets/images/palkia.png"),
+                          Checkbox(
+                              value: packs[6],
+                              onChanged: (bool? newValue) {
+                                setModalState(() {
+                                  packs[6] = newValue ?? false;
+                                });
+                                updateParentState(() {
+                                  filterList("");
+                                });
+                              }),
+                          Image.asset("assets/images/arceus.png"),
+                          Checkbox(
+                              value: packs[7],
+                              onChanged: (bool? newValue) {
+                                setModalState(() {
+                                  packs[7] = newValue ?? false;
+                                });
+                                updateParentState(() {
+                                  filterList("");
+                                });
+                              }),
+                          Image.asset("assets/images/giratina.png"),
                         ],
                       ),
                       const SizedBox(
