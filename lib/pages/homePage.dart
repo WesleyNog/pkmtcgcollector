@@ -62,6 +62,8 @@ class _HomePageContentState extends State<HomePageContent> {
     false,
     false,
     false,
+    false,
+    false,
     false
   ];
   final List<String> nivelRaridades = [
@@ -72,10 +74,21 @@ class _HomePageContentState extends State<HomePageContent> {
     "⭐️",
     "⭐️⭐️",
     "⭐️⭐️⭐️",
+    "S1",
+    "S2",
     "👑",
     "promoA"
   ];
-  final List<bool?> _packs = [false, false, false, false, false, false, false];
+  final List<bool?> _packs = [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ];
   final List<String> nivelPakcs = [
     "Charizard",
     "Mewtwo",
@@ -83,7 +96,8 @@ class _HomePageContentState extends State<HomePageContent> {
     "MEW",
     "Dialga",
     "Palkia",
-    "Arceus"
+    "Arceus",
+    "LucarioShining"
   ];
   bool mewCards = false;
 
@@ -387,7 +401,7 @@ class _HomePageContentState extends State<HomePageContent> {
                           height: 50,
                           margin: const EdgeInsets.symmetric(vertical: 5),
                           decoration: BoxDecoration(
-                              color: getBusterColor(item["buster"]),
+                              gradient: getBusterGradient(item["buster"]),
                               borderRadius: BorderRadius.circular(5)),
                           child: Column(
                             children: [
@@ -404,8 +418,21 @@ class _HomePageContentState extends State<HomePageContent> {
                                     item["raridade"] == "promoA"
                                         ? Image.asset(
                                             "assets/images/promoA_rarity.png")
-                                        : Text(
-                                            item["raridade"]?.toString() ?? "")
+                                        : item["raridade"] == "S1"
+                                            ? Image.asset(
+                                                "assets/images/rarity/rSh.png")
+                                            : item["raridade"] == "S2"
+                                                ? Row(
+                                                    children: [
+                                                      Image.asset(
+                                                          "assets/images/rarity/rSh.png"),
+                                                      Image.asset(
+                                                          "assets/images/rarity/rSh.png")
+                                                    ],
+                                                  )
+                                                : Text(item["raridade"]
+                                                        ?.toString() ??
+                                                    "")
                                   ],
                                 ),
                               ),

@@ -16,8 +16,8 @@ class _GraficPageState extends State<GraficPage> {
   final PageController _pageController = PageController();
   int _currentIndex = 0;
   final List<String> _logos = [
-    "mewtwo",
-    "MEW",
+    "LogoShining",
+    "LogoTriumph",
     "LogoSpace",
     "LogoMystical",
     "LogoApex"
@@ -42,7 +42,7 @@ class _GraficPageState extends State<GraficPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Image.asset("assets/images/${_logos[_currentIndex]}.png"),
+        title: Image.asset("assets/images/Logo/${_logos[_currentIndex]}.png"),
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 10.0),
