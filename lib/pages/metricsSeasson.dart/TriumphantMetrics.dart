@@ -204,13 +204,7 @@ class _TriumphantMetricsState extends State<TriumphantMetrics> {
             height: 30,
           ),
           obtido("Total") <= 0
-              ? Container(
-                  width: MediaQuery.of(context).size.width,
-                  height: 200,
-                  child: Center(
-                    child: CircularProgressIndicator(),
-                  ),
-                )
+              ? Text(AppLocalizations.of(context)!.noMetrics)
               : AspectRatio(
                   aspectRatio: 2,
                   child: PieChart(

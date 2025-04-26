@@ -4,6 +4,7 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:pocket_collect/helpers/centralLabel.dart';
 import 'package:pocket_collect/helpers/dataTable.dart';
+import 'package:pocket_collect/helpers/displayGrafic.dart';
 import 'package:pocket_collect/helpers/pokemonInfos.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -179,26 +180,6 @@ class _ShiningMetricsState extends State<ShiningMetrics> {
       "Total": Colors.grey.shade200
     };
 
-    List<PieChartSectionData> sections = [];
-    final entries = packCounts.entries.toList();
-    for (int i = 0; i < entries.length; i++) {
-      final key = entries[i].key;
-      final value = entries[i].value;
-      double percentage = (value / totalPokemon("Total")) * 100;
-      final isTouched = i == touchedIndex;
-      final radios = isTouched ? 130.0 : 100.0;
-      sections.add(
-        PieChartSectionData(
-          value: percentage,
-          title: '${percentage.toStringAsFixed(2)}%',
-          color: packColors[key] ?? Colors.grey,
-          radius: radios,
-          titleStyle: TextStyle(
-              fontSize: 14, fontWeight: FontWeight.bold, color: Colors.black),
-        ),
-      );
-    }
-
     return SingleChildScrollView(
       child: Column(
         children: [
@@ -206,37 +187,11 @@ class _ShiningMetricsState extends State<ShiningMetrics> {
             height: 30,
           ),
           obtido("Total") <= 0
-              ? Container(
-                  width: MediaQuery.of(context).size.width,
-                  height: 200,
-                  child: Center(
-                    child: CircularProgressIndicator(),
-                  ),
-                )
-              : AspectRatio(
-                  aspectRatio: 2,
-                  child: PieChart(
-                    PieChartData(
-                      pieTouchData: PieTouchData(
-                        touchCallback: (FlTouchEvent event, pieTouchResponse) {
-                          setState(() {
-                            if (!event.isInterestedForInteractions ||
-                                pieTouchResponse == null ||
-                                pieTouchResponse.touchedSection == null) {
-                              touchedIndex = -1;
-                              return;
-                            }
-                            touchedIndex = pieTouchResponse
-                                .touchedSection!.touchedSectionIndex;
-                          });
-                        },
-                      ),
-                      sectionsSpace: 5,
-                      centerSpaceRadius: 0,
-                      sections: sections,
-                    ),
-                  ),
-                ),
+              ? Text(AppLocalizations.of(context)!.noMetrics)
+              : BusterBarChart(
+                  packCounts: packCounts,
+                  packColors: packColors,
+                  totalPokemonCount: totalPokemon("Total")),
           SizedBox(
             height: 30,
           ),
