@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:collection/collection.dart';
 
 class BusterHorizontalChart extends StatelessWidget {
   final Map<String, int> packCounts;
   final Map<String, Color> packColors;
   final int totalPokemonCount;
+  final Gradient? gradient;
 
   const BusterHorizontalChart({
     Key? key,
     required this.packCounts,
     required this.packColors,
     required this.totalPokemonCount,
+    this.gradient,
   }) : super(key: key);
 
   @override
@@ -27,24 +30,49 @@ class BusterHorizontalChart extends StatelessWidget {
         Row(
           children: [
             // Gerar as partes da barra dinamicamente
-            ...packCounts.entries.map((entry) {
+            ...packCounts.entries.mapIndexed((index, entry) {
               final color = packColors[entry.key] ?? Colors.grey;
               final flexValue = entry.value;
 
+              BorderRadius borderRadius = BorderRadius.zero;
+              if (index == 0) {
+                borderRadius = const BorderRadius.only(
+                  topLeft: Radius.circular(10),
+                  bottomLeft: Radius.circular(10),
+                );
+              } else if (index == packCounts.length - 1 && missingCount <= 0) {
+                borderRadius = const BorderRadius.only(
+                  topRight: Radius.circular(10),
+                  bottomRight: Radius.circular(10),
+                );
+              }
+
               return Expanded(
                 flex: flexValue,
-                child: Container(
-                  height: 30,
-                  color: color,
+                child: ClipRRect(
+                  borderRadius: borderRadius,
+                  child: Container(
+                    height: 30,
+                    decoration: BoxDecoration(
+                      color: gradient == null ? color : null,
+                      gradient: gradient,
+                    ),
+                  ),
                 ),
               );
             }).toList(),
             if (missingCount > 0)
               Expanded(
                 flex: missingCount,
-                child: Container(
-                  height: 30,
-                  color: Colors.grey.shade300,
+                child: ClipRRect(
+                  borderRadius: const BorderRadius.only(
+                    topRight: Radius.circular(10),
+                    bottomRight: Radius.circular(10),
+                  ),
+                  child: Container(
+                    height: 30,
+                    color: Colors.grey.shade300,
+                  ),
                 ),
               ),
           ],
@@ -77,7 +105,12 @@ class LegendItem extends StatelessWidget {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Container(width: 16, height: 16, color: color),
+        Container(
+          width: 16,
+          height: 16,
+          decoration: BoxDecoration(
+              color: color, borderRadius: BorderRadius.circular(5)),
+        ),
         const SizedBox(width: 4),
         Text(text),
       ],

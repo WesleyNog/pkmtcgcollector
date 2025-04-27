@@ -9,7 +9,14 @@ Gradient getBusterGradient(String buster) {
     "Dialga": [Colors.blueAccent, Colors.blueAccent],
     "Palkia": [Colors.pink, Colors.pink],
     "Arceus": [Colors.amber, Colors.amberAccent],
-    "LucarioShining": [Colors.deepPurple, Colors.green, Colors.amberAccent],
+    "LucarioShining": [
+      Colors.pinkAccent,
+      Colors.deepPurple,
+      Colors.blueAccent,
+      Colors.green,
+      Colors.greenAccent,
+      Colors.amberAccent
+    ],
     "All": [Colors.grey, Colors.grey],
   };
 

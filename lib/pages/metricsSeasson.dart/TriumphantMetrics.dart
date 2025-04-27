@@ -173,7 +173,7 @@ class _TriumphantMetricsState extends State<TriumphantMetrics> {
     };
 
     Map<String, Color> packColors = {
-      "Arceus": Colors.greenAccent,
+      "Arceus": Colors.amberAccent.shade200,
       "Total": Colors.grey.shade200
     };
 
