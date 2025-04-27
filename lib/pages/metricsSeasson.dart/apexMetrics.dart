@@ -1,7 +1,6 @@
 import 'dart:convert';
 import 'dart:math';
 
-import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:pocket_collect/helpers/centralLabel.dart';
 import 'package:pocket_collect/helpers/dataTable.dart';
@@ -272,10 +271,13 @@ class _ApexMetricsState extends State<ApexMetrics> {
           ),
           obtido("Total") <= 0
               ? Text(AppLocalizations.of(context)!.noMetrics)
-              : BusterBarChart(
-                  packColors: packColors,
-                  packCounts: packCounts,
-                  totalPokemonCount: totalPokemon("Total"),
+              : Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                  child: BusterHorizontalChart(
+                    packColors: packColors,
+                    packCounts: packCounts,
+                    totalPokemonCount: totalPokemon("Total"),
+                  ),
                 ),
           SizedBox(
             height: 30,

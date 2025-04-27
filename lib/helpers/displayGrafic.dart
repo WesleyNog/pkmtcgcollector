@@ -1,12 +1,11 @@
-import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
-class BusterBarChart extends StatelessWidget {
+class BusterHorizontalChart extends StatelessWidget {
   final Map<String, int> packCounts;
   final Map<String, Color> packColors;
   final int totalPokemonCount;
 
-  const BusterBarChart({
+  const BusterHorizontalChart({
     Key? key,
     required this.packCounts,
     required this.packColors,
@@ -15,83 +14,73 @@ class BusterBarChart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final entries = packCounts.entries.toList();
+    // Soma a quantidade já obtida dos boosters
+    final int obtainedTotal = packCounts.entries
+        .where((entry) => entry.key != 'Total')
+        .fold(0, (sum, entry) => sum + entry.value);
 
-    return AspectRatio(
-      aspectRatio: 5,
-      child: BarChart(
-        BarChartData(
-          alignment: BarChartAlignment.center,
-          barTouchData: BarTouchData(
-            enabled: true,
-            touchTooltipData: BarTouchTooltipData(
-              getTooltipItem: (group, groupIndex, rod, rodIndex) {
-                final entry =
-                    rodIndex < entries.length ? entries[rodIndex] : null;
-                return entry != null
-                    ? BarTooltipItem(
-                        '${entry.key}\n${entry.value}',
-                        const TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 14,
-                        ),
-                      )
-                    : null;
-              },
-            ),
-          ),
-          titlesData: FlTitlesData(
-            leftTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
-            rightTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
-            topTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
-            bottomTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
-          ),
-          gridData: FlGridData(show: false),
-          borderData: FlBorderData(show: false),
-          barGroups: [
-            BarChartGroupData(
-              x: 0,
-              barRods: [
-                BarChartRodData(
-                  toY: 100,
-                  rodStackItems: [
-                    ...entries.asMap().entries.map((entry) {
-                      final index = entry.key;
-                      final key = entry.value.key;
-                      final value = entry.value.value;
-                      double start =
-                          _calcStart(entries, index, totalPokemonCount);
-                      double percentage = (value / totalPokemonCount) * 100;
-                      return BarChartRodStackItem(
-                        start,
-                        start + percentage,
-                        packColors[key] ?? Colors.grey,
-                      );
-                    }),
-                    // Preenchendo espaço vazio (cinza)
-                    BarChartRodStackItem(
-                      _calcStart(entries, entries.length, totalPokemonCount),
-                      100,
-                      Colors.grey.shade300,
-                    ),
-                  ],
-                  width: 30,
-                  borderRadius: BorderRadius.circular(8),
+    // Calcula o que falta
+    final int missingCount = totalPokemonCount - obtainedTotal;
+
+    return Column(
+      children: [
+        Row(
+          children: [
+            // Gerar as partes da barra dinamicamente
+            ...packCounts.entries.map((entry) {
+              final color = packColors[entry.key] ?? Colors.grey;
+              final flexValue = entry.value;
+
+              return Expanded(
+                flex: flexValue,
+                child: Container(
+                  height: 30,
+                  color: color,
                 ),
-              ],
-            ),
+              );
+            }).toList(),
+            if (missingCount > 0)
+              Expanded(
+                flex: missingCount,
+                child: Container(
+                  height: 30,
+                  color: Colors.grey.shade300,
+                ),
+              ),
           ],
         ),
-      ),
+        const SizedBox(height: 20),
+        // Legenda automática
+        Wrap(
+          spacing: 20,
+          children: packCounts.entries.map((entry) {
+            final color = packColors[entry.key] ?? Colors.grey;
+            return LegendItem(
+              color: color,
+              text: entry.key,
+            );
+          }).toList(),
+        ),
+      ],
     );
   }
+}
 
-  double _calcStart(List<MapEntry<String, int>> entries, int index, int total) {
-    double start = 0;
-    for (int i = 0; i < index; i++) {
-      start += (entries[i].value / total) * 100;
-    }
-    return start;
+class LegendItem extends StatelessWidget {
+  final Color color;
+  final String text;
+
+  const LegendItem({super.key, required this.color, required this.text});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Container(width: 16, height: 16, color: color),
+        const SizedBox(width: 4),
+        Text(text),
+      ],
+    );
   }
 }

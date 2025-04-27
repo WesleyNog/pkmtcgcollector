@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:pocket_collect/helpers/centralLabel.dart';
 import 'package:pocket_collect/helpers/dataTable.dart';
@@ -188,10 +187,13 @@ class _ShiningMetricsState extends State<ShiningMetrics> {
           ),
           obtido("Total") <= 0
               ? Text(AppLocalizations.of(context)!.noMetrics)
-              : BusterBarChart(
-                  packCounts: packCounts,
-                  packColors: packColors,
-                  totalPokemonCount: totalPokemon("Total")),
+              : Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                  child: BusterHorizontalChart(
+                      packCounts: packCounts,
+                      packColors: packColors,
+                      totalPokemonCount: totalPokemon("Total")),
+                ),
           SizedBox(
             height: 30,
           ),
