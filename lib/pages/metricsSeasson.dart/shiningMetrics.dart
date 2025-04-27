@@ -171,7 +171,7 @@ class _ShiningMetricsState extends State<ShiningMetrics> {
   Widget build(BuildContext context) {
     Map<String, int> packCounts = {
       "LucarioShining": obtido("LucarioShining"),
-      "Total": totalPokemon("Total") - obtido("LucarioShining")
+      // "Total": totalPokemon("Total") - obtido("LucarioShining")
     };
 
     Map<String, Color> packColors = {

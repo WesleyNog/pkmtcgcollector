@@ -169,7 +169,7 @@ class _MysticalMetricsState extends State<MysticalMetrics> {
   Widget build(BuildContext context) {
     Map<String, int> packCounts = {
       "MEW": obtido("MEW"),
-      "Total": totalPokemon("Total") - obtido("MEW")
+      // "Total": totalPokemon("Total") - obtido("MEW")
     };
 
     Map<String, Color> packColors = {

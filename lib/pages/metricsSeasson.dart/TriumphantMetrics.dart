@@ -169,7 +169,7 @@ class _TriumphantMetricsState extends State<TriumphantMetrics> {
   Widget build(BuildContext context) {
     Map<String, int> packCounts = {
       "Arceus": obtido("Arceus"),
-      "Total": totalPokemon("Total") - obtido("Arceus")
+      // "Total": totalPokemon("Total") - obtido("Arceus")
     };
 
     Map<String, Color> packColors = {
