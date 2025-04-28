@@ -1,10 +1,13 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:pocket_collect/adState.dart';
 import 'package:pocket_collect/helpers/centralLabel.dart';
 import 'package:pocket_collect/helpers/dataTable.dart';
 import 'package:pocket_collect/helpers/displayGrafic.dart';
 import 'package:pocket_collect/helpers/pokemonInfos.dart';
+import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -18,6 +21,28 @@ class ShiningMetrics extends StatefulWidget {
 class _ShiningMetricsState extends State<ShiningMetrics> {
   int touchedIndex = -1;
   List<Map<String, dynamic>> pokemonList = [];
+
+  BannerAd? _bannerAd;
+
+  void _loadBannerAd() {
+    final adState = Provider.of<AdState>(context, listen: false);
+    adState.initialization.then((status) {
+      setState(() {
+        _bannerAd = BannerAd(
+          adUnitId: adState.bannerAdUnitId,
+          size: AdSize.banner,
+          request: AdRequest(),
+          listener: BannerAdListener(
+            onAdLoaded: (ad) => print('Ad loaded: ${ad.adUnitId}'),
+            onAdFailedToLoad: (ad, error) {
+              print('Ad failed to load: ${ad.adUnitId}, $error');
+              ad.dispose();
+            },
+          ),
+        )..load();
+      });
+    });
+  }
 
   int obtido(String pack, {String tipo = "Normal"}) {
     if (pack == "Total") {
@@ -53,6 +78,7 @@ class _ShiningMetricsState extends State<ShiningMetrics> {
   void initState() {
     super.initState();
     _loadPokemonList();
+    _loadBannerAd();
   }
 
   int totalPokemon(String pack, {String tipo = "Normal"}) {
@@ -179,47 +205,61 @@ class _ShiningMetricsState extends State<ShiningMetrics> {
       "Total": Colors.grey.shade200
     };
 
-    return SingleChildScrollView(
-      child: Column(
-        children: [
-          SizedBox(
-            height: 30,
-          ),
-          obtido("Total") <= 0
-              ? Text(AppLocalizations.of(context)!.noMetrics)
-              : Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                  child: BusterHorizontalChart(
-                      packCounts: packCounts,
-                      packColors: packColors,
-                      totalPokemonCount: totalPokemon("Total")),
+    return Column(
+      children: [
+        Expanded(
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                SizedBox(
+                  height: 30,
                 ),
-          SizedBox(
-            height: 30,
+                obtido("Total") <= 0
+                    ? Text(AppLocalizations.of(context)!.noMetrics)
+                    : Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                        child: BusterHorizontalChart(
+                            packCounts: packCounts,
+                            packColors: packColors,
+                            totalPokemonCount: totalPokemon("Total")),
+                      ),
+                SizedBox(
+                  height: 30,
+                ),
+                centralLabel(AppLocalizations.of(context)!.colectionLabel,
+                    obtido: currentTask("Unit"),
+                    total: currentTask("Total"),
+                    corFundo: Colors.green.shade100,
+                    complete: completeTask()),
+                createDataTable(labels: [
+                  AppLocalizations.of(context)!.busterPack,
+                  AppLocalizations.of(context)!.totalsLabel,
+                  "%"
+                ], packs: [
+                  [
+                    "Lucario",
+                    "${obtido("LucarioShining")}/${totalPokemon("LucarioShining")}",
+                    "${percentBuster("LucarioShining")}%"
+                  ],
+                  [
+                    "Total",
+                    "${obtido("Total")}/${totalPokemon("Total")}",
+                    "${percentBuster("Total")}%"
+                  ],
+                ]),
+              ],
+            ),
           ),
-          centralLabel(AppLocalizations.of(context)!.colectionLabel,
-              obtido: currentTask("Unit"),
-              total: currentTask("Total"),
-              corFundo: Colors.green.shade100,
-              complete: completeTask()),
-          createDataTable(labels: [
-            AppLocalizations.of(context)!.busterPack,
-            AppLocalizations.of(context)!.totalsLabel,
-            "%"
-          ], packs: [
-            [
-              "Lucario",
-              "${obtido("LucarioShining")}/${totalPokemon("LucarioShining")}",
-              "${percentBuster("LucarioShining")}%"
-            ],
-            [
-              "Total",
-              "${obtido("Total")}/${totalPokemon("Total")}",
-              "${percentBuster("Total")}%"
-            ],
-          ]),
-        ],
-      ),
+        ),
+        if (_bannerAd != null)
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20.0),
+            child: Container(
+              height: 50,
+              child: AdWidget(ad: _bannerAd!),
+            ),
+          ),
+      ],
     );
   }
 }
