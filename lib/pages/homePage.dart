@@ -7,6 +7,7 @@ import 'package:pocket_collect/adState.dart';
 import 'package:pocket_collect/helpers/bottomSheet.dart';
 import 'package:pocket_collect/helpers/getColors.dart';
 import 'package:pocket_collect/helpers/pokemonInfos.dart';
+import 'package:pocket_collect/helpers/showRarity.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -340,14 +341,6 @@ class _HomePageContentState extends State<HomePageContent> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10.0),
-                    child: Text(
-                      "#",
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
-                    ),
-                  ),
                   Text(
                     AppLocalizations.of(context)!.codeLabel,
                     style: const TextStyle(fontWeight: FontWeight.bold),
@@ -363,6 +356,14 @@ class _HomePageContentState extends State<HomePageContent> {
                   Text(
                     AppLocalizations.of(context)!.rarityLabel,
                     style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.only(right: 10.0),
+                    child: Text(
+                      "#",
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                    ),
                   ),
                 ],
               ),
@@ -387,14 +388,6 @@ class _HomePageContentState extends State<HomePageContent> {
                   final item = _pokemonListFiltered[realIndex];
                   return Row(
                     children: [
-                      Checkbox(
-                          value: item["obtido"],
-                          onChanged: (bool? newValue) {
-                            setState(() {
-                              item["obtido"] = newValue ?? false;
-                            });
-                            _savedPokemonList();
-                          }),
                       Expanded(
                         child: Container(
                           width: double.infinity,
@@ -415,24 +408,8 @@ class _HomePageContentState extends State<HomePageContent> {
                                     Text(item["code"]),
                                     Text(item["nome"]),
                                     // Text(item["buster"]),
-                                    item["raridade"] == "promoA"
-                                        ? Image.asset(
-                                            "assets/images/promoA_rarity.png")
-                                        : item["raridade"] == "S1"
-                                            ? Image.asset(
-                                                "assets/images/rarity/rSh.png")
-                                            : item["raridade"] == "S2"
-                                                ? Row(
-                                                    children: [
-                                                      Image.asset(
-                                                          "assets/images/rarity/rSh.png"),
-                                                      Image.asset(
-                                                          "assets/images/rarity/rSh.png")
-                                                    ],
-                                                  )
-                                                : Text(item["raridade"]
-                                                        ?.toString() ??
-                                                    "")
+                                    showRarityImage(
+                                        rarity: item["raridade"] ?? "")
                                   ],
                                 ),
                               ),
@@ -474,6 +451,14 @@ class _HomePageContentState extends State<HomePageContent> {
                           ),
                         ),
                       ),
+                      Checkbox(
+                          value: item["obtido"],
+                          onChanged: (bool? newValue) {
+                            setState(() {
+                              item["obtido"] = newValue ?? false;
+                            });
+                            _savedPokemonList();
+                          }),
                     ],
                   );
                 },
@@ -483,7 +468,7 @@ class _HomePageContentState extends State<HomePageContent> {
               height: 20,
             ),
             Container(
-              alignment: Alignment.topRight,
+              alignment: Alignment.topLeft,
               child: Text(
                 "${AppLocalizations.of(context)!.amountPokemon} ${_pokemonListFiltered.where((pokemon) => pokemon["obtido"] == true).length.toString().padLeft(2, "0")}/${_pokemonListFiltered.length.toString().padLeft(2, "0")}",
                 style: TextStyle(
