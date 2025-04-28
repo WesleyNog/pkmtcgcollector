@@ -1,0 +1,2 @@
+/Users/wesleynog/Flutter/pkmtcgcollector/android/app/.cxx/RelWithDebInfo/423t1d3b/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/wesleynog/Flutter/pkmtcgcollector/android/app/.cxx/RelWithDebInfo/423t1d3b/armeabi-v7a/CMakeFiles/rebuild_cache.dir
