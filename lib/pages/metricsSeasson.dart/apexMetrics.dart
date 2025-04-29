@@ -259,7 +259,7 @@ class _ApexMetricsState extends State<ApexMetrics> {
       "Mewtwo": Colors.deepPurple,
       "Pikachu": Colors.amberAccent,
       "All": Colors.green,
-      "Total": Colors.grey.shade200,
+      // "Total": Colors.grey.shade200,
       if (packCounts.containsKey("Total")) "Total": Colors.grey.shade200,
     };
 

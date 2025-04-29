@@ -204,7 +204,7 @@ class _SpaceMetricsState extends State<SpaceMetrics> {
       "Dialga": Colors.blue,
       "Palkia": Colors.pink.shade100,
       "All": Colors.green,
-      "Total": Colors.grey.shade200,
+      // "Total": Colors.grey.shade200,
       if (packCounts.containsKey("Total")) "Total": Colors.grey.shade200,
     };
 
