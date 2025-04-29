@@ -4,6 +4,7 @@ import 'package:pocket_collect/pages/metricsSeasson.dart/TriumphantMetrics.dart'
 import 'package:pocket_collect/pages/metricsSeasson.dart/apexMetrics.dart';
 import 'package:pocket_collect/pages/metricsSeasson.dart/mysticalMetrics.dart';
 import 'package:pocket_collect/pages/metricsSeasson.dart/shiningMetrics.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class GraficPage extends StatefulWidget {
   GraficPage({super.key});
@@ -42,7 +43,9 @@ class _GraficPageState extends State<GraficPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Image.asset("assets/images/Logo/${_logos[_currentIndex]}.png"),
+        title: AppLocalizations.of(context)!.language == "português"
+            ? Image.asset("assets/images/Logo/${_logos[_currentIndex]}_PT.png")
+            : Image.asset("assets/images/Logo/${_logos[_currentIndex]}.png"),
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 10.0),
