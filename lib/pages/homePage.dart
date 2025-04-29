@@ -320,14 +320,22 @@ class _HomePageContentState extends State<HomePageContent> {
                   },
                   child: Center(
                     child: Icon(
-                      Icons.filter_list_rounded,
+                      _packs.contains(true)
+                          ? Icons.clear_rounded
+                          : _raridades.contains(true)
+                              ? Icons.clear_rounded
+                              : Icons.filter_list_rounded,
                       color: Colors.blue[100],
                       size: 30,
                     ),
                   ),
                   style: ElevatedButton.styleFrom(
                       // minimumSize: Size(0, 60),
-                      backgroundColor: Colors.blue,
+                      backgroundColor: _packs.contains(true)
+                          ? Colors.redAccent
+                          : _raridades.contains(true)
+                              ? Colors.redAccent
+                              : Colors.blue,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10))),
                 )
