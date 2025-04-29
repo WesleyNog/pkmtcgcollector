@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:pocket_collect/helpers/showRarity.dart';
 
 Future<void> displayBottomSheet({
   required BuildContext context,
@@ -17,14 +18,14 @@ Future<void> displayBottomSheet({
       builder: (context) {
         return StatefulBuilder(builder: (context, StateSetter setModalState) {
           return DraggableScrollableSheet(
-              initialChildSize: 0.6, // Começa ocupando 50% da tela
+              initialChildSize: 0.7, // Começa ocupando 50% da tela
               minChildSize: 0.3, // Pode encolher até 30% da tela
               maxChildSize: 0.9, // Pode expandir até 90% da tela
               expand: false,
               builder: (context, ScrollController) {
                 return Container(
                   decoration: BoxDecoration(
-                    color: Colors.indigoAccent[100],
+                    color: Colors.indigoAccent[50],
                     borderRadius:
                         const BorderRadius.vertical(top: Radius.circular(20)),
                   ),
@@ -45,103 +46,141 @@ Future<void> displayBottomSheet({
                       ),
                       Column(
                         children: [
-                          Row(
-                            children: [
-                              Checkbox(
-                                  value: raridades[0],
-                                  onChanged: (bool? newValue) {
-                                    setModalState(() {
-                                      raridades[0] = newValue ?? false;
-                                    });
-                                    updateParentState(() {
-                                      filterList("");
-                                    });
-                                  }),
-                              const Text("🔹"),
-                              Checkbox(
-                                  value: raridades[1],
-                                  onChanged: (bool? newValue) {
-                                    setModalState(() {
-                                      raridades[1] = newValue ?? false;
-                                    });
-                                    updateParentState(() {
-                                      filterList("");
-                                    });
-                                  }),
-                              const Text("🔹🔹"),
-                              Checkbox(
-                                  value: raridades[2],
-                                  onChanged: (bool? newValue) {
-                                    setModalState(() {
-                                      raridades[2] = newValue ?? false;
-                                    });
-                                    updateParentState(() {
-                                      filterList("");
-                                    });
-                                  }),
-                              const Text("🔹🔹🔹"),
-                              Checkbox(
-                                  value: raridades[3],
-                                  onChanged: (bool? newValue) {
-                                    setModalState(() {
-                                      raridades[3] = newValue ?? false;
-                                    });
-                                    updateParentState(() {
-                                      filterList("");
-                                    });
-                                  }),
-                              const Text("🔹🔹🔹🔹")
-                            ],
+                          Padding(
+                            padding: const EdgeInsets.only(right: 20.0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Checkbox(
+                                    value: raridades[0],
+                                    onChanged: (bool? newValue) {
+                                      setModalState(() {
+                                        raridades[0] = newValue ?? false;
+                                      });
+                                      updateParentState(() {
+                                        filterList("");
+                                      });
+                                    }),
+                                showRaritySheet(rarity: "🔹"),
+                                Checkbox(
+                                    value: raridades[1],
+                                    onChanged: (bool? newValue) {
+                                      setModalState(() {
+                                        raridades[1] = newValue ?? false;
+                                      });
+                                      updateParentState(() {
+                                        filterList("");
+                                      });
+                                    }),
+                                showRaritySheet(rarity: "🔹🔹"),
+                                Checkbox(
+                                    value: raridades[2],
+                                    onChanged: (bool? newValue) {
+                                      setModalState(() {
+                                        raridades[2] = newValue ?? false;
+                                      });
+                                      updateParentState(() {
+                                        filterList("");
+                                      });
+                                    }),
+                                showRaritySheet(rarity: "🔹🔹🔹"),
+                                Checkbox(
+                                    value: raridades[3],
+                                    onChanged: (bool? newValue) {
+                                      setModalState(() {
+                                        raridades[3] = newValue ?? false;
+                                      });
+                                      updateParentState(() {
+                                        filterList("");
+                                      });
+                                    }),
+                                showRaritySheet(rarity: "🔹🔹🔹🔹")
+                              ],
+                            ),
                           ),
                         ],
                       ),
-                      Row(
-                        children: [
-                          Checkbox(
-                              value: raridades[4],
-                              onChanged: (bool? newValue) {
-                                setModalState(() {
-                                  raridades[4] = newValue ?? false;
-                                });
-                                updateParentState(() {
-                                  filterList("");
-                                });
-                              }),
-                          const Text("⭐️"),
-                          Checkbox(
-                              value: raridades[5],
-                              onChanged: (bool? newValue) {
-                                setModalState(() {
-                                  raridades[5] = newValue ?? false;
-                                });
-                                updateParentState(() {
-                                  filterList("");
-                                });
-                              }),
-                          const Text("⭐️⭐️"),
-                          Checkbox(
-                              value: raridades[6],
-                              onChanged: (bool? newValue) {
-                                setModalState(() {
-                                  raridades[6] = newValue ?? false;
-                                });
-                                updateParentState(() {
-                                  filterList("");
-                                });
-                              }),
-                          const Text("⭐️⭐️⭐️"),
-                          Checkbox(
-                              value: raridades[7],
-                              onChanged: (bool? newValue) {
-                                setModalState(() {
-                                  raridades[7] = newValue ?? false;
-                                });
-                                updateParentState(() {
-                                  filterList("");
-                                });
-                              }),
-                          const Text("👑"),
-                        ],
+                      Padding(
+                        padding: const EdgeInsets.only(right: 20.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Checkbox(
+                                value: raridades[4],
+                                onChanged: (bool? newValue) {
+                                  setModalState(() {
+                                    raridades[4] = newValue ?? false;
+                                  });
+                                  updateParentState(() {
+                                    filterList("");
+                                  });
+                                }),
+                            showRaritySheet(rarity: "⭐️"),
+                            Checkbox(
+                                value: raridades[5],
+                                onChanged: (bool? newValue) {
+                                  setModalState(() {
+                                    raridades[5] = newValue ?? false;
+                                  });
+                                  updateParentState(() {
+                                    filterList("");
+                                  });
+                                }),
+                            showRaritySheet(rarity: "⭐️⭐️"),
+                            Checkbox(
+                                value: raridades[6],
+                                onChanged: (bool? newValue) {
+                                  setModalState(() {
+                                    raridades[6] = newValue ?? false;
+                                  });
+                                  updateParentState(() {
+                                    filterList("");
+                                  });
+                                }),
+                            showRaritySheet(rarity: "⭐️⭐️⭐️"),
+                            Checkbox(
+                                value: raridades[9],
+                                onChanged: (bool? newValue) {
+                                  setModalState(() {
+                                    raridades[9] = newValue ?? false;
+                                  });
+                                  updateParentState(() {
+                                    filterList("");
+                                  });
+                                }),
+                            showRaritySheet(rarity: "👑"),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 20.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Checkbox(
+                                value: raridades[7],
+                                onChanged: (bool? newValue) {
+                                  setModalState(() {
+                                    raridades[7] = newValue ?? false;
+                                  });
+                                  updateParentState(() {
+                                    filterList("");
+                                  });
+                                }),
+                            showRaritySheet(rarity: "S1"),
+                            Checkbox(
+                                value: raridades[8],
+                                onChanged: (bool? newValue) {
+                                  setModalState(() {
+                                    raridades[8] = newValue ?? false;
+                                  });
+                                  updateParentState(() {
+                                    filterList("");
+                                  });
+                                }),
+                            showRaritySheet(rarity: "S2"),
+                          ],
+                        ),
                       ),
                       const SizedBox(
                         height: 30,
@@ -258,10 +297,10 @@ Future<void> displayBottomSheet({
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Checkbox(
-                              value: raridades[8],
+                              value: raridades[10],
                               onChanged: (bool? newValue) {
                                 setModalState(() {
-                                  raridades[8] = newValue ?? false;
+                                  raridades[10] = newValue ?? false;
                                 });
                                 updateParentState(() {
                                   filterList("");
@@ -270,17 +309,35 @@ Future<void> displayBottomSheet({
                           Image.asset("assets/images/promoA.png"),
                         ],
                       ),
-                      // SizedBox(
-                      //   height: 20,
-                      // ),
-                      // Divider(
-                      //   color: Colors.indigoAccent,
-                      // ),
-                      // TextButton(
-                      //     onPressed: () {
-                      //       print("Pressionou");
-                      //     },
-                      //     child: Text(AppLocalizations.of(context)!.clear))
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Divider(
+                        color: Colors.indigoAccent,
+                      ),
+                      ElevatedButton(
+                        onPressed: () {
+                          setModalState(() {
+                            for (int i = 0; i < raridades.length; i++) {
+                              raridades[i] = false;
+                            }
+                            for (int i = 0; i < packs.length; i++) {
+                              packs[i] = false;
+                            }
+                          });
+                          updateParentState(() {
+                            filterList("");
+                          });
+                          Navigator.pop(context);
+                        },
+                        child: Text(
+                          AppLocalizations.of(context)!.clear,
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.indigo,
+                            overlayColor: Colors.lightBlueAccent.shade100),
+                      )
                     ],
                   ),
                 );
