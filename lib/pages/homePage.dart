@@ -88,6 +88,8 @@ class _HomePageContentState extends State<HomePageContent> {
     false,
     false,
     false,
+    false,
+    false,
     false
   ];
   final List<String> nivelPakcs = [
@@ -98,7 +100,9 @@ class _HomePageContentState extends State<HomePageContent> {
     "Dialga",
     "Palkia",
     "Arceus",
-    "LucarioShining"
+    "Shining",
+    "Solgaleo",
+    "Lunala"
   ];
   bool mewCards = false;
 

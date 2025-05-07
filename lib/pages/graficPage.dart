@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pocket_collect/pages/metricsSeasson.dart/CelestialMetrics.dart';
 import 'package:pocket_collect/pages/metricsSeasson.dart/SpaceMetrics.dart';
 import 'package:pocket_collect/pages/metricsSeasson.dart/TriumphantMetrics.dart';
 import 'package:pocket_collect/pages/metricsSeasson.dart/apexMetrics.dart';
@@ -17,6 +18,7 @@ class _GraficPageState extends State<GraficPage> {
   final PageController _pageController = PageController();
   int _currentIndex = 0;
   final List<String> _logos = [
+    "LogoApex",
     "LogoShining",
     "LogoTriumph",
     "LogoSpace",
@@ -25,6 +27,7 @@ class _GraficPageState extends State<GraficPage> {
   ];
 
   List<Widget> _pages = [
+    CelestialMetrics(),
     ShiningMetrics(),
     TriumphantMetrics(),
     SpaceMetrics(),

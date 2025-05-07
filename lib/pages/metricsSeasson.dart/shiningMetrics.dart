@@ -137,7 +137,7 @@ class _ShiningMetricsState extends State<ShiningMetrics> {
 
   currentTask(String tipoTask,
       {List<String>? remove, List<String>? add, String tipoPack = "Normal"}) {
-    List<String> onlyCount = ["LucarioShining"];
+    List<String> onlyCount = ["Shining"];
     if (remove != null && remove.isNotEmpty) {
       remove.forEach((item) {
         onlyCount.remove(item);
@@ -196,12 +196,12 @@ class _ShiningMetricsState extends State<ShiningMetrics> {
   @override
   Widget build(BuildContext context) {
     Map<String, int> packCounts = {
-      "LucarioShining": obtido("LucarioShining"),
-      // "Total": totalPokemon("Total") - obtido("LucarioShining")
+      "Shining": obtido("Shining"),
+      // "Total": totalPokemon("Total") - obtido("Shining")
     };
 
     Map<String, Color> packColors = {
-      "LucarioShining": Colors.greenAccent,
+      "Shining": Colors.greenAccent,
       "Total": Colors.grey.shade200
     };
 
@@ -238,8 +238,8 @@ class _ShiningMetricsState extends State<ShiningMetrics> {
                 ], packs: [
                   [
                     "Lucario",
-                    "${obtido("LucarioShining")}/${totalPokemon("LucarioShining")}",
-                    "${percentBuster("LucarioShining")}%"
+                    "${obtido("Shining")}/${totalPokemon("Shining")}",
+                    "${percentBuster("Shining")}%"
                   ],
                   [
                     "Total",
