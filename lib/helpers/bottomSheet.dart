@@ -297,6 +297,36 @@ Future<void> displayBottomSheet({
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Checkbox(
+                              value: packs[8],
+                              onChanged: (bool? newValue) {
+                                setModalState(() {
+                                  packs[8] = newValue ?? false;
+                                });
+                                updateParentState(() {
+                                  filterList("");
+                                });
+                              }),
+                          Image.asset("assets/images/solgaleo.png"),
+                          Checkbox(
+                              value: packs[9],
+                              onChanged: (bool? newValue) {
+                                setModalState(() {
+                                  packs[9] = newValue ?? false;
+                                });
+                                updateParentState(() {
+                                  filterList("");
+                                });
+                              }),
+                          Image.asset("assets/images/lunala.png"),
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Checkbox(
                               value: raridades[10],
                               onChanged: (bool? newValue) {
                                 setModalState(() {
