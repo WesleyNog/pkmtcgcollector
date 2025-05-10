@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:pocket_collect/helpers/calcMetrics.dart';
 import 'package:pocket_collect/helpers/centralLabel.dart';
 import 'package:pocket_collect/helpers/dataTable.dart';
 import 'package:pocket_collect/helpers/displayGrafic.dart';
@@ -137,46 +138,6 @@ class _ApexMetricsState extends State<ApexMetrics> {
     double minPercent = percentBusters.keys.reduce(min);
 
     return percentBusters[minPercent];
-  }
-
-  // Função para calcular a chance que a carta ainda pode vir no buster
-  String chanceCard(String chance, String pack) {
-    List<String> _raridades = [
-      "🔹",
-      "🔹🔹",
-      "🔹🔹🔹",
-      "🔹🔹🔹🔹",
-      "⭐️",
-      "⭐️⭐️",
-      "⭐️⭐️⭐️",
-      "👑"
-    ];
-    double _sum = 0.0;
-    for (String raridade in _raridades) {
-      var sumPack = pokemonList
-          .where((pokemon) =>
-              pokemon["obtido"] == false &&
-              pokemon["raridade"] == raridade &&
-              pokemon["buster"] == pack &&
-              pokemon["promoA"] == false &&
-              pokemon["seasson"] == "Apex")
-          .fold(0.0, (soma, pokemon) {
-        return soma + (pokemon[chance] ?? 0.0);
-      });
-      var sumAll = pokemonList
-          .where((pokemon) =>
-              pokemon["obtido"] == false &&
-              pokemon["raridade"] == raridade &&
-              pokemon["buster"] == "All" &&
-              pokemon["promoA"] == false &&
-              pokemon["seasson"] == "Apex")
-          .fold(0.0, (soma, pokemon) {
-        return soma + (pokemon[chance] ?? 0.0);
-      });
-
-      _sum = _sum + sumPack + sumAll;
-    }
-    return _sum.toStringAsFixed(3);
   }
 
   currentTask(String tipoTask,
@@ -373,21 +334,30 @@ class _ApexMetricsState extends State<ApexMetrics> {
               rows: [
                 DataRow(cells: [
                   DataCell(Text("Charizard")),
-                  DataCell(Text("${chanceCard("chance_1_3", "Charizard")}%")),
-                  DataCell(Text("${chanceCard("chance_4", "Charizard")}%")),
-                  DataCell(Text("${chanceCard("chance_5", "Charizard")}%")),
+                  DataCell(Text(
+                      "${chanceCard("chance_1_3", "Charizard", "Apex", pokemonList)}%")),
+                  DataCell(Text(
+                      "${chanceCard("chance_4", "Charizard", "Apex", pokemonList)}%")),
+                  DataCell(Text(
+                      "${chanceCard("chance_5", "Charizard", "Apex", pokemonList)}%")),
                 ]),
                 DataRow(cells: [
                   DataCell(Text("Mewtwo")),
-                  DataCell(Text("${chanceCard("chance_1_3", "Mewtwo")}%")),
-                  DataCell(Text("${chanceCard("chance_4", "Mewtwo")}%")),
-                  DataCell(Text("${chanceCard("chance_5", "Mewtwo")}%")),
+                  DataCell(Text(
+                      "${chanceCard("chance_1_3", "Mewtwo", "Apex", pokemonList)}%")),
+                  DataCell(Text(
+                      "${chanceCard("chance_4", "Mewtwo", "Apex", pokemonList)}%")),
+                  DataCell(Text(
+                      "${chanceCard("chance_5", "Mewtwo", "Apex", pokemonList)}%")),
                 ]),
                 DataRow(cells: [
                   DataCell(Text("Pikachu")),
-                  DataCell(Text("${chanceCard("chance_1_3", "Pikachu")}%")),
-                  DataCell(Text("${chanceCard("chance_4", "Pikachu")}%")),
-                  DataCell(Text("${chanceCard("chance_5", "Pikachu")}%")),
+                  DataCell(Text(
+                      "${chanceCard("chance_1_3", "Pikachu", "Apex", pokemonList)}%")),
+                  DataCell(Text(
+                      "${chanceCard("chance_4", "Pikachu", "Apex", pokemonList)}%")),
+                  DataCell(Text(
+                      "${chanceCard("chance_5", "Pikachu", "Apex", pokemonList)}%")),
                 ])
               ]),
           SizedBox(

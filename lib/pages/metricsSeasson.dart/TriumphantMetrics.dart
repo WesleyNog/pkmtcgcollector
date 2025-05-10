@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:pocket_collect/helpers/calcMetrics.dart';
 import 'package:pocket_collect/helpers/centralLabel.dart';
 import 'package:pocket_collect/helpers/dataTable.dart';
 import 'package:pocket_collect/helpers/displayGrafic.dart';
@@ -67,44 +68,6 @@ class _TriumphantMetricsState extends State<TriumphantMetrics> {
 
   String percentBuster(String pack, {String tipo = "Normal"}) {
     return ((obtido(pack) / totalPokemon(pack)) * 100).toStringAsFixed(3);
-  }
-
-  // Função para calcular a chance que a carta ainda pode vir no buster
-  String chanceCard(String chance, String pack) {
-    List<String> _raridades = [
-      "🔹",
-      "🔹🔹",
-      "🔹🔹🔹",
-      "🔹🔹🔹🔹",
-      "⭐️",
-      "⭐️⭐️",
-      "⭐️⭐️⭐️",
-      "👑"
-    ];
-    double _sum = 0.0;
-    for (String raridade in _raridades) {
-      var sumPack = pokemonList
-          .where((pokemon) =>
-              pokemon["obtido"] == false &&
-              pokemon["raridade"] == raridade &&
-              pokemon["buster"] == pack &&
-              pokemon["promoA"] == false)
-          .fold(0.0, (soma, pokemon) {
-        return soma + (pokemon[chance] ?? 0.0);
-      });
-      var sumAll = pokemonList
-          .where((pokemon) =>
-              pokemon["obtido"] == false &&
-              pokemon["raridade"] == raridade &&
-              pokemon["buster"] == "All" &&
-              pokemon["promoA"] == false)
-          .fold(0.0, (soma, pokemon) {
-        return soma + (pokemon[chance] ?? 0.0);
-      });
-
-      _sum = _sum + sumPack + sumAll;
-    }
-    return _sum.toStringAsFixed(3);
   }
 
   currentTask(String tipoTask,
@@ -217,6 +180,32 @@ class _TriumphantMetricsState extends State<TriumphantMetrics> {
               "${percentBuster("Total")}%"
             ],
           ]),
+          SizedBox(
+            height: 40,
+          ),
+          centralLabel(AppLocalizations.of(context)!.newCards,
+              corFundo: Colors.green.shade100, complete: completeTask()),
+          DataTable(
+              columnSpacing: 25,
+              headingTextStyle: TextStyle(fontWeight: FontWeight.bold),
+              columns: [
+                DataColumn(
+                    label: Text(AppLocalizations.of(context)!.busterPack)),
+                DataColumn(label: Text("1-3")),
+                DataColumn(label: Text("4")),
+                DataColumn(label: Text("5")),
+              ],
+              rows: [
+                DataRow(cells: [
+                  DataCell(Text("Arceus")),
+                  DataCell(Text(
+                      "${chanceCard("chance_1_3", "Arceus", "Triumphant", pokemonList)}%")),
+                  DataCell(Text(
+                      "${chanceCard("chance_4", "Arceus", "Triumphant", pokemonList)}%")),
+                  DataCell(Text(
+                      "${chanceCard("chance_5", "Arceus", "Triumphant", pokemonList)}%")),
+                ]),
+              ]),
         ],
       ),
     );

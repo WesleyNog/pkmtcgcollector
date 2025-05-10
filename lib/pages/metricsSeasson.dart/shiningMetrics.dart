@@ -1,13 +1,11 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:pocket_collect/adState.dart';
+import 'package:pocket_collect/helpers/calcMetrics.dart';
 import 'package:pocket_collect/helpers/centralLabel.dart';
 import 'package:pocket_collect/helpers/dataTable.dart';
 import 'package:pocket_collect/helpers/displayGrafic.dart';
 import 'package:pocket_collect/helpers/pokemonInfos.dart';
-import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -21,28 +19,6 @@ class ShiningMetrics extends StatefulWidget {
 class _ShiningMetricsState extends State<ShiningMetrics> {
   int touchedIndex = -1;
   List<Map<String, dynamic>> pokemonList = [];
-
-  BannerAd? _bannerAd;
-
-  void _loadBannerAd() {
-    final adState = Provider.of<AdState>(context, listen: false);
-    adState.initialization.then((status) {
-      setState(() {
-        _bannerAd = BannerAd(
-          adUnitId: adState.bannerAdUnitId,
-          size: AdSize.banner,
-          request: AdRequest(),
-          listener: BannerAdListener(
-            onAdLoaded: (ad) => print('Ad loaded: ${ad.adUnitId}'),
-            onAdFailedToLoad: (ad, error) {
-              print('Ad failed to load: ${ad.adUnitId}, $error');
-              ad.dispose();
-            },
-          ),
-        )..load();
-      });
-    });
-  }
 
   int obtido(String pack, {String tipo = "Normal"}) {
     if (pack == "Total") {
@@ -78,7 +54,6 @@ class _ShiningMetricsState extends State<ShiningMetrics> {
   void initState() {
     super.initState();
     _loadPokemonList();
-    _loadBannerAd();
   }
 
   int totalPokemon(String pack, {String tipo = "Normal"}) {
@@ -93,46 +68,6 @@ class _ShiningMetricsState extends State<ShiningMetrics> {
 
   String percentBuster(String pack, {String tipo = "Normal"}) {
     return ((obtido(pack) / totalPokemon(pack)) * 100).toStringAsFixed(3);
-  }
-
-  // Função para calcular a chance que a carta ainda pode vir no buster
-  String chanceCard(String chance, String pack) {
-    List<String> _raridades = [
-      "🔹",
-      "🔹🔹",
-      "🔹🔹🔹",
-      "🔹🔹🔹🔹",
-      "⭐️",
-      "⭐️⭐️",
-      "⭐️⭐️⭐️",
-      "✨",
-      "✨✨",
-      "👑"
-    ];
-    double _sum = 0.0;
-    for (String raridade in _raridades) {
-      var sumPack = pokemonList
-          .where((pokemon) =>
-              pokemon["obtido"] == false &&
-              pokemon["raridade"] == raridade &&
-              pokemon["buster"] == pack &&
-              pokemon["promoA"] == false)
-          .fold(0.0, (soma, pokemon) {
-        return soma + (pokemon[chance] ?? 0.0);
-      });
-      var sumAll = pokemonList
-          .where((pokemon) =>
-              pokemon["obtido"] == false &&
-              pokemon["raridade"] == raridade &&
-              pokemon["buster"] == "All" &&
-              pokemon["promoA"] == false)
-          .fold(0.0, (soma, pokemon) {
-        return soma + (pokemon[chance] ?? 0.0);
-      });
-
-      _sum = _sum + sumPack + sumAll;
-    }
-    return _sum.toStringAsFixed(3);
   }
 
   currentTask(String tipoTask,
@@ -247,18 +182,37 @@ class _ShiningMetricsState extends State<ShiningMetrics> {
                     "${percentBuster("Total")}%"
                   ],
                 ]),
+                SizedBox(
+                  height: 40,
+                ),
+                centralLabel(AppLocalizations.of(context)!.newCards,
+                    corFundo: Colors.green.shade100, complete: completeTask()),
+                DataTable(
+                    columnSpacing: 25,
+                    headingTextStyle: TextStyle(fontWeight: FontWeight.bold),
+                    columns: [
+                      DataColumn(
+                          label:
+                              Text(AppLocalizations.of(context)!.busterPack)),
+                      DataColumn(label: Text("1-3")),
+                      DataColumn(label: Text("4")),
+                      DataColumn(label: Text("5")),
+                    ],
+                    rows: [
+                      DataRow(cells: [
+                        DataCell(Text("Lucario")),
+                        DataCell(Text(
+                            "${chanceCard("chance_1_3", "Shining", "Shining", pokemonList)}%")),
+                        DataCell(Text(
+                            "${chanceCard("chance_4", "Shining", "Shining", pokemonList)}%")),
+                        DataCell(Text(
+                            "${chanceCard("chance_5", "Shining", "Shining", pokemonList)}%")),
+                      ]),
+                    ]),
               ],
             ),
           ),
         ),
-        if (_bannerAd != null)
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20.0),
-            child: Container(
-              height: 50,
-              child: AdWidget(ad: _bannerAd!),
-            ),
-          ),
       ],
     );
   }
