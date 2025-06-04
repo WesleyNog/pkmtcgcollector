@@ -7,7 +7,7 @@ import 'package:pocket_collect/pages/metricsSeasson.dart/TriumphantMetrics.dart'
 import 'package:pocket_collect/pages/metricsSeasson.dart/apexMetrics.dart';
 import 'package:pocket_collect/pages/metricsSeasson.dart/mysticalMetrics.dart';
 import 'package:pocket_collect/pages/metricsSeasson.dart/shiningMetrics.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:pocket_collect/l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 
 class GraficPage extends StatefulWidget {

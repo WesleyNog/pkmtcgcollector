@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:pocket_collect/l10n/app_localizations.dart';
 import 'package:pocket_collect/helpers/infosAndUpdates.dart';
 
 class MenuPage extends StatelessWidget {

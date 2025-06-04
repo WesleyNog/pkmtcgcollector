@@ -10,7 +10,7 @@ import 'package:pocket_collect/helpers/pokemonInfos.dart';
 import 'package:pocket_collect/helpers/showRarity.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:pocket_collect/l10n/app_localizations.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
