@@ -136,7 +136,7 @@ class UltrabeastMetricsState extends State<UltrabeastMetrics> {
     };
 
     Map<String, Color> packColors = {
-      "Buzzwole": Colors.amberAccent.shade200,
+      "Buzzwole": Colors.red,
       "Total": Colors.grey.shade200
     };
 

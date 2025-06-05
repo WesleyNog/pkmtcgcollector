@@ -29,7 +29,7 @@ Gradient getBusterGradient(String buster) {
   ];
   final base = baseColors[buster] ?? defaultColors;
 
-  double opacity = (buster == "Arceus") ? 0.8 : 0.4;
+  double opacity = (buster == "Arceus" || buster == "Buzzwole") ? 0.8 : 0.4;
 
   final fadedColors = base.map((c) => c.withOpacity(opacity)).toList();
 
