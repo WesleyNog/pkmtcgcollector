@@ -4,6 +4,7 @@ import 'package:pocket_collect/adState.dart';
 import 'package:pocket_collect/pages/metricsSeasson.dart/CelestialMetrics.dart';
 import 'package:pocket_collect/pages/metricsSeasson.dart/SpaceMetrics.dart';
 import 'package:pocket_collect/pages/metricsSeasson.dart/TriumphantMetrics.dart';
+import 'package:pocket_collect/pages/metricsSeasson.dart/UltrabeastMetrics.dart';
 import 'package:pocket_collect/pages/metricsSeasson.dart/apexMetrics.dart';
 import 'package:pocket_collect/pages/metricsSeasson.dart/mysticalMetrics.dart';
 import 'package:pocket_collect/pages/metricsSeasson.dart/shiningMetrics.dart';
@@ -43,6 +44,7 @@ class _GraficPageState extends State<GraficPage> {
   final PageController _pageController = PageController();
   int _currentIndex = 0;
   final List<String> _logos = [
+    "LogoApex",
     "LogoCelestial",
     "LogoShining",
     "LogoTriumph",
@@ -52,6 +54,7 @@ class _GraficPageState extends State<GraficPage> {
   ];
 
   List<Widget> _pages = [
+    UltrabeastMetrics(),
     CelestialMetrics(),
     ShiningMetrics(),
     TriumphantMetrics(),

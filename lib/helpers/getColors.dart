@@ -19,6 +19,7 @@ Gradient getBusterGradient(String buster) {
     ],
     "Solgaleo": [Colors.red, Colors.red],
     "Lunala": [Colors.blue, Colors.blue],
+    "Buzzwole": [Colors.red, Colors.red],
     "All": [Colors.grey, Colors.grey],
   };
 
