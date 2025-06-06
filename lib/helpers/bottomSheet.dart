@@ -318,6 +318,17 @@ Future<void> displayBottomSheet({
                                 });
                               }),
                           Image.asset("assets/images/lunala.png"),
+                          Checkbox(
+                              value: packs[10],
+                              onChanged: (bool? newValue) {
+                                setModalState(() {
+                                  packs[10] = newValue ?? false;
+                                });
+                                updateParentState(() {
+                                  filterList("");
+                                });
+                              }),
+                          Image.asset("assets/images/buzzwole.png"),
                         ],
                       ),
                       const SizedBox(

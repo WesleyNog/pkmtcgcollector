@@ -44,7 +44,7 @@ class _GraficPageState extends State<GraficPage> {
   final PageController _pageController = PageController();
   int _currentIndex = 0;
   final List<String> _logos = [
-    "LogoApex",
+    "LogoUltra",
     "LogoCelestial",
     "LogoShining",
     "LogoTriumph",
