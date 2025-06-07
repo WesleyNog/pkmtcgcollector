@@ -286,7 +286,6 @@ class _HomePageContentState extends State<HomePageContent> {
                         child: TextField(
                           controller: _filterController,
                           decoration: InputDecoration(
-                            contentPadding: EdgeInsets.fromLTRB(12, 16, 12, 16),
                             border: OutlineInputBorder(),
                             labelText:
                                 AppLocalizations.of(context)!.placeholders,
