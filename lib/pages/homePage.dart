@@ -5,6 +5,7 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:pocket_collect/adState.dart';
 import 'package:pocket_collect/helpers/bottomSheet.dart';
+import 'package:pocket_collect/helpers/confirm.dart';
 import 'package:pocket_collect/helpers/getColors.dart';
 import 'package:pocket_collect/helpers/pokemonInfos.dart';
 import 'package:pocket_collect/helpers/showRarity.dart';
@@ -375,14 +376,18 @@ class _HomePageContentState extends State<HomePageContent> {
                     AppLocalizations.of(context)!.rarityLabel,
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(right: 10.0),
-                    child: Text(
-                      "#",
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
-                    ),
-                  ),
+                  GestureDetector(
+                      onTap: () {
+                        showConfirmationDialog(
+                          context: context,
+                          title: "Marcar Todos",
+                          message: "Tem certeza que Marcar os itens Listados?",
+                          onConfirm: () {
+                            print("Itens Marcados!"); // Ação ao confirmar
+                          },
+                        );
+                      },
+                      child: Icon(Icons.check_box_rounded)),
                 ],
               ),
             ),
