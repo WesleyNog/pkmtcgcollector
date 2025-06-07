@@ -284,7 +284,9 @@ class _HomePageContentState extends State<HomePageContent> {
                       SizedBox(
                         height: 40,
                         child: TextField(
+                          controller: _filterController,
                           decoration: InputDecoration(
+                            contentPadding: EdgeInsets.fromLTRB(12, 16, 12, 16),
                             border: OutlineInputBorder(),
                             labelText:
                                 AppLocalizations.of(context)!.placeholders,
@@ -293,20 +295,23 @@ class _HomePageContentState extends State<HomePageContent> {
                           ),
                           onChanged: (value) => _filterList(value),
                           onSubmitted: (value) =>
-                              _filterList(_filterController.text),
+                              _filterList((_filterController.text)),
                         ),
                       ),
-                      Positioned(
-                        right: 0,
-                        bottom: -4,
-                        child: IconButton(
-                          onPressed: () {
-                            _filterList(_filterController.text);
-                          },
-                          icon: const Icon(Icons.search_rounded),
-                          color: Colors.deepPurple,
-                        ),
-                      ),
+                      _filterController.text.isNotEmpty
+                          ? Positioned(
+                              right: 0,
+                              bottom: -4,
+                              child: IconButton(
+                                icon: Icon(Icons.clear_rounded),
+                                color: Colors.red,
+                                onPressed: () {
+                                  _filterController.clear();
+                                  _filterList("");
+                                },
+                              ),
+                            )
+                          : SizedBox.shrink(),
                     ],
                   ),
                 ),
